@@ -1,0 +1,74 @@
+{
+  "background": {
+    "texture": "mainmenu_bg"
+  },
+  "buttons": {
+    "btnRelSize": {
+      "x": 0.20000000298023224,
+      "y": 0.07999999821186066
+    },
+    "items": [
+      {
+        "font": "default",
+        "fontSize": 20.0,
+        "id": "main.play",
+        "label": "Play",
+        "relPos": {
+          "x": 0.30000001192092896,
+          "y": 0.4000000059604645
+        },
+        "textColor": 4294967295
+      },
+      {
+        "font": "default",
+        "fontSize": 20.0,
+        "id": "main.tutorial",
+        "label": "Tutorial",
+        "relPos": {
+          "x": 0.30000001192092896,
+          "y": 0.30000001192092896
+        },
+        "textColor": 4294967295
+      },
+      {
+        "font": "default",
+        "fontSize": 20.0,
+        "id": "main.settings",
+        "label": "Settings",
+        "relPos": {
+          "x": 0.30000001192092896,
+          "y": 0.20000000298023224
+        },
+        "textColor": 4294967295
+      },
+      {
+        "font": "default",
+        "fontSize": 20.0,
+        "id": "main.quit",
+        "label": "Quit Game",
+        "relPos": {
+          "x": 0.30000001192092896,
+          "y": 0.10000000149011612
+        },
+        "textColor": 4294967295
+      }
+    ],
+    "playRelPos": {
+      "x": 0.30000001192092896,
+      "y": 0.4000000059604645
+    },
+    "quitRelPos": {
+      "x": 0.30000001192092896,
+      "y": 0.10000000149011612
+    },
+    "settingsRelPos": {
+      "x": 0.30000001192092896,
+      "y": 0.20000000298023224
+    },
+    "texture": "menu_button",
+    "tutorialRelPos": {
+      "x": 0.30000001192092896,
+      "y": 0.30000001192092896
+    }
+  }
+}

@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{19bb754d-b8ac-451d-a764-3a0c823573a2}</ProjectGuid>
+    <RootNamespace>CSD_1401_Apex</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)Extern\CProcessing\inc</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(SolutionDir)Extern\CProcessing\lib\x64</LibraryPath>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)-$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir).tmp\$(Configuration)-$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(SolutionDir)Extern\CProcessing\inc</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(SolutionDir)Extern\CProcessing\lib\x64</LibraryPath>
+    <OutDir>$(SolutionDir)bin\$(Configuration)-$(Platform)\</OutDir>
+    <IntDir>$(SolutionDir).tmp\$(Configuration)-$(Platform)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);CProcessingd.lib</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)Assets\*" "$(OutDir)Assets\" /s /r /y /q
+xcopy "$(SolutionDir)Extern\CProcessing\lib\x64\CProcessingd.dll" "$(OutDir)" /s /r /y /q
+xcopy "$(SolutionDir)Extern\CProcessing\lib\x64\fmodL.dll" "$(OutDir)" /s /r /y /q</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);CProcessing.lib</AdditionalDependencies>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)Assets\*" "$(OutDir)Assets\" /s /r /y /q
+xcopy "$(SolutionDir)Extern\CProcessing\lib\x64\CProcessing.dll" "$(OutDir)" /s /r /y /q
+xcopy "$(SolutionDir)Extern\CProcessing\lib\x64\fmod.dll" "$(OutDir)" /s /r /y /q</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\194414289_m_normal_none.jpg" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\bulletGeneric.png" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\L1.jpg" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\L2.jpg" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\mainbg2.jpg" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\monsterwalk1.png" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\Opt1.jpg" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player1hurt.png" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player1hurtLEFT.png" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player1jump.png" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player1jumpLEFT.png" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player1walk1.png" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player1walk1LEFT.png" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player2hurt.png" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player2hurtleft.png" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player2jump.png" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player2jumpLEFT.png" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player2walk1.png" />
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player2walk1LEFT.png" />
+    <Image Include="Assets\194414289_m_normal_none.jpg" />
+    <Image Include="Assets\blueBullet.png" />
+    <Image Include="Assets\bossAttackLeft.png" />
+    <Image Include="Assets\bossAttackRight.png" />
+    <Image Include="Assets\bossLeft.png" />
+    <Image Include="Assets\bossRight.png" />
+    <Image Include="Assets\bulletGeneric.png" />
+    <Image Include="Assets\cavebound.jpg" />
+    <Image Include="Assets\DigiPen_BLACK.png" />
+    <Image Include="Assets\final1.png" />
+    <Image Include="Assets\final2.png" />
+    <Image Include="Assets\GEM2.PNG" />
+    <Image Include="Assets\greenBullet.png" />
+    <Image Include="Assets\greyBullet.png" />
+    <Image Include="Assets\hp.png" />
+    <Image Include="Assets\L1.jpg" />
+    <Image Include="Assets\L2.jpg" />
+    <Image Include="Assets\leaderboard.png" />
+    <Image Include="Assets\level1.2.png" />
+    <Image Include="Assets\LEVEL2UPDATED.png" />
+    <Image Include="Assets\lvl2.3.png" />
+    <Image Include="Assets\mainbg2.jpg" />
+    <Image Include="Assets\MainMenu.jpg" />
+    <Image Include="Assets\MapL1.png" />
+    <Image Include="Assets\monsterwalk1.png" />
+    <Image Include="Assets\Opt1.jpg" />
+    <Image Include="Assets\pinkBullet.png" />
+    <Image Include="Assets\player1hurt.png" />
+    <Image Include="Assets\player1hurtLEFT.png" />
+    <Image Include="Assets\player1jump.png" />
+    <Image Include="Assets\player1jumpLEFT.png" />
+    <Image Include="Assets\player1walk1.png" />
+    <Image Include="Assets\player1walk1LEFT.png" />
+    <Image Include="Assets\player2hurt.png" />
+    <Image Include="Assets\player2hurtleft.png" />
+    <Image Include="Assets\player2jump.png" />
+    <Image Include="Assets\player2jumpLEFT.png" />
+    <Image Include="Assets\player2walk1.png" />
+    <Image Include="Assets\player2walk1LEFT.png" />
+    <Image Include="Assets\purpleBullet.png" />
+    <Image Include="Assets\RangeMonster.png" />
+    <Image Include="Assets\skeletonAttack1.png" />
+    <Image Include="Assets\skeletonAttack2.png" />
+    <Image Include="Assets\skeletonAttack3.png" />
+    <Image Include="Assets\skeletonAttackLeft.png" />
+    <Image Include="Assets\skeletonAttackRight1.png" />
+    <Image Include="Assets\skeletonAttackRight2.png" />
+    <Image Include="Assets\skeletonAttackRight3.png" />
+    <Image Include="Assets\skeletonEndAttack.png" />
+    <Image Include="Assets\skeletonEndAttackRight.png" />
+    <Image Include="Assets\SkeletonEnemy.png" />
+    <Image Include="Assets\skeletonLeftwalk.png" />
+    <Image Include="Assets\skeletonLeftwalk2.png" />
+    <Image Include="Assets\skeletonRightwalk.png" />
+    <Image Include="Assets\skeletonRightWalk2.png" />
+    <Image Include="Assets\speed.png" />
+    <Image Include="Assets\trophy.png" />
+    <Image Include="Assets\updatedmap.png" />
+    <Image Include="Assets\yellowBullet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\CSD1401ProjectCaveBound\Assets\Exo2-Regular.ttf" />
+    <Font Include="Assets\Exo2-Regular.ttf" />
+    <Font Include="Assets\HanaleiFill-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="boss.h" />
+    <ClInclude Include="bullet.h" />
+    <ClInclude Include="collectables.h" />
+    <ClInclude Include="credits.h" />
+    <ClInclude Include="enemies.h" />
+    <ClInclude Include="game.h" />
+    <ClInclude Include="gameover.h" />
+    <ClInclude Include="instructions.h" />
+    <ClInclude Include="leaderBoard.h" />
+    <ClInclude Include="mainmenu.h" />
+    <ClInclude Include="options.h" />
+    <ClInclude Include="platform.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="points.h" />
+    <ClInclude Include="utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\credits.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="boss.c" />
+    <ClCompile Include="bullet.c" />
+    <ClCompile Include="collectables.c" />
+    <ClCompile Include="credits.c" />
+    <ClCompile Include="enemies.c" />
+    <ClCompile Include="game.c" />
+    <ClCompile Include="gameover.c" />
+    <ClCompile Include="instructions.c" />
+    <ClCompile Include="leaderBoard.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="mainmenu.c" />
+    <ClCompile Include="options.c" />
+    <ClCompile Include="platform.c" />
+    <ClCompile Include="player.c" />
+    <ClCompile Include="points.c" />
+    <ClCompile Include="utils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\clicking.wav" />
+    <Media Include="Assets\collision.wav" />
+    <Media Include="Assets\gameBG.wav" />
+    <Media Include="Assets\gemCollect.wav" />
+    <Media Include="Assets\gemCollection.wav" />
+    <Media Include="Assets\instructionMusic.wav" />
+    <Media Include="Assets\jump.wav" />
+    <Media Include="Assets\powerUps.wav" />
+    <Media Include="Assets\walk.wav" />
+    <Media Include="Assets\walk2.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

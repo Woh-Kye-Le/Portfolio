@@ -1,0 +1,220 @@
+{
+  "sheets": [
+    {
+      "name": "player_run_right",
+      "file": "atlases/char_walking_state_spritesheet-R.png",
+      "frameW": 40,
+      "frameH": 52,
+      "cols": 5,
+      "rows": 1,
+      "frameDuration": 0.8
+    },
+    {
+      "name": "player_run_left",
+      "file": "atlases/char_walking_state_spritesheet-L.png",
+      "frameW": 40,
+      "frameH": 52,
+      "cols": 5,
+      "rows": 1,
+      "frameDuration": 0.8
+    },
+    {
+      "name": "player_idle_right",
+      "file": "atlases/char_startform_idle_spritesheet-R.png",
+      "frameW": 38,
+      "frameH": 52,
+      "cols": 2,
+      "rows": 1,
+      "frameDuration": 0.8
+    },
+    {
+      "name": "player_idle_left",
+      "file": "atlases/char_startform_idle_spritesheet-L.png",
+      "frameW": 38,
+      "frameH": 52,
+      "cols": 2,
+      "rows": 1,
+      "frameDuration": 0.8
+    },
+    {
+      "name": "torch",
+      "file": "atlases/torch_spritesheet.png",
+      "frameW": 64,
+      "frameH": 64,
+      "cols": 3,
+      "rows": 1,
+      "frameDuration": 0.8
+    },
+    {
+      "name": "player_heal_R",
+      "file": "atlases/char_healing_spritesheet-R.png",
+      "frameW": 42,
+      "frameH": 58,
+      "cols": 5,
+      "rows": 1,
+      "frameDuration": 0.8
+    },
+    {
+      "name": "player_heal_L",
+      "file": "atlases/char_healing_spritesheet-L.png",
+      "frameW": 42,
+      "frameH": 58,
+      "cols": 5,
+      "rows": 1,
+      "frameDuration": 0.8
+    },
+    {
+      "name": "player_burrow_R",
+      "file": "atlases/char_Burrow_Animation_Sheet-R.png",
+      "frameW": 43,
+      "frameH": 53,
+      "cols": 6,
+      "rows": 1,
+      "frameDuration": 0.8
+    },
+    {
+      "name": "player_burrow_L",
+      "file": "atlases/char_Burrow_Animation_Sheet-L.png",
+      "frameW": 42,
+      "frameH": 53,
+      "cols": 6,
+      "rows": 1,
+      "frameDuration": 0.8
+    },
+    {
+      "name": "player_burrowUnder_R",
+      "file": "atlases/char_Burrow_Under_Animation_Sheet_R.png",
+      "frameW": 42,
+      "frameH": 53,
+      "cols": 2,
+      "rows": 1,
+      "frameDuration": 0.8
+    },
+    {
+      "name": "player_burrowUnder_L",
+      "file": "atlases/char_Burrow_Under_Animation_Sheet_L.png",
+      "frameW": 41,
+      "frameH": 53,
+      "cols": 2,
+      "rows": 1,
+      "frameDuration": 0.8
+    },
+    {
+      "name": "ranged_enemy",
+      "file": "atlases/ranged_enemy.png",
+      "frameW": 55,
+      "frameH": 46,
+      "cols": 6,
+      "rows": 1,
+      "frameDuration": 0.1
+    },
+    {
+      "name": "default_enemy",
+      "file": "atlases/default_enemy.png",
+      "frameW": 57,
+      "frameH": 26,
+      "cols": 6,
+      "rows": 1,
+      "frameDuration": 0.1
+    },
+    {
+      "name": "burrow_enemy",
+      "file": "atlases/burrow_enemy.png",
+      "frameW": 64,
+      "frameH": 64,
+      "cols": 4,
+      "rows": 1,
+      "frameDuration": 0.1
+    },
+    {
+      "name": "heal_enemy",
+      "file": "atlases/heal_enemy.png",
+      "frameW": 56,
+      "frameH": 83,
+      "cols": 4,
+      "rows": 1,
+      "frameDuration": 0.1
+    },
+    {
+      "name": "burrow_enemy_underground",
+      "file": "atlases/burrow_enemy_underground_sheet.png",
+      "frameW": 193,
+      "frameH": 95,
+      "cols": 4,
+      "rows": 1,
+      "frameDuration": 0.1
+    },
+    {
+      "name": "char_melee_L",
+      "file": "atlases/char_melee_attack_spritesheet_L.png",
+      "frameW":56,
+      "frameH":52,
+      "cols": 4,
+      "rows": 1,
+      "frameDuration": 0.1
+    },
+    {
+      "name": "char_melee_R",
+      "file": "atlases/char_melee_attack_spritesheet_R.png",
+      "frameW":52,
+      "frameH":52,
+      "cols": 4,
+      "rows": 1,
+      "frameDuration": 0.1
+    },
+    {
+      "name": "final_boss",
+      "file": "atlases/IdleFinalBoss.png",
+      "frameW": 65,
+      "frameH": 72,
+      "cols": 2,
+      "rows": 1,
+      "frameDuration": 0.8
+    },
+    {
+      "name": "char_damage_R",
+      "file": "atlases/Char_damaged-R.png",
+      "frameW": 41,
+      "frameH": 54,
+      "cols": 3,
+      "rows": 1,
+      "frameDuration": 0.8
+    },
+    {
+      "name": "char_damage_L",
+      "file": "atlases/Char_damaged-L.png",
+      "frameW": 41,
+      "frameH": 54,
+      "cols": 3,
+      "rows": 1,
+      "frameDuration": 0.8
+    },
+    {
+      "name": "projectile_Bullet_R",
+      "file": "atlases/spores_projectile_spritesheet-R.png",
+      "frameW": 48,
+      "frameH": 41,
+      "cols": 3,
+      "rows": 1,
+      "frameDuration": 0.8
+    },
+    {
+      "name": "projectile_Bullet_L",
+      "file": "atlases/spores_projectile_spritesheet-L.png",
+      "frameW": 48,
+      "frameH": 41,
+      "cols": 3,
+      "rows": 1,
+      "frameDuration": 0.8
+    },
+    {
+      "name": "ActionHint",
+      "file": "atlases/ActionHint.png",
+      "frameW": 52,
+      "frameH": 52,
+      "cols": 5,
+      "rows": 1,
+      "frameDuration": 0.8
+    }
+  ]
+}

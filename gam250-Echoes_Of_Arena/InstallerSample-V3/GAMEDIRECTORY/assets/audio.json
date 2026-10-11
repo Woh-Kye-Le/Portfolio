@@ -1,0 +1,88 @@
+{
+  "volumes": {
+    "masterDb": 0.0,
+    "musicDb": 0.0,
+    "sfxDb": 0.0
+  },
+  "bgm": {
+    "key": "bgm",
+    "file": "audio/BGM Menu.wav",
+    "loop": true,
+    "gain": 0.9
+  },
+  "sounds": {
+    "bgm": "audio/BGM Menu.wav",
+    "bgm_labyrinth": "audio/BGM Labyrinth.wav",
+
+    "fire": "audio/FX Fire.wav",
+
+    "door_open": "audio/FX Door Open v1.1.wav",
+    "door_close": "audio/FX Door Close.wav",
+
+    "buttonHover": "audio/FX Button Hover.wav",
+    "buttonClick": "audio/FX Button Push.wav",
+
+    "equip": "audio/FX Equip.wav",
+
+    "Heal": "audio/FX Healing.wav",
+    "Projectile": "audio/FX Projectile.wav",
+    "ranged_mini_boss": "audio/FX EnemyProjectile.wav",
+    "Burrow_In": "audio/FX Burrow In.wav",
+    "Burrow_Out": "audio/FX Burrow Out.wav",
+
+    "PlayerShot1": "audio/FX PlayerShot1.wav",
+    "PlayerShot2": "audio/FX PlayerShot2.wav",
+    "PlayerShot3": "audio/FX PlayerShot3.wav",
+
+    "footstep_1": "audio/FX Footsteps1.wav",
+    "footstep_2": "audio/FX Footsteps2.wav",
+    "footstep_3": "audio/FX Footsteps3.wav",
+    "footstep_4": "audio/FX Footsteps4.wav",
+    "footstep_5": "audio/FX Footsteps5.wav",
+    "footstep_6": "audio/FX Footsteps6.wav",
+    "footstep_7": "audio/FX Footsteps7.wav",
+
+    "Slash_1": "audio/FX Slash1.wav",
+    "Slash_2": "audio/FX Slash2.wav",
+    "Slash_3": "audio/FX Slash3.wav",
+    "Slash_4": "audio/FX Slash4.wav",
+    "Slash_5": "audio/FX Slash5.wav",
+
+    "testfile": "audio/Test File.wav",
+    "basic_footstep1": "audio/temp/Temp enemy footstep1.wav",
+    "basic_footstep2": "audio/temp/Temp enemy footstep2.wav",
+    "range_footstep1": "audio/temp/Temp enemy footstep1.wav",
+    "range_footstep2": "audio/temp/Temp enemy footstep2.wav",
+    "heal_footstep1": "audio/temp/Temp enemy footstep1.wav",
+    "heal_footstep2": "audio/temp/Temp enemy footstep2.wav",
+    "burrow_footstep1": "audio/temp/Burrow Footstep1.wav",
+    "burrow_footstep2": "audio/temp/Burrow Footstep2.wav",
+    "finalboss_footstep1": "audio/temp/Temp enemy footstep1.wav",
+    "finalboss_footstep2": "audio/temp/Temp enemy footstep2.wav",
+
+    "basic_death": "audio/temp/enemy death.wav",
+    "range_death": "audio/temp/enemy death.wav",
+    "heal_death": "audio/temp/enemy death.wav",
+    "burrow_death": "audio/temp/enemy death.wav",
+    "finalboss_death": "audio/temp/enemy death.wav",
+
+    "player_grunt1": "audio/temp/PlayerGrunt1.wav",
+    "player_grunt2": "audio/temp/PlayerGrunt2.wav",
+    "player_grunt3": "audio/temp/PlayerGrunt3.wav",
+
+    "generator_triggered": "audio/temp/Generator activate.wav",
+    "generator_activated": "audio/temp/Generator in work.wav",
+    "key_collected1": "audio/temp/Key Collected1.wav",
+    "key_collected2": "audio/temp/Key Collected2.wav",
+
+    "tile_crack1": "audio/temp/tile crack1.wav",
+    "tile_crack2": "audio/temp/tile crack2.wav",
+    "tile_crack3": "audio/temp/tile crack3.wav",
+    "tile_crack4": "audio/temp/tile crack4.wav",
+    "tile_break": "audio/temp/tile break.wav",
+
+    "lever1": "audio/temp/lever1.wav",
+    "lever2": "audio/temp/lever2.wav",
+    "lever3": "audio/temp/lever3.wav"
+  }
+}

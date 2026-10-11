@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\194414289_m_normal_none.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\L1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\L2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\mainbg2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\Opt1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\player1hurt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\player1hurtLEFT.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\player1jump.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\player1jumpLEFT.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\player1walk1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\player1walk1LEFT.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\player2hurt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\player2hurtleft.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\player2jump.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\player2jumpLEFT.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\player2walk1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\player2walk1LEFT.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\194414289_m_normal_none.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\bulletGeneric.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\L1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\L2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\mainbg2.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\Opt1.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player1hurt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player1hurtLEFT.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player1jump.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player1jumpLEFT.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player1walk1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player1walk1LEFT.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player2hurt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player2hurtleft.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player2jump.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player2jumpLEFT.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player2walk1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\player2walk1LEFT.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\CSD1401ProjectCaveBound\Assets\monsterwalk1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\skeletonAttack1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\skeletonAttack2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\skeletonAttack3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\skeletonAttackRight1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\skeletonAttackRight2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\skeletonAttackRight3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\skeletonEndAttack.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\skeletonEndAttackRight.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\skeletonLeftwalk.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\skeletonLeftwalk2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\skeletonRightwalk.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\skeletonRightWalk2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\updatedmap.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\blueBullet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\bulletGeneric.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\GEM2.PNG">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\greenBullet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\greyBullet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\monsterwalk1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\pinkBullet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\purpleBullet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\skeletonAttackLeft.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\yellowBullet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\leaderboard.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\trophy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\LEVEL2UPDATED.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\RangeMonster.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\SkeletonEnemy.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\DigiPen_BLACK.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\cavebound.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\bossAttackLeft.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\bossAttackRight.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\bossLeft.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\bossRight.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\MainMenu.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\MapL1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\hp.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\speed.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\level1.2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\lvl2.3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\final1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\final2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\Exo2-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
+    <Font Include="..\..\CSD1401ProjectCaveBound\Assets\Exo2-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
+    <Font Include="Assets\HanaleiFill-Regular.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="credits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="enemies.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mainmenu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="options.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="boss.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="platform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="points.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="instructions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="leaderBoard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gameover.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="collectables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\credits.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="boss.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="credits.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="enemies.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="game.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gameover.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="instructions.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="leaderBoard.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainmenu.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="options.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="platform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="player.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="points.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="collectables.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\gameBG.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\gemCollect.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\gemCollection.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\instructionMusic.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\jump.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\powerUps.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\walk.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\walk2.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\clicking.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="Assets\collision.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+  </ItemGroup>
+</Project>
