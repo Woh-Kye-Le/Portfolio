@@ -19,9 +19,10 @@ buttons.forEach((btn) => {
 // Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Hide a card's video player if its file is missing or can't be played
+// If a card's video file is missing or can't be played, remove the player so the
+// gradient behind it shows instead. (Only react to a real error event: checking the
+// loading state at start-up is unreliable when this script is served from cache.)
 document.querySelectorAll('.card video').forEach((video) => {
-  const hide = () => video.remove();
-  video.addEventListener('error', hide);
-  if (video.error || video.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) hide();
+  video.addEventListener('error', () => video.remove());
+  if (video.error) video.remove();
 });
