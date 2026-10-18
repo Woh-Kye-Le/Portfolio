@@ -1,0 +1,21 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Raw personal data: never commit your own export ---
+data/raw/*
+!data/raw/.gitkeep
+
+# --- Editors / OS ---
+.vscode/
+.idea/
+.vs/
+.DS_Store
+Thumbs.db

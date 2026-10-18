@@ -1,0 +1,58 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskName": "dashboard build",
+      "appliesTo": "*",
+      "type": "launch",
+      "contextType": "build",
+      "command": "nmake",
+      "args": [ "all" ],
+      "envVars": {
+        "VSCMD_START_DIR": "\"${workspaceRoot}\""
+      }
+    },
+    {
+      "taskName": "dashboard rebuild",
+      "appliesTo": "*",
+      "type": "launch",
+      "contextType": "rebuild",
+      "command": "nmake",
+      "args": [ "rebuild" ],
+      "envVars": {
+        "VSCMD_START_DIR": "\"${workspaceRoot}\""
+      }
+    },
+    {
+      "taskName": "dashboard clean",
+      "appliesTo": "*",
+      "type": "launch",
+      "contextType": "clean",
+      "command": "nmake",
+      "args": [ "clean" ],
+      "envVars": {
+        "VSCMD_START_DIR": "\"${workspaceRoot}\""
+      }
+    },
+    {
+      "taskName": "Streamlit app",
+      "appliesTo": "*",
+      "type": "default",
+      "command": "nmake",
+      "args": [ "run" ],
+      "envVars": {
+        "VSCMD_START_DIR": "\"${workspaceRoot}\""
+      }
+    },
+    {
+      "taskName": "pytest suite",
+      "appliesTo": "*",
+      "type": "default",
+      "command": "nmake",
+      "args": [ "test" ],
+      "envVars": {
+        "VSCMD_START_DIR": "\"${workspaceRoot}\""
+      }
+    }
+  ]
+}
