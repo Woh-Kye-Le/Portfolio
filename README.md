@@ -1,11 +1,37 @@
 # Portfolio
 
-A collection of game development coursework completed at DigiPen Institute of Technology.
-Each project below lists the libraries used, the languages, my main roles, and a short description of the game.
+A collection of my personal and DigiPen Institute of Technology coursework projects.
+Each project below lists the languages used, the libraries/frameworks, my main roles, and a short description.
 
 ---
 
-## GAM100 — CaveBound
+## Personal Projects
+
+### My Listening Dashboard
+
+| | |
+|---|---|
+| **Folder** | `Personal_Project/Data_analysis_pyt/my-listening-dashboard` |
+| **Language** | Python |
+| **Libraries** | pandas (data wrangling), Streamlit (UI), Plotly (charts), pytest (testing) |
+| **My Role** | Solo project — data pipeline, analysis, and UI |
+
+**About the project**
+A small pandas + Streamlit app that answers questions about my own listening habits, built from a Spotify *Extended streaming history* export I already had. Instead of a one-off notebook, the data wrangling lives in a tested `src/` package, the UI is a thin Streamlit layer on top of it, and a `Makefile` sets everything up in one command.
+
+It answers:
+- **What time of day do I listen the most?**
+- **Which days do I listen the most?**
+- **How has my listening shifted month to month?**
+- **What do I replay most?** (tracks and artists)
+
+Cleaning is centralised in `src/clean.py` (timezone conversion, dropping junk rows, de-duplication, blank name handling, derived columns), so `analysis.py`, `charts.py`, and `app.py` only ever see a clean, canonical frame. The app opens with a bundled anonymous sample dataset out of the box, and supports any export mapped onto the same `ts, track, artist, album, ms_played` schema.
+
+---
+
+## School Projects
+
+### GAM100 — CaveBound
 
 | | |
 |---|---|
@@ -18,7 +44,7 @@ CaveBound is a 2D platformer in which the player explores a mysterious cave and 
 
 ---
 
-## GAM200 — OceanBound
+### GAM200 — OceanBound
 
 | | |
 |---|---|
@@ -37,7 +63,7 @@ The game also includes a health system, respawns, and a leaderboard that logs pl
 
 ---
 
-## GAM250 — Taken (Echoes of Arena)
+### GAM250 — Taken (Echoes of Arena)
 
 | | |
 |---|---|
