@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Woh Kye Le | Portfolio</title>
+  <meta name="description" content="Portfolio of Woh Kye Le, Computer Science student at SIT-DigiPen building game software in C++ and C.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#top">WKL</a>
+      <ul>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <p class="eyebrow">Computer Science student · SIT-DigiPen</p>
+      <h1>Hi, I'm <span class="accent">Woh Kye Le</span>.</h1>
+      <p class="lead">
+        I build game software in C++ and C (graphics, physics and UI systems) in
+        teams of 4 to 8, plus data tools in Python. I'm looking for a Software
+        Engineering internship from May 2027.
+      </p>
+      <div class="hero-links">
+        <a class="btn primary" href="#projects">View my work</a>
+        <a class="btn" href="https://github.com/Woh-Kye-Le" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/kye-le-woh-107ab0325/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="filters" role="group" aria-label="Filter projects by language">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="cpp">C++</button>
+        <button class="filter" data-filter="c">C</button>
+        <button class="filter" data-filter="python">Python</button>
+      </div>
+
+      <div class="grid">
+
+        <!-- PROJECT CARD TEMPLATE: copy a whole <article> block to add a project.
+             data-lang can be "cpp", "c", "python", or several separated by spaces.
+             VIDEO: put the clip in the videos/ folder and point the <video> src at it.
+             The file name is case-sensitive on GitHub Pages. The gradient behind it only
+             shows if the video file is missing (script.js removes the broken player).
+             SCREENSHOT instead: replace the whole <div class="media"> block with
+             <img src="images/your-file.png" alt="Screenshot of the project" loading="lazy"> -->
+
+        <article class="card" data-lang="cpp">
+          <div class="media">
+            <div class="thumb">Taken: Echoes of the Arena</div>
+            <video src="videos/EchoesOfTheArenas.mp4#t=0.1" controls muted loop playsinline preload="metadata"
+                   aria-label="Taken: Echoes of the Arena gameplay clip"></video>
+          </div>
+          <div class="card-body">
+            <h3>Taken: Echoes of the Arena</h3>
+            <p class="meta">GAM250 · Team of 8 · Aug 2025 – Apr 2026</p>
+            <p>
+              Game built on a custom Entity-Component-System engine. As Graphics Lead I
+              implemented the animation system, sprite system and renderer. I also built the
+              UI menu system, linking buttons to game actions through function objects so
+              menu logic stays decoupled from UI code.
+            </p>
+            <ul class="tags">
+              <li>C++20</li>
+              <li>OpenGL</li>
+              <li>Lua</li>
+              <li>ImGui</li>
+              <li>FMOD</li>
+              <li>ECS</li>
+            </ul>
+            <div class="card-links">
+              <!-- TODO: point at this game's own folder, e.g. .../tree/main/School_Project/<FolderName> -->
+              <a href="https://github.com/Woh-Kye-Le/portfolio/tree/main/School_Project" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-lang="cpp">
+          <div class="media">
+            <div class="thumb">OceanBound</div>
+            <video src="videos/Oceanbound.mp4#t=0.1" controls muted loop playsinline preload="metadata"
+                   aria-label="OceanBound gameplay clip"></video>
+          </div>
+          <div class="card-body">
+            <h3>OceanBound</h3>
+            <p class="meta">GAM200 · Team of 5 · Jan 2025 – Apr 2025</p>
+            <p>
+              Underwater platformer on DigiPen's Alpha Engine. I implemented the physics
+              (low-friction, ice-style sliding and gravity-driven jumping) used across all
+              10 levels, plus map generation and 3 power-ups: Shield, Speed Boost and
+              Oxygen Replenishment.
+            </p>
+            <ul class="tags">
+              <li>C++17</li>
+              <li>Alpha Engine</li>
+              <li>Physics</li>
+              <li>Map generation</li>
+            </ul>
+            <div class="card-links">
+              <!-- TODO: point at this game's own folder, e.g. .../tree/main/School_Project/<FolderName> -->
+              <a href="https://github.com/Woh-Kye-Le/portfolio/tree/main/School_Project" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-lang="c">
+          <div class="media">
+            <div class="thumb">CaveBound</div>
+            <video src="videos/Cavebound.mp4#t=0.1" controls muted loop playsinline preload="metadata"
+                   aria-label="CaveBound gameplay clip"></video>
+          </div>
+          <div class="card-body">
+            <h3>CaveBound</h3>
+            <p class="meta">GAM100 · Team of 4 · Sep 2024 – Dec 2024</p>
+            <p>
+              2D platformer written in C on DigiPen's CProcessing library, which has no
+              classes or objects. I built the physics system and map generation. The game
+              ships with 2 switchable characters, enemies and bosses, collectables and a
+              leaderboard.
+            </p>
+            <ul class="tags">
+              <li>C</li>
+              <li>CProcessing</li>
+              <li>Physics</li>
+              <li>Map generation</li>
+            </ul>
+            <div class="card-links">
+              <!-- TODO: point at this game's own folder, e.g. .../tree/main/School_Project/<FolderName> -->
+              <a href="https://github.com/Woh-Kye-Le/portfolio/tree/main/School_Project" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-lang="python">
+          <img src="images/listening-dashboard.png" alt="My Listening Dashboard running on its bundled sample data: headline metrics and bar charts of listening by hour and weekday" loading="lazy">
+          <div class="card-body">
+            <h3>My Listening Dashboard</h3>
+            <p class="meta">Personal project · Data analysis</p>
+            <p>
+              Streamlit app that answers questions about my own Spotify listening history:
+              what time of day and which days I listen most, how listening shifts month to
+              month, and which tracks and artists I replay. The pandas cleaning and analysis
+              code lives in a tested <code>src/</code> package (timezones, duplicates,
+              zero-length plays, blank names), with a thin Streamlit and Plotly UI on top.
+              12 pytest tests, and a bundled anonymised sample so it runs out of the box.
+            </p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>pandas</li>
+              <li>Streamlit</li>
+              <li>Plotly</li>
+              <li>pytest</li>
+              <li>Make</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/Woh-Kye-Le/portfolio/tree/main/Personal_Project/Data_analysis_pyt/my-listening-dashboard" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I'm a Computer Science student at SIT-DigiPen, studying for a BSc (Hons) in
+        Computer Science in Real-Time Interactive Simulation. I've built game software
+        in C++ and C in teams of 4 to 8, using object-oriented design and Git. In
+        Python, I studied through MIT OpenCourseWare and built a pandas and Streamlit
+        dashboard to analyse my own listening history.
+      </p>
+      <p>
+        <strong>Currently seeking:</strong> a Software Engineering Internship (IWSP,
+        3 May 2027 – 7 Apr 2028).
+      </p>
+
+      <dl class="facts">
+        <div><dt>Languages</dt><dd>C++, C, Python, Lua</dd></div>
+        <div><dt>Libraries</dt><dd>OpenGL, GLFW, GLM, Dear ImGui, FMOD, FreeType, pandas, Streamlit, Plotly</dd></div>
+        <div><dt>Tools</dt><dd>Git, Jira, Visual Studio, VS Code, pytest, Make</dd></div>
+        <div><dt>Concepts</dt><dd>Object-oriented programming, data structures and algorithms, Entity-Component-System architecture, data cleaning and visualisation</dd></div>
+      </dl>
+
+      <h3 class="subhead">Education</h3>
+      <ul class="edu">
+        <li>
+          <strong>Singapore Institute of Technology (SIT) - DigiPen</strong><br>
+          BSc (Hons) in Computer Science in Real-Time Interactive Simulation, Sep 2024 – Present
+        </li>
+        <li>
+          <strong>Nanyang Polytechnic</strong><br>
+          Diploma in Pharmaceutical Science, Apr 2019 – Apr 2022
+        </li>
+        <li>
+          <strong>Programming in Python, MIT OpenCourseWare</strong><br>
+          Online course covering Python fundamentals, string manipulation, functions,
+          compound data types and object-oriented programming
+        </li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>
+        Open to internship opportunities and collaborations. Reach me at
+        <a href="mailto:wohkyele1120@gmail.com">wohkyele1120@gmail.com</a>, or find me on
+        <a href="https://www.linkedin.com/in/kye-le-woh-107ab0325/" target="_blank" rel="noopener">LinkedIn</a>
+        and <a href="https://github.com/Woh-Kye-Le" target="_blank" rel="noopener">GitHub</a>.
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Woh Kye Le</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
