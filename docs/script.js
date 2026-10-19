@@ -1,4 +1,4 @@
-// Project filtering (All / C++ / Python)
+// Project filtering (All / C++ / C / Python / Assembly)
 const buttons = document.querySelectorAll('.filter');
 const cards = document.querySelectorAll('.card');
 

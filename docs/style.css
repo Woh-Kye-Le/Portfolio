@@ -88,7 +88,7 @@ main, .nav, .footer {
 .btn.primary { background: var(--accent); color: var(--accent-text); border-color: var(--accent); }
 
 /* Filters */
-.filters { display: flex; gap: 8px; margin-bottom: 24px; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
 .filter {
   padding: 6px 16px;
   border: 1px solid var(--border);

@@ -29,6 +29,32 @@ Cleaning is centralised in `src/clean.py` (timezone conversion, dropping junk ro
 
 ---
 
+### Assembly Benchmark — "Can I Beat the Compiler?"
+
+| | |
+|---|---|
+| **Folder** | `Personal_Project/Assembly_benchmark` |
+| **Language** | x86-64 Assembly (MASM) + C++17 |
+| **Libraries** | None — MSVC toolchain (`ml64.exe` assembler), C++ built with `/O2 /GL /arch:AVX2` |
+| **My Role** | Solo project — hand-written x64 assembly, C++ reference implementations, benchmark harness, correctness tests |
+
+**About the project**
+After learning the basics of x64 assembly, I hand-wrote five functions in MASM — `strlen`, summing an array, counting set bits (popcount), reversing an array, and converting a 1080p RGBA image to grayscale — and raced them against the optimized C++ versions to work out *why* each one went the way it did.
+
+Results (Release / x64, `/O2 /arch:AVX2`):
+
+| Benchmark | Winner | By how much |
+|---|---|---|
+| `strlen` | asm | 1.64x |
+| `sum` (1M int64) | C++ | 3.30x |
+| `popcount` | tie | 1.08x |
+| `reverse` | tie | 1.04x |
+| `grayscale` (1080p RGBA) | asm | 4.17x |
+
+The takeaway: for a simple loop over memory the compiler already emits the vector code you would write by hand (it auto-vectorized `sum` into AVX2 and won 3.3x), but for awkward data — interleaved bytes, widening multiplies, packing — the auto-vectorizer often gives up, which is where hand-written SSE2 (`pmaddwd`, shuffles, packs) paid off for the grayscale pass. The project also covers the Microsoft x64 calling convention, the C++/assembly boundary, `extern "C"` linkage, and a correctness test suite that checks the assembly output matches C++.
+
+---
+
 ## School Projects
 
 ### GAM100 — CaveBound

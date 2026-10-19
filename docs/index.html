@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Woh Kye Le | Portfolio</title>
-  <meta name="description" content="Portfolio of Woh Kye Le, Computer Science student at SIT-DigiPen building game software in C++ and C.">
-  <link rel="stylesheet" href="style.css?v=2">
+  <meta name="description" content="Portfolio of Woh Kye Le, Computer Science student at SIT-DigiPen building game software in C++ and C, with low-level x86-64 assembly and Python data tools.">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -28,8 +28,8 @@
       <h1>Hi, I'm <span class="accent">Woh Kye Le</span>.</h1>
       <p class="lead">
         I build game software in C++ and C (graphics, physics and UI systems) in
-        teams of 4 to 8, plus data tools in Python. I'm looking for a Software
-        Engineering internship from May 2027.
+        teams of 4 to 8, plus Python data tools and low-level x86-64 assembly.
+        I'm looking for a Software Engineering internship from May 2027.
       </p>
       <div class="hero-links">
         <a class="btn primary" href="#projects">View my work</a>
@@ -47,12 +47,13 @@
         <button class="filter" data-filter="cpp">C++</button>
         <button class="filter" data-filter="c">C</button>
         <button class="filter" data-filter="python">Python</button>
+        <button class="filter" data-filter="asm">Assembly</button>
       </div>
 
       <div class="grid">
 
         <!-- PROJECT CARD TEMPLATE: copy a whole <article> block to add a project.
-             data-lang can be "cpp", "c", "python", or several separated by spaces.
+             data-lang can be "cpp", "c", "python", "asm", or several separated by spaces.
              VIDEO: put the clip in the videos/ folder and point the <video> src at it.
              The file name is case-sensitive on GitHub Pages. The gradient behind it only
              shows if the video file is missing (script.js removes the broken player).
@@ -172,6 +173,32 @@
           </div>
         </article>
 
+        <article class="card" data-lang="asm cpp">
+          <img src="images/assembly_comparison.png" alt="Benchmark comparison of hand-written x64 assembly against optimized C++ across the five routines (strlen, array sum, popcount, reverse and grayscale)" loading="lazy">
+          <div class="card-body">
+            <h3>Can I Beat the Compiler?</h3>
+            <p class="meta">Personal project · x86-64 Assembly benchmark</p>
+            <p>
+              I hand-wrote five routines in x64 MASM (strlen, array sum, popcount, array
+              reverse and an RGBA to grayscale conversion) and raced them against the
+              optimized C++ versions (<code>/O2 /arch:AVX2</code>) to find out <em>why</em>
+              each one wins or loses. Hand-written SSE2 grayscale won 4.2x and strlen 1.64x,
+              the compiler won the auto-vectorized array sum by 3.3x, and popcount/reverse
+              were ties.
+            </p>
+            <ul class="tags">
+              <li>Assembly (x64)</li>
+              <li>MASM</li>
+              <li>SSE2 / SIMD</li>
+              <li>C++17</li>
+              <li>Benchmarking</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/Woh-Kye-Le/portfolio/tree/main/Personal_Project/Assembly_benchmark" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </div>
+        </article>
+
       </div>
     </section>
 
@@ -183,7 +210,9 @@
         Computer Science in Real-Time Interactive Simulation. I've built game software
         in C++ and C in teams of 4 to 8, using object-oriented design and Git. In
         Python, I studied through MIT OpenCourseWare and built a pandas and Streamlit
-        dashboard to analyse my own listening history.
+        dashboard to analyse my own listening history. I also write x86-64 assembly
+        by hand (MASM) and benchmark it against optimized C++ to understand when
+        hand-written SIMD genuinely beats the compiler.
       </p>
       <p>
         <strong>Currently seeking:</strong> a Software Engineering Internship (IWSP,
@@ -191,10 +220,10 @@
       </p>
 
       <dl class="facts">
-        <div><dt>Languages</dt><dd>C++, C, Python, Lua</dd></div>
+        <div><dt>Languages</dt><dd>C++, C, Python, Lua, x86-64 Assembly</dd></div>
         <div><dt>Libraries</dt><dd>OpenGL, GLFW, GLM, Dear ImGui, FMOD, FreeType, pandas, Streamlit, Plotly</dd></div>
-        <div><dt>Tools</dt><dd>Git, Jira, Visual Studio, VS Code, pytest, Make</dd></div>
-        <div><dt>Concepts</dt><dd>Object-oriented programming, data structures and algorithms, Entity-Component-System architecture, data cleaning and visualisation</dd></div>
+        <div><dt>Tools</dt><dd>Git, Jira, Visual Studio, VS Code, pytest, Make, MASM</dd></div>
+        <div><dt>Concepts</dt><dd>Object-oriented programming, data structures and algorithms, Entity-Component-System architecture, low-level x86-64 assembly and SIMD, performance benchmarking, data cleaning and visualisation</dd></div>
       </dl>
 
       <h3 class="subhead">Education</h3>
@@ -232,6 +261,6 @@
     <p>&copy; <span id="year"></span> Woh Kye Le</p>
   </footer>
 
-  <script src="script.js?v=2"></script>
+  <script src="script.js?v=3"></script>
 </body>
 </html>
