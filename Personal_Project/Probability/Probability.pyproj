@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0cbb5593-294b-4120-88ad-2bf093071f19}</ProjectGuid>
+    <ProjectHome>probability-lab</ProjectHome>
+    <StartupFile>run_streamlit.py</StartupFile>
+    <SearchPath>.;src</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app.py" />
+    <Compile Include="conftest.py" />
+    <Compile Include="run_streamlit.py" />
+    <Compile Include="src\__init__.py" />
+    <Compile Include="src\bayes.py" />
+    <Compile Include="src\continuous.py" />
+    <Compile Include="src\counting.py" />
+    <Compile Include="src\discrete.py" />
+    <Compile Include="src\joint.py" />
+    <Compile Include="src\moments.py" />
+    <Compile Include="src\simulate.py" />
+    <Compile Include="tests\test_bayes.py" />
+    <Compile Include="tests\test_continuous.py" />
+    <Compile Include="tests\test_counting.py" />
+    <Compile Include="tests\test_discrete.py" />
+    <Compile Include="tests\test_joint.py" />
+    <Compile Include="tests\test_moments.py" />
+    <Compile Include="tests\test_simulate.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.md" />
+    <Content Include="requirements.txt" />
+    <Content Include="Makefile" />
+    <Content Include="launch.vs.json" />
+    <Content Include="tasks.vs.json" />
+    <Content Include="run.cmd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="tests\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

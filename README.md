@@ -29,6 +29,28 @@ Cleaning is centralised in `src/clean.py` (timezone conversion, dropping junk ro
 
 ---
 
+### Probability Lab — "Exact Answer First, Simulation Second"
+
+| | |
+|---|---|
+| **Folder** | `Personal_Project/Probability/probability-lab` |
+| **Language** | Python |
+| **Libraries** | NumPy (Monte-Carlo simulation), Streamlit (UI), Matplotlib (plots); SciPy and pytest appear only in the tests, to check my own formulas |
+| **My Role** | Solo project — formulas, simulations, test suite, and the Streamlit app |
+
+**About the project**
+A Streamlit lab for the probability course, with one tab per topic (counting, Bayes' rule, the Binomial/Geometric/Poisson triple, continuous distributions, expectation and variance, and joint distributions). Every topic does the same thing twice: compute the answer from the formula, estimate the same quantity with a seeded NumPy simulation, then compare the two **in units of the simulation's own noise** — an estimate counts as agreeing only if it lands within 2 standard errors of the exact value, so each comparison reports the exact value, the estimate, the tolerance and the z-score rather than a vague "close enough".
+
+The PMFs, PDFs, CDFs and quantiles are written from scratch, so `scipy` stays out of `src/` and only shows up in the tests, where the lab's own implementations are checked against `scipy.stats` to `1e-9`. Randomness enters through a single seeded module, so the app, the README and the tests all quote the same numbers.
+
+Highlights:
+- **Week 1, done exactly** — three dice give 216 outcomes you can enumerate, so `P(sum >= 17) = 1/54` is a count, not an estimate. Everything else follows this worksheet.
+- **Bayes' rule three ways** — the formula, the lecture's "natural frequencies", and simulating 10,000 people; a rare disease keeps a positive test unimpressive.
+- **The Poisson approximation, watched** — fixing `lambda = np` and growing `n` from 5 to 1,000 (the 1,000-component defects example) shows the Binomial law sliding onto the Poisson.
+- **The trap** — `Y = X²` with a symmetric `X`: covariance and correlation are exactly zero, yet the two variables are completely dependent.
+
+---
+
 ### Assembly Benchmark — "Can I Beat the Compiler?"
 
 | | |

@@ -1,0 +1,7 @@
+numpy>=1.26
+matplotlib>=3.8
+streamlit>=1.31
+
+# Test-time only: the lab's own PMFs/PDFs/CDFs are checked against scipy.stats.
+scipy>=1.11
+pytest>=7.4

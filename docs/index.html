@@ -173,6 +173,33 @@
           </div>
         </article>
 
+        <article class="card" data-lang="python">
+          <img src="images/Probability.png" alt="Probability Lab: exact probabilities charted next to simulated estimates, one tab per topic" loading="lazy">
+          <div class="card-body">
+            <h3>Probability Lab</h3>
+            <p class="meta">Personal project · Probability &amp; simulation</p>
+            <p>
+              Streamlit lab that works through my probability course one topic at a time:
+              counting, Bayes' rule, the Binomial/Geometric/Poisson family, continuous
+              distributions, expectation and variance, and joint distributions. Every topic
+              computes the answer from the formula, then estimates the same quantity by
+              simulation and only accepts it when the estimate lands within 2 standard
+              errors of the exact value. The PMFs, PDFs and CDFs are written from scratch,
+              with <code>scipy</code> appearing only in the tests that check them.
+            </p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>NumPy</li>
+              <li>Streamlit</li>
+              <li>Matplotlib</li>
+              <li>pytest</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/Woh-Kye-Le/portfolio/tree/main/Personal_Project/Probability/probability-lab" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </div>
+        </article>
+
         <article class="card" data-lang="asm cpp">
           <img src="images/assembly_comparison.png" alt="Benchmark comparison of hand-written x64 assembly against optimized C++ across the five routines (strlen, array sum, popcount, reverse and grayscale)" loading="lazy">
           <div class="card-body">
@@ -210,9 +237,11 @@
         Computer Science in Real-Time Interactive Simulation. I've built game software
         in C++ and C in teams of 4 to 8, using object-oriented design and Git. In
         Python, I studied through MIT OpenCourseWare and built a pandas and Streamlit
-        dashboard to analyse my own listening history. I also write x86-64 assembly
-        by hand (MASM) and benchmark it against optimized C++ to understand when
-        hand-written SIMD genuinely beats the compiler.
+        dashboard to analyse my own listening history. I've also been working through
+        probability theory, building a Streamlit lab that checks every formula
+        against a seeded NumPy simulation. I write x86-64 assembly by hand (MASM)
+        and benchmark it against optimized C++ to understand when hand-written
+        SIMD genuinely beats the compiler.
       </p>
       <p>
         <strong>Currently seeking:</strong> a Software Engineering Internship (IWSP,
@@ -221,9 +250,9 @@
 
       <dl class="facts">
         <div><dt>Languages</dt><dd>C++, C, Python, Lua, x86-64 Assembly</dd></div>
-        <div><dt>Libraries</dt><dd>OpenGL, GLFW, GLM, Dear ImGui, FMOD, FreeType, pandas, Streamlit, Plotly</dd></div>
+        <div><dt>Libraries</dt><dd>OpenGL, GLFW, GLM, Dear ImGui, FMOD, FreeType, pandas, NumPy, Matplotlib, Streamlit, Plotly</dd></div>
         <div><dt>Tools</dt><dd>Git, Jira, Visual Studio, VS Code, pytest, Make, MASM</dd></div>
-        <div><dt>Concepts</dt><dd>Object-oriented programming, data structures and algorithms, Entity-Component-System architecture, low-level x86-64 assembly and SIMD, performance benchmarking, data cleaning and visualisation</dd></div>
+        <div><dt>Concepts</dt><dd>Object-oriented programming, data structures and algorithms, Entity-Component-System architecture, low-level x86-64 assembly and SIMD, performance benchmarking, data cleaning and visualisation, Monte-Carlo simulation and statistical verification</dd></div>
       </dl>
 
       <h3 class="subhead">Education</h3>

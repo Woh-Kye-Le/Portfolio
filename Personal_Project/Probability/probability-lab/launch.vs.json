@@ -1,0 +1,19 @@
+{
+  "version": "0.2.1",
+  "defaults": {},
+  "configurations": [
+    {
+      "type": "python",
+      "interpreter": ".venv\\Scripts\\python.exe",
+      "interpreterArguments": "",
+      "scriptArguments": "",
+      "env": {},
+      "nativeDebug": false,
+      "webBrowserUrl": "http://localhost:8501",
+      "project": "run_streamlit.py",
+      "projectTarget": "",
+      "name": "Probability Lab",
+      "workingDirectory": "."
+    }
+  ]
+}
