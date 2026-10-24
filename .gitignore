@@ -5,3 +5,6 @@ obj/
 *.user
 *.suo
 .tmp/
+
+# CMake
+build/
