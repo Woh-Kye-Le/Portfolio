@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Woh Kye Le | Portfolio</title>
   <meta name="description" content="Portfolio of Woh Kye Le, Computer Science student at SIT-DigiPen building game software in C++ and C, with low-level x86-64 assembly and Python data tools.">
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
 </head>
 <body>
 
@@ -225,6 +225,32 @@
             </ul>
             <div class="card-links">
               <a href="https://github.com/Woh-Kye-Le/portfolio/tree/main/Personal_Project/Assembly_benchmark" target="_blank" rel="noopener">Source code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" data-lang="python">
+          <img class="wide" src="images/ask-the-database.png" alt="Ask the Database: a Streamlit app that turns a plain-English question into SQL, with settings for AI provider, model and prompt version" loading="lazy">
+          <div class="card-body">
+            <h3>Ask the Database</h3>
+            <p class="meta">Personal project · AI and SQL</p>
+            <p>
+              Streamlit app where you ask a question in plain English and an AI model writes
+              the SQL. Every query passes a safety guard before it runs: a single SELECT only,
+              writes blocked, <code>LIMIT 100</code> forced, and the SQLite database opened
+              read-only. It runs on a synthetic resort database, so no real company data is
+              involved. Supports Gemini, Ollama and Claude, with versioned prompts, a 20-question
+              evaluation set with reference SQL, and 140 pytest tests including attack strings.
+            </p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>Streamlit</li>
+              <li>SQL / SQLite</li>
+              <li>LLM prompting</li>
+              <li>pytest</li>
+            </ul>
+            <div class="card-links">
+              <a href="https://github.com/Woh-Kye-Le/portfolio/tree/main/Personal_Project/Ask_the_database" target="_blank" rel="noopener">Source code</a>
             </div>
           </div>
         </article>

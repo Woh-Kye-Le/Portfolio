@@ -243,3 +243,6 @@ main, .nav, .footer {
   object-fit: contain; /* show the whole frame, never crop gameplay */
   border-bottom: 0;
 }
+
+/* Wide screenshots: show the whole image instead of cropping to 16:9 */
+.card img.wide { aspect-ratio: auto; object-fit: contain; }
