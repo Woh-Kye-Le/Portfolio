@@ -25,7 +25,7 @@ AI model (Gemini | Ollama | Claude) ──► SQL ──► sql_guard ──► 
 ## How to run it
 
 You need **Python 3.10 or newer** ([python.org](https://www.python.org/downloads/); tick *Add Python to PATH*
-when installing). Check with `python --version`. Open a terminal **in the project folder**:
+when installing). Check with `python --version`. Open a terminal **in the project folder** (the one that contains `build.bat`; the examples below call it `Ask_the_database`, but any folder name works):
 in File Explorer open the folder, click the address bar, type `cmd` or `powershell` and press Enter.
 
 Everything below works in either **PowerShell** or **Command Prompt (cmd.exe)**. Where the two differ,
@@ -62,7 +62,7 @@ The key is stored only in the window you set it in, and disappears when you clos
 
 ### Option A. Using build.bat (easiest, Windows)
 
-`build.bat` does all the setup for you. It does not need the virtual environment activated and it never
+`build.bat` does all the setup for you, and works from whatever folder you put the project in. It does not need the virtual environment activated and it never
 contains a key. It skips anything already done, so you can run it as often as you like.
 
 | Goal | PowerShell | Command Prompt |
@@ -77,7 +77,7 @@ contains a key. It skips anything already done, so you can run it as often as yo
 Typical first run (Gemini, PowerShell):
 
 ```powershell
-cd C:\Users\User\source\repos\Personal\ask-the-database
+cd path\to\Ask_the_database
 $env:GEMINI_API_KEY="your-key"
 .\build.bat app
 ```
@@ -98,7 +98,7 @@ Copy your scores into `eval\results.md` before cleaning `eval\runs`.
 One-time setup (the first line is the same everywhere; the activate line differs):
 
 ```powershell
-cd C:\Users\User\source\repos\Personal\ask-the-database
+cd path\to\Ask_the_database
 python -m venv .venv
 ```
 
@@ -143,7 +143,7 @@ in Command Prompt drop the `.\` and the quotes (`set GEMINI_API_KEY=your-key`, t
 
 1. **Open a terminal in the project folder.**
    ```powershell
-   cd C:\Users\User\source\repos\Personal\ask-the-database
+   cd path\to\Ask_the_database
    ```
 2. **(Optional) Start completely fresh.** Type `deactivate` first if your prompt shows `(.venv)`, and stop the web app.
    ```powershell
@@ -189,6 +189,7 @@ in Command Prompt drop the `.\` and the quotes (`set GEMINI_API_KEY=your-key`, t
 | `HTTP 503 ... high demand` | Google is busy. Wait and rerun that question. Not a wrong answer, so don't count it as a failure |
 | `HTTP 429` / quota or rate limit | Free-tier limit hit. Wait a minute, or run fewer questions with `--only q01 q02` |
 | `Ollama is not running` | Start the Ollama app, then `ollama pull qwen2.5-coder:7b` |
+| `failed to locate pyvenv.cfg` or the `.venv` stopped working | You moved, copied or renamed the project folder, and a `.venv` cannot move with it. `build.bat` now detects this and rebuilds the `.venv` by itself. By hand: delete the `.venv` folder (`Remove-Item -Recurse -Force .venv` in PowerShell) and run `build.bat` again |
 | `Database not found` | Run `python -m db.seed` (or `build.bat`) |
 | `No module named ...` | Activate the `.venv`, then `pip install -r requirements.txt` |
 | `'python' is not recognized` | Reinstall Python and tick *Add Python to PATH*, then open a new window |

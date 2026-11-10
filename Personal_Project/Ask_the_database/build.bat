@@ -20,11 +20,22 @@ if errorlevel 1 (
     exit /b 1
 )
 
-if not exist ".venv\Scripts\python.exe" (
+rem A virtual environment cannot be moved or renamed together with its folder.
+rem If the existing one no longer runs, delete it and build a new one.
+if exist ".venv\Scripts\python.exe" (
+    ".venv\Scripts\python.exe" -c "import sys" >nul 2>nul
+    if errorlevel 1 (
+        echo The virtual environment is broken, usually because the project folder was moved or renamed.
+        echo Deleting .venv and rebuilding it. The package install can take a few minutes.
+        rd /s /q ".venv"
+    )
+)
+if exist ".venv\Scripts\python.exe" (
+    echo [1/4] Virtual environment found.
+) else (
+    if exist ".venv" rd /s /q ".venv"
     echo [1/4] Creating virtual environment...
     python -m venv .venv || goto :fail
-) else (
-    echo [1/4] Virtual environment found.
 )
 set "PY=.venv\Scripts\python.exe"
 
