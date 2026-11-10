@@ -1,0 +1,197 @@
+# The evaluation set: a question plus a reference query that defines the correct answer.
+#
+# - The reference SQL is run against the database at eval time, so the "expected"
+#   result is always computed, never typed in by hand.
+# - Reference queries return the MINIMAL answer. The AI may return extra columns;
+#   see src/compare.py for the exact scoring rules.
+# - ordered: true  -> row order must match too (rankings). Default is false.
+# - Dates are explicit because the dataset's "today" is fixed at 2026-07-01
+#   (see src/config.py): "last month" = June 2026, "last quarter" = Apr-Jun 2026.
+# - Do NOT copy these questions into a prompt as examples. That would leak the
+#   answers and make the accuracy number meaningless (tests/test_prompts.py checks).
+
+- id: q01
+  category: basic
+  question: How many guests are registered?
+  reference_sql: |
+    SELECT COUNT(*) FROM guests;
+
+- id: q02
+  category: basic
+  question: How many guests are in the Gold loyalty tier?
+  reference_sql: |
+    SELECT COUNT(*) FROM guests WHERE loyalty_tier = 'Gold';
+
+- id: q03
+  category: basic
+  question: How many events were held at each venue?
+  reference_sql: |
+    SELECT venue, COUNT(*) AS events FROM events GROUP BY venue;
+
+- id: q04
+  category: date
+  question: Which restaurant had the highest revenue last month?
+  ordered: true
+  reference_sql: |
+    SELECT r.name
+    FROM orders o JOIN restaurants r ON r.restaurant_id = o.restaurant_id
+    WHERE o.order_date >= '2026-06-01' AND o.order_date < '2026-07-01'
+    GROUP BY r.restaurant_id
+    ORDER BY SUM(o.amount) DESC
+    LIMIT 1;
+
+- id: q05
+  category: date
+  question: What was the total restaurant revenue last quarter?
+  reference_sql: |
+    SELECT ROUND(SUM(amount), 2)
+    FROM orders
+    WHERE order_date >= '2026-04-01' AND order_date < '2026-07-01';
+
+- id: q06
+  category: aggregation
+  question: What were the total retail sales by category in 2026, highest first?
+  ordered: true
+  reference_sql: |
+    SELECT category, ROUND(SUM(amount), 2) AS total_sales
+    FROM retail_sales
+    WHERE sale_date >= '2026-01-01' AND sale_date < '2027-01-01'
+    GROUP BY category
+    ORDER BY SUM(amount) DESC;
+
+- id: q07
+  category: basic
+  question: How many bookings were cancelled?
+  reference_sql: |
+    SELECT COUNT(*) FROM bookings WHERE status = 'cancelled';
+
+- id: q08
+  category: business_rule
+  question: What was the total room revenue from bookings that checked in during March 2026?
+  note: Hidden rule. Only completed bookings earn revenue (cancelled and no_show do not). It is not in the schema, so a prompt must state it.
+  reference_sql: |
+    SELECT ROUND(SUM(total_amount), 2)
+    FROM bookings
+    WHERE status = 'completed'
+      AND check_in >= '2026-03-01' AND check_in < '2026-04-01';
+
+- id: q09
+  category: aggregation
+  question: Which country do most of our guests come from?
+  ordered: true
+  reference_sql: |
+    SELECT country FROM guests GROUP BY country ORDER BY COUNT(*) DESC LIMIT 1;
+
+- id: q10
+  category: date
+  question: What is the average length of stay, in nights, for completed bookings?
+  reference_sql: |
+    SELECT ROUND(AVG(julianday(check_out) - julianday(check_in)), 2)
+    FROM bookings
+    WHERE status = 'completed';
+
+- id: q11
+  category: join
+  question: Who are the top 5 guests by total restaurant spend? Show their names and total spend.
+  ordered: true
+  reference_sql: |
+    SELECT g.full_name, ROUND(SUM(o.amount), 2) AS total_spend
+    FROM orders o JOIN guests g ON g.guest_id = o.guest_id
+    GROUP BY g.guest_id
+    ORDER BY SUM(o.amount) DESC
+    LIMIT 5;
+
+- id: q12
+  category: aggregation
+  question: What is the average attendance for each event type, highest first?
+  note: Two events have NULL attendance. AVG() skips NULLs, which is the intended answer.
+  ordered: true
+  reference_sql: |
+    SELECT event_type, ROUND(AVG(attendance), 2) AS avg_attendance
+    FROM events
+    GROUP BY event_type
+    ORDER BY AVG(attendance) DESC;
+
+- id: q13
+  category: window
+  question: For each restaurant, which month had the highest revenue? Show the restaurant name, the month as YYYY-MM, and that month's revenue.
+  reference_sql: |
+    WITH monthly AS (
+      SELECT r.name AS name, strftime('%Y-%m', o.order_date) AS month, SUM(o.amount) AS revenue
+      FROM orders o JOIN restaurants r ON r.restaurant_id = o.restaurant_id
+      GROUP BY r.restaurant_id, month
+    ), ranked AS (
+      SELECT name, month, ROUND(revenue, 2) AS revenue,
+             ROW_NUMBER() OVER (PARTITION BY name ORDER BY revenue DESC) AS rn
+      FROM monthly
+    )
+    SELECT name, month, revenue FROM ranked WHERE rn = 1;
+
+- id: q14
+  category: window
+  question: What are the top 2 product categories by total sales in each retail store? Show the store, category and total sales.
+  reference_sql: |
+    WITH totals AS (
+      SELECT store_name, category, SUM(amount) AS total
+      FROM retail_sales
+      GROUP BY store_name, category
+    ), ranked AS (
+      SELECT store_name, category, ROUND(total, 2) AS total_sales,
+             ROW_NUMBER() OVER (PARTITION BY store_name ORDER BY total DESC) AS rn
+      FROM totals
+    )
+    SELECT store_name, category, total_sales FROM ranked WHERE rn <= 2;
+
+- id: q15
+  category: join
+  question: How many guests have more than 10 completed bookings?
+  reference_sql: |
+    SELECT COUNT(*) FROM (
+      SELECT guest_id FROM bookings WHERE status = 'completed'
+      GROUP BY guest_id HAVING COUNT(*) > 10
+    );
+
+- id: q16
+  category: date
+  question: What was the total restaurant revenue for each month of 2026? Show the month as YYYY-MM, oldest first.
+  ordered: true
+  reference_sql: |
+    SELECT strftime('%Y-%m', order_date) AS month, ROUND(SUM(amount), 2) AS revenue
+    FROM orders
+    WHERE order_date >= '2026-01-01' AND order_date < '2027-01-01'
+    GROUP BY month
+    ORDER BY month;
+
+- id: q17
+  category: join
+  question: How many guests from Singapore have at least one completed booking?
+  reference_sql: |
+    SELECT COUNT(DISTINCT g.guest_id)
+    FROM guests g JOIN bookings b ON b.guest_id = g.guest_id
+    WHERE g.country = 'Singapore' AND b.status = 'completed';
+
+- id: q18
+  category: nulls
+  question: What percentage of restaurant orders have no guest linked to them (walk-ins)?
+  reference_sql: |
+    SELECT ROUND(100.0 * SUM(guest_id IS NULL) / COUNT(*), 2) FROM orders;
+
+- id: q19
+  category: aggregation
+  question: Which event type generated the most ticket revenue?
+  note: Ticket revenue = attendance x ticket_price (the rule is not in the schema; v2 states it).
+  ordered: true
+  reference_sql: |
+    SELECT event_type
+    FROM events
+    GROUP BY event_type
+    ORDER BY SUM(attendance * ticket_price) DESC
+    LIMIT 1;
+
+- id: q20
+  category: ambiguous
+  question: Which room type is the most popular?
+  note: Ambiguous on purpose. "Popular" could mean most bookings, most revenue or most nights. The reference answer counts bookings. Report this category separately when you quote accuracy.
+  ordered: true
+  reference_sql: |
+    SELECT room_type FROM bookings GROUP BY room_type ORDER BY COUNT(*) DESC LIMIT 1;
