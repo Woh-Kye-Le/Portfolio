@@ -129,3 +129,43 @@ Core gameplay features:
 - **Editor tools** — a full ImGui-based editor with a Room Editor, UI Editor, prefab system, scene save/load to JSON, and undo/redo.
 
 The game runs on a fixed-timestep simulation with separate variable-rate rendering, and ships with an installer build.
+
+---
+
+### GAM300 — Atelier3D (in development)
+
+| | |
+|---|---|
+| **Folder** | `School_Project/gam300-Atelier3D` |
+| **Duration** | Sep 2026 – present |
+| **Team** | SayReal, team of 9 |
+| **Language** | C++20 |
+| **Libraries** | Custom 3D engine on OpenGL 3.3 (GLEW), EnTT (ECS), Dear ImGui (docking) + ImGuizmo, GLM, FMOD Core, Jolt Physics, Lua, nlohmann JSON, stb_image, OpenFBX; CMake and GoogleTest for build and tests |
+| **My Role** | Graphics Champion and API Champion: 3D rendering pipeline, editor camera, performance overlay |
+| **Download** | [Atelier3D-win64.zip](https://github.com/Woh-Kye-Le/portfolio/releases/download/atelier3d-v1/Atelier3D-win64.zip) (Windows 10/11, 64-bit) |
+
+**About the project**
+Atelier3D is a Scratch-inspired 3D programming and game-making environment for secondary school students. Instead of hiding what a program is doing, it makes execution visible: you build a 3D scene, attach visual blocks to objects, press Play, and the blocks that are running are highlighted while the scene reacts. The editor runs on a custom C++20 engine (object and scene system, runtime, editor and project system are our own; established libraries handle supporting work such as physics, audio and model loading).
+
+What works today: creating a game from an empty world or a demo template, building scenes, object grouping and prefabs, importing assets and 3D models, block logic and Lua scripting, execution highlighting, stepping and breakpoints, rigid-body physics, undo/redo, Play mode and standalone game builds. The project is still being developed, so features and the downloadable build will change.
+
+**What I built**
+- **Rendering pipeline** — OpenGL 3.3 with built-in shapes and imported models, base colour and diffuse textures, Blinn-Phong lighting (1 directional light and up to 8 point lights), and separate editor and game cameras.
+- **Scene viewing** — a fly camera for the editor viewport (right mouse + WASD, scroll to zoom).
+- **Performance overlay** — on-screen FPS and entity count from the viewport toolbar.
+
+**Download and run**
+1. Download `Atelier3D-win64.zip` from the link above (or from the [Releases page](https://github.com/Woh-Kye-Le/portfolio/releases)).
+2. Unzip it and keep the folder together (the editor needs the `assets/` and `templates/` folders and the DLLs next to it).
+3. Run `AtelierEditor.exe`, choose **New Game** and pick a template.
+
+**Build from source** (Windows, Visual Studio with the C++ workload and CMake 3.22+; the first configure needs internet for GoogleTest)
+
+```powershell
+# in "Developer PowerShell for VS"
+cd School_Project\gam300-Atelier3D\apps\desktop
+.\run.bat            # build Debug and open the editor
+.\run.bat release    # the same with a Release build
+```
+
+The full project README, design documents and about 900 unit tests are in the project folder. The team's own repository is [L1nceLin/Atelier3D](https://github.com/L1nceLin/Atelier3D).

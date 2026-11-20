@@ -1,0 +1,739 @@
+{
+  "objects": [
+    {
+      "id": 1,
+      "name": "Floor",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.6,
+        "albedo_g": 0.57,
+        "albedo_r": 0.55,
+        "rotation_speed": 0.0,
+        "shape": "plane"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 2,
+      "light": {
+        "color_b": 0.88,
+        "color_g": 0.96,
+        "color_r": 1.0,
+        "enabled": true,
+        "intensity": 0.9,
+        "range": 10.0,
+        "spot_inner": 25.0,
+        "spot_outer": 35.0,
+        "type": "directional"
+      },
+      "name": "Sun",
+      "transform": {
+        "rotation": -50.0,
+        "rotation_x": -55.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 3,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "glide_to",
+                    "id": 3,
+                    "numbers": [
+                      1.0,
+                      0.0,
+                      1.5,
+                      -10.0
+                    ]
+                  },
+                  {
+                    "block": "glide_to",
+                    "id": 4,
+                    "numbers": [
+                      1.0,
+                      0.0,
+                      0.75,
+                      -10.0
+                    ]
+                  }
+                ],
+                "id": 2
+              }
+            ],
+            "x": 20.0,
+            "y": 20.0
+          }
+        ]
+      },
+      "name": "Waypoint North (red)",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.25,
+        "albedo_g": 0.3,
+        "albedo_r": 1.0,
+        "rotation_speed": 0.0,
+        "shape": "pyramid"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.5,
+        "x": 0.0,
+        "y": 0.75,
+        "z": -10.0
+      }
+    },
+    {
+      "id": 4,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_key_pressed",
+                "id": 1,
+                "text": "Space"
+              },
+              {
+                "block": "say",
+                "id": 2,
+                "text": "Spin!"
+              },
+              {
+                "block": "repeat",
+                "body": [
+                  {
+                    "block": "turn_by",
+                    "id": 4,
+                    "numbers": [
+                      10.0
+                    ]
+                  }
+                ],
+                "id": 3,
+                "numbers": [
+                  36.0
+                ]
+              }
+            ],
+            "x": 20.0,
+            "y": 20.0
+          }
+        ]
+      },
+      "name": "Waypoint East (green)",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.35,
+        "albedo_g": 0.9,
+        "albedo_r": 0.3,
+        "rotation_speed": 0.0,
+        "shape": "pyramid"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.5,
+        "x": 10.0,
+        "y": 0.75,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 5,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "if_else",
+                    "body": [
+                      {
+                        "block": "set_color",
+                        "id": 6,
+                        "numbers": [
+                          1.0,
+                          1.0,
+                          1.0
+                        ]
+                      }
+                    ],
+                    "else": [
+                      {
+                        "block": "set_color",
+                        "id": 7,
+                        "numbers": [
+                          0.3,
+                          0.45,
+                          1.0
+                        ]
+                      }
+                    ],
+                    "id": 3,
+                    "slots": [
+                      {
+                        "block": "less",
+                        "id": 4,
+                        "inputs": [
+                          {
+                            "block": "distance_to",
+                            "id": 5,
+                            "text": "Player"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          3.0
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "id": 2
+              }
+            ],
+            "x": 20.0,
+            "y": 20.0
+          }
+        ]
+      },
+      "name": "Waypoint South (blue)",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 1.0,
+        "albedo_g": 0.45,
+        "albedo_r": 0.3,
+        "rotation_speed": 0.0,
+        "shape": "pyramid"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.5,
+        "x": 0.0,
+        "y": 0.75,
+        "z": 10.0
+      }
+    },
+    {
+      "id": 6,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_key_pressed",
+                "id": 1,
+                "text": "1"
+              },
+              {
+                "block": "change_variable",
+                "id": 2,
+                "numbers": [
+                  1.0
+                ],
+                "text": "jumps"
+              },
+              {
+                "block": "broadcast",
+                "id": 3,
+                "text": "jump"
+              }
+            ],
+            "x": 20.0,
+            "y": 20.0
+          },
+          {
+            "blocks": [
+              {
+                "block": "when_i_receive",
+                "id": 4,
+                "text": "jump"
+              },
+              {
+                "block": "repeat",
+                "body": [
+                  {
+                    "block": "move_by",
+                    "id": 6,
+                    "numbers": [
+                      0.0,
+                      0.1,
+                      0.0
+                    ]
+                  }
+                ],
+                "id": 5,
+                "numbers": [
+                  10.0
+                ]
+              },
+              {
+                "block": "repeat",
+                "body": [
+                  {
+                    "block": "move_by",
+                    "id": 8,
+                    "numbers": [
+                      0.0,
+                      -0.1,
+                      0.0
+                    ]
+                  }
+                ],
+                "id": 7,
+                "numbers": [
+                  10.0
+                ]
+              },
+              {
+                "block": "say",
+                "id": 9,
+                "text": "Hop!"
+              }
+            ],
+            "x": 20.0,
+            "y": 200.0
+          }
+        ],
+        "variables": [
+          {
+            "name": "jumps",
+            "value": 0.0
+          }
+        ]
+      },
+      "name": "Waypoint West (yellow)",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.25,
+        "albedo_g": 0.85,
+        "albedo_r": 1.0,
+        "rotation_speed": 0.0,
+        "shape": "pyramid"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.5,
+        "x": -10.0,
+        "y": 0.75,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 7,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "if_else",
+                    "body": [
+                      {
+                        "block": "set_variable",
+                        "id": 5,
+                        "numbers": [
+                          0.14
+                        ],
+                        "text": "speed"
+                      }
+                    ],
+                    "else": [
+                      {
+                        "block": "set_variable",
+                        "id": 6,
+                        "numbers": [
+                          0.07
+                        ],
+                        "text": "speed"
+                      }
+                    ],
+                    "id": 3,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 4,
+                        "text": "LeftShift"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_forward",
+                        "id": 9,
+                        "inputs": [
+                          {
+                            "block": "variable",
+                            "id": 10,
+                            "text": "speed"
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 7,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 8,
+                        "text": "W"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_forward",
+                        "id": 13,
+                        "inputs": [
+                          {
+                            "block": "subtract",
+                            "id": 14,
+                            "inputs": [
+                              {},
+                              {
+                                "block": "variable",
+                                "id": 15,
+                                "text": "speed"
+                              }
+                            ],
+                            "numbers": [
+                              0.0,
+                              0.0
+                            ]
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 11,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 12,
+                        "text": "S"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_right",
+                        "id": 18,
+                        "inputs": [
+                          {
+                            "block": "variable",
+                            "id": 19,
+                            "text": "speed"
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 16,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 17,
+                        "text": "D"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_right",
+                        "id": 22,
+                        "inputs": [
+                          {
+                            "block": "subtract",
+                            "id": 23,
+                            "inputs": [
+                              {},
+                              {
+                                "block": "variable",
+                                "id": 24,
+                                "text": "speed"
+                              }
+                            ],
+                            "numbers": [
+                              0.0,
+                              0.0
+                            ]
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 20,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 21,
+                        "text": "A"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_by",
+                        "id": 27,
+                        "inputs": [
+                          {},
+                          {
+                            "block": "variable",
+                            "id": 28,
+                            "text": "speed"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          0.0,
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 25,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 26,
+                        "text": "E"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_by",
+                        "id": 31,
+                        "inputs": [
+                          {},
+                          {
+                            "block": "subtract",
+                            "id": 32,
+                            "inputs": [
+                              {},
+                              {
+                                "block": "variable",
+                                "id": 33,
+                                "text": "speed"
+                              }
+                            ],
+                            "numbers": [
+                              0.0,
+                              0.0
+                            ]
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          0.0,
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 29,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 30,
+                        "text": "Q"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "turn_by",
+                        "id": 36,
+                        "numbers": [
+                          -2.0
+                        ]
+                      }
+                    ],
+                    "id": 34,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 35,
+                        "text": "Right"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "turn_by",
+                        "id": 39,
+                        "numbers": [
+                          2.0
+                        ]
+                      }
+                    ],
+                    "id": 37,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 38,
+                        "text": "Left"
+                      }
+                    ]
+                  }
+                ],
+                "id": 2
+              }
+            ],
+            "x": 20.0,
+            "y": 20.0
+          }
+        ],
+        "variables": [
+          {
+            "name": "speed",
+            "value": 0.07
+          }
+        ]
+      },
+      "name": "Player",
+      "player": {
+        "camera_offset_y": 1.0,
+        "camera_offset_z": 6.0,
+        "camera_pitch": -20.0,
+        "fast_multiplier": 2.0,
+        "follow_camera": true,
+        "look_sensitivity": 0.2,
+        "speed": 0.0
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.35,
+        "z": 0.0
+      }
+    },
+    {
+      "camera": {
+        "far_plane": 1000.0,
+        "field_of_view": 60.0,
+        "near_plane": 0.05,
+        "primary": true
+      },
+      "id": 8,
+      "name": "Main Camera",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": -20.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 3.0,
+        "z": 6.0
+      }
+    }
+  ],
+  "version": 8
+}

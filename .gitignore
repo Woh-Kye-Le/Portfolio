@@ -8,3 +8,6 @@ obj/
 
 # CMake
 build/
+
+# Atelier3D keeps prebuilt third-party DLLs in libraries/bin; the rule above must not hide them
+!School_Project/gam300-Atelier3D/apps/desktop/libraries/bin/

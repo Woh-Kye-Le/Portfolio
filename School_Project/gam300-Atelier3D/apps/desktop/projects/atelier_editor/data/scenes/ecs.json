@@ -1,0 +1,500 @@
+{
+  "objects": [
+    {
+      "id": 1,
+      "name": "Floor",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.6,
+        "albedo_g": 0.57,
+        "albedo_r": 0.55,
+        "rotation_speed": 0.0,
+        "shape": "plane"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 3.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 2,
+      "light": {
+        "color_b": 0.88,
+        "color_g": 0.96,
+        "color_r": 1.0,
+        "enabled": true,
+        "intensity": 0.35,
+        "range": 10.0,
+        "spot_inner": 25.0,
+        "spot_outer": 35.0,
+        "type": "directional"
+      },
+      "name": "Sun",
+      "transform": {
+        "rotation": -50.0,
+        "rotation_x": -55.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 3,
+      "name": "Spawn Template",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 45.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 0.8,
+        "x": 0.0,
+        "y": 0.28,
+        "z": -4.0
+      }
+    },
+    {
+      "id": 4,
+      "name": "Spinner",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.75,
+        "albedo_g": 0.8,
+        "albedo_r": 0.2,
+        "rotation_speed": 90.0,
+        "shape": "pyramid"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -4.0,
+        "y": 0.5,
+        "z": 2.0
+      }
+    },
+    {
+      "id": 5,
+      "light": {
+        "color_b": 0.3,
+        "color_g": 0.7,
+        "color_r": 1.0,
+        "enabled": true,
+        "intensity": 2.5,
+        "range": 6.0,
+        "spot_inner": 25.0,
+        "spot_outer": 35.0,
+        "type": "point"
+      },
+      "name": "Lamp",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.4,
+        "albedo_g": 0.85,
+        "albedo_r": 1.0,
+        "rotation_speed": 0.0,
+        "shape": "sphere"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 0.15,
+        "x": 4.0,
+        "y": 1.2,
+        "z": 2.0
+      }
+    },
+    {
+      "id": 6,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "if_else",
+                    "body": [
+                      {
+                        "block": "set_variable",
+                        "id": 5,
+                        "numbers": [
+                          0.14
+                        ],
+                        "text": "speed"
+                      }
+                    ],
+                    "else": [
+                      {
+                        "block": "set_variable",
+                        "id": 6,
+                        "numbers": [
+                          0.07
+                        ],
+                        "text": "speed"
+                      }
+                    ],
+                    "id": 3,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 4,
+                        "text": "LeftShift"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_forward",
+                        "id": 9,
+                        "inputs": [
+                          {
+                            "block": "variable",
+                            "id": 10,
+                            "text": "speed"
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 7,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 8,
+                        "text": "W"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_forward",
+                        "id": 13,
+                        "inputs": [
+                          {
+                            "block": "subtract",
+                            "id": 14,
+                            "inputs": [
+                              {},
+                              {
+                                "block": "variable",
+                                "id": 15,
+                                "text": "speed"
+                              }
+                            ],
+                            "numbers": [
+                              0.0,
+                              0.0
+                            ]
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 11,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 12,
+                        "text": "S"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_right",
+                        "id": 18,
+                        "inputs": [
+                          {
+                            "block": "variable",
+                            "id": 19,
+                            "text": "speed"
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 16,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 17,
+                        "text": "D"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_right",
+                        "id": 22,
+                        "inputs": [
+                          {
+                            "block": "subtract",
+                            "id": 23,
+                            "inputs": [
+                              {},
+                              {
+                                "block": "variable",
+                                "id": 24,
+                                "text": "speed"
+                              }
+                            ],
+                            "numbers": [
+                              0.0,
+                              0.0
+                            ]
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 20,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 21,
+                        "text": "A"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_by",
+                        "id": 27,
+                        "inputs": [
+                          {},
+                          {
+                            "block": "variable",
+                            "id": 28,
+                            "text": "speed"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          0.0,
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 25,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 26,
+                        "text": "E"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_by",
+                        "id": 31,
+                        "inputs": [
+                          {},
+                          {
+                            "block": "subtract",
+                            "id": 32,
+                            "inputs": [
+                              {},
+                              {
+                                "block": "variable",
+                                "id": 33,
+                                "text": "speed"
+                              }
+                            ],
+                            "numbers": [
+                              0.0,
+                              0.0
+                            ]
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          0.0,
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 29,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 30,
+                        "text": "Q"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "turn_by",
+                        "id": 36,
+                        "numbers": [
+                          -2.0
+                        ]
+                      }
+                    ],
+                    "id": 34,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 35,
+                        "text": "Right"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "turn_by",
+                        "id": 39,
+                        "numbers": [
+                          2.0
+                        ]
+                      }
+                    ],
+                    "id": 37,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 38,
+                        "text": "Left"
+                      }
+                    ]
+                  }
+                ],
+                "id": 2
+              }
+            ],
+            "x": 20.0,
+            "y": 20.0
+          }
+        ],
+        "variables": [
+          {
+            "name": "speed",
+            "value": 0.07
+          }
+        ]
+      },
+      "name": "Player",
+      "player": {
+        "camera_offset_y": 1.0,
+        "camera_offset_z": 6.0,
+        "camera_pitch": -20.0,
+        "fast_multiplier": 2.0,
+        "follow_camera": false,
+        "look_sensitivity": 0.2,
+        "speed": 0.0
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 1.0,
+        "albedo_g": 0.5,
+        "albedo_r": 0.25,
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.5,
+        "z": 4.0
+      }
+    },
+    {
+      "camera": {
+        "far_plane": 1000.0,
+        "field_of_view": 60.0,
+        "near_plane": 0.05,
+        "primary": true
+      },
+      "id": 7,
+      "name": "Main Camera",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": -14.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 8.0,
+        "z": 22.0
+      }
+    }
+  ],
+  "version": 8
+}

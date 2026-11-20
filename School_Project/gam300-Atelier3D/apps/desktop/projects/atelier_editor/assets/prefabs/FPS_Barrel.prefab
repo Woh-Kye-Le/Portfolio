@@ -1,0 +1,36 @@
+{
+  "name": "FPS_Barrel",
+  "objects": [
+    {
+      "id": 1,
+      "name": "Barrel",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.395,
+        "albedo_g": 0.448,
+        "albedo_r": 0.503,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.45,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.544,
+        "shape_size_y": 0.9,
+        "shape_size_z": 0.544
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    }
+  ],
+  "version": 1
+}

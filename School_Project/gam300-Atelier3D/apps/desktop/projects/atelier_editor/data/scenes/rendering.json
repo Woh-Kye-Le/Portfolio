@@ -1,0 +1,3486 @@
+{
+  "objects": [
+    {
+      "id": 1,
+      "name": "Floor",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.6,
+        "albedo_g": 0.57,
+        "albedo_r": 0.55,
+        "rotation_speed": 0.0,
+        "shape": "plane"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.4,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 2,
+      "name": "Crate 1",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -7.2,
+        "y": 0.35,
+        "z": -7.2
+      }
+    },
+    {
+      "id": 3,
+      "name": "Crate 2",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 9.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -5.6,
+        "y": 0.35,
+        "z": -7.2
+      }
+    },
+    {
+      "id": 4,
+      "name": "Crate 3",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 18.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -4.0,
+        "y": 0.35,
+        "z": -7.2
+      }
+    },
+    {
+      "id": 5,
+      "name": "Crate 4",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 27.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -2.4,
+        "y": 0.35,
+        "z": -7.2
+      }
+    },
+    {
+      "id": 6,
+      "name": "Crate 5",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 36.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -0.8,
+        "y": 0.35,
+        "z": -7.2
+      }
+    },
+    {
+      "id": 7,
+      "name": "Crate 6",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 45.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.8,
+        "y": 0.35,
+        "z": -7.2
+      }
+    },
+    {
+      "id": 8,
+      "name": "Crate 7",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 54.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 2.4,
+        "y": 0.35,
+        "z": -7.2
+      }
+    },
+    {
+      "id": 9,
+      "name": "Crate 8",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 63.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 4.0,
+        "y": 0.35,
+        "z": -7.2
+      }
+    },
+    {
+      "id": 10,
+      "name": "Crate 9",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 72.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 5.6,
+        "y": 0.35,
+        "z": -7.2
+      }
+    },
+    {
+      "id": 11,
+      "name": "Crate 10",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 81.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 7.2,
+        "y": 0.35,
+        "z": -7.2
+      }
+    },
+    {
+      "id": 12,
+      "name": "Crate 11",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -7.2,
+        "y": 0.35,
+        "z": -5.6
+      }
+    },
+    {
+      "id": 13,
+      "name": "Crate 12",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 99.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -5.6,
+        "y": 0.35,
+        "z": -5.6
+      }
+    },
+    {
+      "id": 14,
+      "name": "Crate 13",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 108.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -4.0,
+        "y": 0.35,
+        "z": -5.6
+      }
+    },
+    {
+      "id": 15,
+      "name": "Crate 14",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 117.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -2.4,
+        "y": 0.35,
+        "z": -5.6
+      }
+    },
+    {
+      "id": 16,
+      "name": "Crate 15",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 126.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -0.8,
+        "y": 0.35,
+        "z": -5.6
+      }
+    },
+    {
+      "id": 17,
+      "name": "Crate 16",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 135.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.8,
+        "y": 0.35,
+        "z": -5.6
+      }
+    },
+    {
+      "id": 18,
+      "name": "Crate 17",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 144.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 2.4,
+        "y": 0.35,
+        "z": -5.6
+      }
+    },
+    {
+      "id": 19,
+      "name": "Crate 18",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 153.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 4.0,
+        "y": 0.35,
+        "z": -5.6
+      }
+    },
+    {
+      "id": 20,
+      "name": "Crate 19",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 162.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 5.6,
+        "y": 0.35,
+        "z": -5.6
+      }
+    },
+    {
+      "id": 21,
+      "name": "Crate 20",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 171.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 7.2,
+        "y": 0.35,
+        "z": -5.6
+      }
+    },
+    {
+      "id": 22,
+      "name": "Crate 21",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 180.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -7.2,
+        "y": 0.35,
+        "z": -4.0
+      }
+    },
+    {
+      "id": 23,
+      "name": "Crate 22",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 189.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -5.6,
+        "y": 0.35,
+        "z": -4.0
+      }
+    },
+    {
+      "id": 24,
+      "name": "Crate 23",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 198.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -4.0,
+        "y": 0.35,
+        "z": -4.0
+      }
+    },
+    {
+      "id": 25,
+      "name": "Crate 24",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 207.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -2.4,
+        "y": 0.35,
+        "z": -4.0
+      }
+    },
+    {
+      "id": 26,
+      "name": "Crate 25",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 216.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -0.8,
+        "y": 0.35,
+        "z": -4.0
+      }
+    },
+    {
+      "id": 27,
+      "name": "Crate 26",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 225.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.8,
+        "y": 0.35,
+        "z": -4.0
+      }
+    },
+    {
+      "id": 28,
+      "name": "Crate 27",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 234.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 2.4,
+        "y": 0.35,
+        "z": -4.0
+      }
+    },
+    {
+      "id": 29,
+      "name": "Crate 28",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 243.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 4.0,
+        "y": 0.35,
+        "z": -4.0
+      }
+    },
+    {
+      "id": 30,
+      "name": "Crate 29",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 252.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 5.6,
+        "y": 0.35,
+        "z": -4.0
+      }
+    },
+    {
+      "id": 31,
+      "name": "Crate 30",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 261.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 7.2,
+        "y": 0.35,
+        "z": -4.0
+      }
+    },
+    {
+      "id": 32,
+      "name": "Crate 31",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 270.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -7.2,
+        "y": 0.35,
+        "z": -2.4
+      }
+    },
+    {
+      "id": 33,
+      "name": "Crate 32",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 279.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -5.6,
+        "y": 0.35,
+        "z": -2.4
+      }
+    },
+    {
+      "id": 34,
+      "name": "Crate 33",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 288.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -4.0,
+        "y": 0.35,
+        "z": -2.4
+      }
+    },
+    {
+      "id": 35,
+      "name": "Crate 34",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 297.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -2.4,
+        "y": 0.35,
+        "z": -2.4
+      }
+    },
+    {
+      "id": 36,
+      "name": "Crate 35",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 306.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -0.8,
+        "y": 0.35,
+        "z": -2.4
+      }
+    },
+    {
+      "id": 37,
+      "name": "Crate 36",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 315.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.8,
+        "y": 0.35,
+        "z": -2.4
+      }
+    },
+    {
+      "id": 38,
+      "name": "Crate 37",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 324.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 2.4,
+        "y": 0.35,
+        "z": -2.4
+      }
+    },
+    {
+      "id": 39,
+      "name": "Crate 38",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 333.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 4.0,
+        "y": 0.35,
+        "z": -2.4
+      }
+    },
+    {
+      "id": 40,
+      "name": "Crate 39",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 342.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 5.6,
+        "y": 0.35,
+        "z": -2.4
+      }
+    },
+    {
+      "id": 41,
+      "name": "Crate 40",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 351.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 7.2,
+        "y": 0.35,
+        "z": -2.4
+      }
+    },
+    {
+      "id": 42,
+      "name": "Crate 41",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 360.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -7.2,
+        "y": 0.35,
+        "z": -0.8
+      }
+    },
+    {
+      "id": 43,
+      "name": "Crate 42",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 369.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -5.6,
+        "y": 0.35,
+        "z": -0.8
+      }
+    },
+    {
+      "id": 44,
+      "name": "Crate 43",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 378.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -4.0,
+        "y": 0.35,
+        "z": -0.8
+      }
+    },
+    {
+      "id": 45,
+      "name": "Crate 44",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 387.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -2.4,
+        "y": 0.35,
+        "z": -0.8
+      }
+    },
+    {
+      "id": 46,
+      "name": "Crate 45",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 396.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -0.8,
+        "y": 0.35,
+        "z": -0.8
+      }
+    },
+    {
+      "id": 47,
+      "name": "Crate 46",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 405.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.8,
+        "y": 0.35,
+        "z": -0.8
+      }
+    },
+    {
+      "id": 48,
+      "name": "Crate 47",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 414.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 2.4,
+        "y": 0.35,
+        "z": -0.8
+      }
+    },
+    {
+      "id": 49,
+      "name": "Crate 48",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 423.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 4.0,
+        "y": 0.35,
+        "z": -0.8
+      }
+    },
+    {
+      "id": 50,
+      "name": "Crate 49",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 432.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 5.6,
+        "y": 0.35,
+        "z": -0.8
+      }
+    },
+    {
+      "id": 51,
+      "name": "Crate 50",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 441.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 7.2,
+        "y": 0.35,
+        "z": -0.8
+      }
+    },
+    {
+      "id": 52,
+      "name": "Crate 51",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 450.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -7.2,
+        "y": 0.35,
+        "z": 0.8
+      }
+    },
+    {
+      "id": 53,
+      "name": "Crate 52",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 459.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -5.6,
+        "y": 0.35,
+        "z": 0.8
+      }
+    },
+    {
+      "id": 54,
+      "name": "Crate 53",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 468.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -4.0,
+        "y": 0.35,
+        "z": 0.8
+      }
+    },
+    {
+      "id": 55,
+      "name": "Crate 54",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 477.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -2.4,
+        "y": 0.35,
+        "z": 0.8
+      }
+    },
+    {
+      "id": 56,
+      "name": "Crate 55",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 486.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -0.8,
+        "y": 0.35,
+        "z": 0.8
+      }
+    },
+    {
+      "id": 57,
+      "name": "Crate 56",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 495.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.8,
+        "y": 0.35,
+        "z": 0.8
+      }
+    },
+    {
+      "id": 58,
+      "name": "Crate 57",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 504.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 2.4,
+        "y": 0.35,
+        "z": 0.8
+      }
+    },
+    {
+      "id": 59,
+      "name": "Crate 58",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 513.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 4.0,
+        "y": 0.35,
+        "z": 0.8
+      }
+    },
+    {
+      "id": 60,
+      "name": "Crate 59",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 522.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 5.6,
+        "y": 0.35,
+        "z": 0.8
+      }
+    },
+    {
+      "id": 61,
+      "name": "Crate 60",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 531.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 7.2,
+        "y": 0.35,
+        "z": 0.8
+      }
+    },
+    {
+      "id": 62,
+      "name": "Crate 61",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 540.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -7.2,
+        "y": 0.35,
+        "z": 2.4
+      }
+    },
+    {
+      "id": 63,
+      "name": "Crate 62",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 549.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -5.6,
+        "y": 0.35,
+        "z": 2.4
+      }
+    },
+    {
+      "id": 64,
+      "name": "Crate 63",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 558.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -4.0,
+        "y": 0.35,
+        "z": 2.4
+      }
+    },
+    {
+      "id": 65,
+      "name": "Crate 64",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 567.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -2.4,
+        "y": 0.35,
+        "z": 2.4
+      }
+    },
+    {
+      "id": 66,
+      "name": "Crate 65",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 576.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -0.8,
+        "y": 0.35,
+        "z": 2.4
+      }
+    },
+    {
+      "id": 67,
+      "name": "Crate 66",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 585.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.8,
+        "y": 0.35,
+        "z": 2.4
+      }
+    },
+    {
+      "id": 68,
+      "name": "Crate 67",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 594.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 2.4,
+        "y": 0.35,
+        "z": 2.4
+      }
+    },
+    {
+      "id": 69,
+      "name": "Crate 68",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 603.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 4.0,
+        "y": 0.35,
+        "z": 2.4
+      }
+    },
+    {
+      "id": 70,
+      "name": "Crate 69",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 612.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 5.6,
+        "y": 0.35,
+        "z": 2.4
+      }
+    },
+    {
+      "id": 71,
+      "name": "Crate 70",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 621.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 7.2,
+        "y": 0.35,
+        "z": 2.4
+      }
+    },
+    {
+      "id": 72,
+      "name": "Crate 71",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 630.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -7.2,
+        "y": 0.35,
+        "z": 4.0
+      }
+    },
+    {
+      "id": 73,
+      "name": "Crate 72",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 639.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -5.6,
+        "y": 0.35,
+        "z": 4.0
+      }
+    },
+    {
+      "id": 74,
+      "name": "Crate 73",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 648.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -4.0,
+        "y": 0.35,
+        "z": 4.0
+      }
+    },
+    {
+      "id": 75,
+      "name": "Crate 74",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 657.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -2.4,
+        "y": 0.35,
+        "z": 4.0
+      }
+    },
+    {
+      "id": 76,
+      "name": "Crate 75",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 666.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -0.8,
+        "y": 0.35,
+        "z": 4.0
+      }
+    },
+    {
+      "id": 77,
+      "name": "Crate 76",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 675.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.8,
+        "y": 0.35,
+        "z": 4.0
+      }
+    },
+    {
+      "id": 78,
+      "name": "Crate 77",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 684.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 2.4,
+        "y": 0.35,
+        "z": 4.0
+      }
+    },
+    {
+      "id": 79,
+      "name": "Crate 78",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 693.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 4.0,
+        "y": 0.35,
+        "z": 4.0
+      }
+    },
+    {
+      "id": 80,
+      "name": "Crate 79",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 702.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 5.6,
+        "y": 0.35,
+        "z": 4.0
+      }
+    },
+    {
+      "id": 81,
+      "name": "Crate 80",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 711.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 7.2,
+        "y": 0.35,
+        "z": 4.0
+      }
+    },
+    {
+      "id": 82,
+      "name": "Crate 81",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 720.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -7.2,
+        "y": 0.35,
+        "z": 5.6
+      }
+    },
+    {
+      "id": 83,
+      "name": "Crate 82",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 729.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -5.6,
+        "y": 0.35,
+        "z": 5.6
+      }
+    },
+    {
+      "id": 84,
+      "name": "Crate 83",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 738.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -4.0,
+        "y": 0.35,
+        "z": 5.6
+      }
+    },
+    {
+      "id": 85,
+      "name": "Crate 84",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 747.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -2.4,
+        "y": 0.35,
+        "z": 5.6
+      }
+    },
+    {
+      "id": 86,
+      "name": "Crate 85",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 756.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -0.8,
+        "y": 0.35,
+        "z": 5.6
+      }
+    },
+    {
+      "id": 87,
+      "name": "Crate 86",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 765.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.8,
+        "y": 0.35,
+        "z": 5.6
+      }
+    },
+    {
+      "id": 88,
+      "name": "Crate 87",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 774.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 2.4,
+        "y": 0.35,
+        "z": 5.6
+      }
+    },
+    {
+      "id": 89,
+      "name": "Crate 88",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 783.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 4.0,
+        "y": 0.35,
+        "z": 5.6
+      }
+    },
+    {
+      "id": 90,
+      "name": "Crate 89",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 792.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 5.6,
+        "y": 0.35,
+        "z": 5.6
+      }
+    },
+    {
+      "id": 91,
+      "name": "Crate 90",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 801.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 7.2,
+        "y": 0.35,
+        "z": 5.6
+      }
+    },
+    {
+      "id": 92,
+      "name": "Crate 91",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 810.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -7.2,
+        "y": 0.35,
+        "z": 7.2
+      }
+    },
+    {
+      "id": 93,
+      "name": "Crate 92",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 819.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -5.6,
+        "y": 0.35,
+        "z": 7.2
+      }
+    },
+    {
+      "id": 94,
+      "name": "Crate 93",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 828.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -4.0,
+        "y": 0.35,
+        "z": 7.2
+      }
+    },
+    {
+      "id": 95,
+      "name": "Crate 94",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 837.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -2.4,
+        "y": 0.35,
+        "z": 7.2
+      }
+    },
+    {
+      "id": 96,
+      "name": "Crate 95",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 846.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -0.8,
+        "y": 0.35,
+        "z": 7.2
+      }
+    },
+    {
+      "id": 97,
+      "name": "Crate 96",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 855.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.8,
+        "y": 0.35,
+        "z": 7.2
+      }
+    },
+    {
+      "id": 98,
+      "name": "Crate 97",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 864.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 2.4,
+        "y": 0.35,
+        "z": 7.2
+      }
+    },
+    {
+      "id": 99,
+      "name": "Crate 98",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 873.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 4.0,
+        "y": 0.35,
+        "z": 7.2
+      }
+    },
+    {
+      "id": 100,
+      "name": "Crate 99",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 882.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 5.6,
+        "y": 0.35,
+        "z": 7.2
+      }
+    },
+    {
+      "id": 101,
+      "name": "Crate 100",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.239,
+        "albedo_g": 0.443,
+        "albedo_r": 0.625,
+        "rotation_speed": 15.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.7,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 891.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 7.2,
+        "y": 0.35,
+        "z": 7.2
+      }
+    },
+    {
+      "id": 102,
+      "light": {
+        "color_b": 0.88,
+        "color_g": 0.96,
+        "color_r": 1.0,
+        "enabled": true,
+        "intensity": 0.45,
+        "range": 10.0,
+        "spot_inner": 25.0,
+        "spot_outer": 35.0,
+        "type": "directional"
+      },
+      "name": "Sun",
+      "transform": {
+        "rotation": -50.0,
+        "rotation_x": -55.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 103,
+      "light": {
+        "color_b": 0.2,
+        "color_g": 0.25,
+        "color_r": 1.0,
+        "enabled": true,
+        "intensity": 1.6,
+        "range": 9.0,
+        "spot_inner": 25.0,
+        "spot_outer": 35.0,
+        "type": "point"
+      },
+      "name": "Red Light",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -5.0,
+        "y": 2.5,
+        "z": -5.0
+      }
+    },
+    {
+      "id": 104,
+      "light": {
+        "color_b": 0.35,
+        "color_g": 1.0,
+        "color_r": 0.3,
+        "enabled": true,
+        "intensity": 1.6,
+        "range": 9.0,
+        "spot_inner": 25.0,
+        "spot_outer": 35.0,
+        "type": "point"
+      },
+      "name": "Green Light",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 5.0,
+        "y": 2.5,
+        "z": -5.0
+      }
+    },
+    {
+      "id": 105,
+      "light": {
+        "color_b": 1.0,
+        "color_g": 0.45,
+        "color_r": 0.3,
+        "enabled": true,
+        "intensity": 1.6,
+        "range": 9.0,
+        "spot_inner": 25.0,
+        "spot_outer": 35.0,
+        "type": "point"
+      },
+      "name": "Blue Light",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -5.0,
+        "y": 2.5,
+        "z": 5.0
+      }
+    },
+    {
+      "id": 106,
+      "light": {
+        "color_b": 0.2,
+        "color_g": 0.7,
+        "color_r": 1.0,
+        "enabled": true,
+        "intensity": 1.6,
+        "range": 9.0,
+        "spot_inner": 25.0,
+        "spot_outer": 35.0,
+        "type": "point"
+      },
+      "name": "Amber Light",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 5.0,
+        "y": 2.5,
+        "z": 5.0
+      }
+    },
+    {
+      "camera": {
+        "far_plane": 1000.0,
+        "field_of_view": 60.0,
+        "near_plane": 0.05,
+        "primary": true
+      },
+      "id": 107,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "if_else",
+                    "body": [
+                      {
+                        "block": "set_variable",
+                        "id": 5,
+                        "numbers": [
+                          0.4
+                        ],
+                        "text": "speed"
+                      }
+                    ],
+                    "else": [
+                      {
+                        "block": "set_variable",
+                        "id": 6,
+                        "numbers": [
+                          0.15
+                        ],
+                        "text": "speed"
+                      }
+                    ],
+                    "id": 3,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 4,
+                        "text": "LeftShift"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_forward",
+                        "id": 9,
+                        "inputs": [
+                          {
+                            "block": "variable",
+                            "id": 10,
+                            "text": "speed"
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 7,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 8,
+                        "text": "W"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_forward",
+                        "id": 13,
+                        "inputs": [
+                          {
+                            "block": "subtract",
+                            "id": 14,
+                            "inputs": [
+                              {},
+                              {
+                                "block": "variable",
+                                "id": 15,
+                                "text": "speed"
+                              }
+                            ],
+                            "numbers": [
+                              0.0,
+                              0.0
+                            ]
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 11,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 12,
+                        "text": "S"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_right",
+                        "id": 18,
+                        "inputs": [
+                          {
+                            "block": "variable",
+                            "id": 19,
+                            "text": "speed"
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 16,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 17,
+                        "text": "D"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_right",
+                        "id": 22,
+                        "inputs": [
+                          {
+                            "block": "subtract",
+                            "id": 23,
+                            "inputs": [
+                              {},
+                              {
+                                "block": "variable",
+                                "id": 24,
+                                "text": "speed"
+                              }
+                            ],
+                            "numbers": [
+                              0.0,
+                              0.0
+                            ]
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 20,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 21,
+                        "text": "A"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_by",
+                        "id": 27,
+                        "inputs": [
+                          {},
+                          {
+                            "block": "variable",
+                            "id": 28,
+                            "text": "speed"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          0.0,
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 25,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 26,
+                        "text": "E"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_by",
+                        "id": 31,
+                        "inputs": [
+                          {},
+                          {
+                            "block": "subtract",
+                            "id": 32,
+                            "inputs": [
+                              {},
+                              {
+                                "block": "variable",
+                                "id": 33,
+                                "text": "speed"
+                              }
+                            ],
+                            "numbers": [
+                              0.0,
+                              0.0
+                            ]
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          0.0,
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 29,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 30,
+                        "text": "Q"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "turn_by",
+                        "id": 36,
+                        "numbers": [
+                          -2.0
+                        ]
+                      }
+                    ],
+                    "id": 34,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 35,
+                        "text": "Right"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "turn_by",
+                        "id": 39,
+                        "numbers": [
+                          2.0
+                        ]
+                      }
+                    ],
+                    "id": 37,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 38,
+                        "text": "Left"
+                      }
+                    ]
+                  }
+                ],
+                "id": 2
+              }
+            ],
+            "x": 20.0,
+            "y": 20.0
+          }
+        ],
+        "variables": [
+          {
+            "name": "speed",
+            "value": 0.15
+          }
+        ]
+      },
+      "name": "Main Camera",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": -32.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 10.0,
+        "z": 16.0
+      }
+    }
+  ],
+  "version": 8
+}

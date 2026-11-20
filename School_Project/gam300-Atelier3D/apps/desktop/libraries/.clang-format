@@ -1,0 +1,3 @@
+# Third-party code: never reformat it (also stops editors' format-on-save from changing these files)
+DisableFormat: true
+SortIncludes: Never

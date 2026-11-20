@@ -1,0 +1,30 @@
+{
+  "actions": {
+    "Look": [
+      "MouseRight"
+    ],
+    "MoveBack": [
+      "S"
+    ],
+    "MoveDown": [
+      "Q"
+    ],
+    "MoveFast": [
+      "LeftShift",
+      "RightShift"
+    ],
+    "MoveForward": [
+      "W"
+    ],
+    "MoveLeft": [
+      "A"
+    ],
+    "MoveRight": [
+      "D"
+    ],
+    "MoveUp": [
+      "E"
+    ]
+  },
+  "version": 1
+}

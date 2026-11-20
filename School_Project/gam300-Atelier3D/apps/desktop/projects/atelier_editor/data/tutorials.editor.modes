@@ -1,0 +1,226 @@
+{
+    "version": 1,
+    "modes": [
+        {
+            "name": "Track 1: Environment",
+            "next_index": 5,
+            "done": 0,
+            "tutorials": [
+                {
+                    "name": "Lay the ground",
+                    "code": "Every game starts with a place to be. You will build one world through all these lessons, so keep what you make.",
+                    "steps": [
+                        {"text": "Add a Plane and rename it Ground", "check": "shape Ground plane"},
+                        {"text": "Make the Ground bigger", "check": "sized Ground"},
+                        {"text": "Give the Ground a colour", "check": "colored Ground"}
+                    ]
+                },
+                {
+                    "name": "Place some things",
+                    "code": "A world is built from simple shapes. Moving them apart is what makes it feel like a place.",
+                    "steps": [
+                        {"text": "Add a Cube and rename it Wall", "check": "shape Wall cube"},
+                        {"text": "Move the Wall away from the middle", "check": "moved Wall"},
+                        {"text": "Add a Pyramid and rename it Tree", "check": "shape Tree pyramid"},
+                        {"text": "Move the Tree well away from the Wall", "check": "apart Tree Wall 2"}
+                    ]
+                },
+                {
+                    "name": "Turn on the lights",
+                    "code": "A Directional Light shines on everything, like the sun. A Point Light glows from one spot, like a lamp.",
+                    "steps": [
+                        {"text": "Add a Directional Light and rename it Sun", "check": "has Sun light"},
+                        {"text": "Add a Point Light and rename it Lamp", "check": "has Lamp light"},
+                        {"text": "Give the Lamp a colour", "check": "colored Lamp"}
+                    ]
+                },
+                {
+                    "name": "Paint the sky",
+                    "code": "An object is made of parts. A Sky part sets what the whole scene is drawn in. Parts are added with the Parts button.",
+                    "steps": [
+                        {"text": "Select the Sun, open Parts and add the Sky part", "check": "has Sun sky"}
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Track 2: Physics",
+            "next_index": 4,
+            "done": 0,
+            "tutorials": [
+                {
+                    "name": "Gravity",
+                    "code": "Objects stay where you put them until physics takes over. A Rigid Body part makes an object fall and collide.",
+                    "steps": [
+                        {"text": "Add a Sphere and rename it Ball", "check": "shape Ball sphere"},
+                        {"text": "Lift the Ball high above the Ground", "check": "above Ball Ground 3"},
+                        {"text": "In Parts, give the Ball a Rigid Body", "check": "has Ball body"},
+                        {"text": "Press Run and watch the Ball fall", "check": "dropped Ball 1"}
+                    ]
+                },
+                {
+                    "name": "Solid ground",
+                    "code": "The Ball fell straight through, because the Ground is not part of the physics yet. A Static body never moves, but things hit it.",
+                    "steps": [
+                        {"text": "Give the Ground a Rigid Body", "check": "has Ground body"},
+                        {"text": "Set its Type to Static", "check": "body Ground static"},
+                        {"text": "Press Run: the Ball should land and stay on the Ground", "check": "landed Ball Ground"}
+                    ]
+                },
+                {
+                    "name": "Bounce",
+                    "code": "Bodies have a surface as well as weight. Bounciness says how much speed they keep when they hit something.",
+                    "steps": [
+                        {"text": "Raise the Ball's Bounciness", "check": "bouncy Ball"},
+                        {"text": "Press Run and watch it bounce to a stop", "check": "landed Ball Ground"}
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Track 3: Parts",
+            "next_index": 3,
+            "done": 0,
+            "tutorials": [
+                {
+                    "name": "A player and a camera",
+                    "code": "Parts decide what an object is. A Player part makes it answer to the move keys, and a Camera is what the game is seen through.",
+                    "steps": [
+                        {"text": "Add a Player. It comes with Player Controls", "check": "has Player player"},
+                        {"text": "Move the Player away from the Wall", "check": "apart Player Wall 2"},
+                        {"text": "Add a Camera and rename it Eye", "check": "has Eye camera"}
+                    ]
+                },
+                {
+                    "name": "Words on the screen",
+                    "code": "Screen objects are drawn over the game instead of in the world. That is how games show a title, a score or a button.",
+                    "steps": [
+                        {"text": "From Screen, add a Text and rename it Title", "check": "has Title screen"},
+                        {"text": "Give the Tree a Sound part", "check": "has Tree sound"}
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Track 4: Movement",
+            "next_index": 5,
+            "done": 0,
+            "tutorials": [
+                {
+                    "name": "Walk around",
+                    "code": "The Player part already knows how to walk. No blocks are needed for this one.",
+                    "steps": [
+                        {"text": "Press Run and walk the Player with W, A, S and D", "check": "travelled Player 2"}
+                    ]
+                },
+                {
+                    "name": "Move with blocks",
+                    "code": "Anything else moves with blocks. A script starts with a \"when\" block: it says WHEN the blocks under it run. Select the Wall to give it blocks.",
+                    "steps": [
+                        {"text": "Give the Wall \"when Play starts\" with \"move forward\" under it", "check": "script Wall when_play_starts move_forward"},
+                        {"text": "Set \"move forward\" to 3", "check": "number Wall move_forward 0 3"},
+                        {"text": "Press Run and watch the Wall move", "check": "travelled Wall 2"}
+                    ]
+                },
+                {
+                    "name": "Blocks run in order",
+                    "code": "Blocks run from top to bottom, one after another. The order is the logic: the same blocks in another order do something else.",
+                    "steps": [
+                        {"text": "Under \"move forward\", add \"turn\" and set it to 90", "check": "number Wall turn_by 0 90"},
+                        {"text": "Then add another \"move forward\"", "check": "script Wall when_play_starts move_forward turn_by move_forward"},
+                        {"text": "Press Run and let the script finish", "check": "finished Wall"}
+                    ]
+                },
+                {
+                    "name": "Go to a place",
+                    "code": "An object does not need to know where something is. Blocks can find it for you.",
+                    "steps": [
+                        {"text": "Add a Sphere, rename it Flag and move it far from the Wall", "check": "apart Flag Wall 5"},
+                        {"text": "Delete the Wall's old blocks, keeping \"when Play starts\"", "check": "gone Wall turn_by"},
+                        {"text": "Add \"point towards\" and type Flag", "check": "text Wall point_towards Flag"},
+                        {"text": "Use \"repeat\" with a small \"move forward\" inside", "check": "inside Wall repeat move_forward"},
+                        {"text": "Press Run. Change the numbers until the Wall reaches the Flag", "check": "near Wall Flag 2"}
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Track 5: Logic",
+            "next_index": 6,
+            "done": 0,
+            "tutorials": [
+                {
+                    "name": "Events",
+                    "code": "So far scripts ran when the game started. Scripts can also wait: a \"when key pressed\" block runs every time that key goes down.",
+                    "steps": [
+                        {"text": "Give the Tree \"when key pressed\" with \"say\" under it", "check": "script Tree when_key_pressed say"},
+                        {"text": "Press Run, then press that key", "check": "ran Tree say"}
+                    ]
+                },
+                {
+                    "name": "Loops",
+                    "code": "A \"forever\" block runs what is inside it again and again, for as long as the game runs.",
+                    "steps": [
+                        {"text": "Give the Tree \"when Play starts\" with \"forever\" under it", "check": "script Tree when_play_starts forever"},
+                        {"text": "Put \"turn\" inside the forever", "check": "inside Tree forever turn_by"},
+                        {"text": "Press Run and watch the Tree spin", "check": "ran Tree turn_by"}
+                    ]
+                },
+                {
+                    "name": "Ask a question",
+                    "code": "\"if\" only runs its inside when the answer is yes. Games ask questions like this all the time, inside a forever.",
+                    "steps": [
+                        {"text": "Give the Player \"when Play starts\" with \"forever\", and an \"if\" inside it", "check": "inside Player forever if"},
+                        {"text": "Make the question \"distance to Flag\" < 2", "check": "slot Player if distance_to"},
+                        {"text": "Put \"say\" inside the if", "check": "inside Player if say"},
+                        {"text": "Press Run and walk the Player to the Flag", "check": "ran Player say"}
+                    ]
+                },
+                {
+                    "name": "Remember things",
+                    "code": "A variable is a named number the game remembers. Now reaching the Flag can be worth something.",
+                    "steps": [
+                        {"text": "Make a variable on the Player called score", "check": "variable Player score"},
+                        {"text": "Put \"change score by 1\" inside the if", "check": "inside Player if change_variable"},
+                        {"text": "Press Run and reach the Flag", "check": "reaches Player score 1"}
+                    ]
+                },
+                {
+                    "name": "Objects talk to each other",
+                    "code": "The score climbs for as long as the Player stays there. A message tells every object something happened, and stopping the script ends it.",
+                    "steps": [
+                        {"text": "In the if, add \"broadcast\" and type won", "check": "text Player broadcast won"},
+                        {"text": "Then add \"stop this script\"", "check": "inside Player if stop"},
+                        {"text": "Give the Flag \"when I receive won\" with \"hide\" under it", "check": "script Flag when_i_receive hide"},
+                        {"text": "Press Run and collect the Flag", "check": "ran Flag hide"}
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Track 6: Your game",
+            "next_index": 3,
+            "done": 0,
+            "tutorials": [
+                {
+                    "name": "Add a danger",
+                    "code": "No more step-by-step. Add an object called Enemy between the Player and the Flag. Getting too close should send the Player back to the start.",
+                    "steps": [
+                        {"text": "Add an object called Enemy", "check": "object Enemy"},
+                        {"text": "Make the Player ask how far the Enemy is", "check": "text Player distance_to Enemy"},
+                        {"text": "When it is too close, send the Player back with \"go to\"", "check": "inside Player if go_to"},
+                        {"text": "Press Run, get past the Enemy and collect the Flag", "check": "reaches Player score 1"}
+                    ]
+                },
+                {
+                    "name": "Finish your game",
+                    "code": "A game should say when you have won. Use everything you know, then make it your own.",
+                    "steps": [
+                        {"text": "Give the Title \"when I receive won\" with \"show text on screen\" under it", "check": "script Title when_i_receive show_text_on_screen"},
+                        {"text": "Press Run and win your game", "check": "ran Title show_text_on_screen"}
+                    ]
+                }
+            ]
+        }
+    ]
+}

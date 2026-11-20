@@ -1,0 +1,10 @@
+# Files clang-format (and the clang-format check in tools/ci/lint.sh) leaves alone, kept as written by their authors.
+# tools/ci/lint.sh does not report clang-tidy findings in them either.
+# (third-party code is left alone by apps/desktop/libraries/.clang-format)
+apps/desktop/projects/atelier_engine/include/engine/Engine.hpp
+apps/desktop/projects/atelier_engine/include/engine/audio/AudioSystem.hpp
+apps/desktop/projects/atelier_engine/include/engine/core/Application.hpp
+apps/desktop/projects/atelier_engine/include/engine/input/Input.hpp
+apps/desktop/projects/atelier_engine/src/input/Input.cpp
+apps/desktop/projects/atelier_engine/src/audio/AudioSystem.cpp
+apps/desktop/projects/atelier_engine/src/core/Application.cpp

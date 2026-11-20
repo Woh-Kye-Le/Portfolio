@@ -1,0 +1,931 @@
+{
+  "objects": [
+    {
+      "id": 1,
+      "name": "Grass",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.143,
+        "albedo_g": 0.419,
+        "albedo_r": 0.274,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": -0.1,
+        "shape_center_z": 0.0,
+        "shape_size_x": 114.0,
+        "shape_size_y": 0.2,
+        "shape_size_z": 114.0
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": -0.1,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 114.0,
+        "size_y": 0.2,
+        "size_z": 114.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 2,
+      "light": {
+        "color_b": 0.58,
+        "color_g": 0.78,
+        "color_r": 1.0,
+        "enabled": true,
+        "intensity": 0.95,
+        "range": 10.0,
+        "spot_inner": 25.0,
+        "spot_outer": 35.0,
+        "type": "directional"
+      },
+      "name": "Sun",
+      "transform": {
+        "rotation": -110.0,
+        "rotation_x": -28.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 3,
+      "name": "Sky",
+      "sky": {
+        "ground_b": 0.22,
+        "ground_g": 0.24,
+        "ground_r": 0.3,
+        "haze": 0.006,
+        "horizon_b": 0.38,
+        "horizon_g": 0.62,
+        "horizon_r": 0.98,
+        "picture": "",
+        "top_b": 0.6,
+        "top_g": 0.3,
+        "top_r": 0.27,
+        "turn": 0.0
+      }
+    },
+    {
+      "id": 4,
+      "name": "Track",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.561,
+        "albedo_g": 0.686,
+        "albedo_r": 0.769,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.01,
+        "shape_size_z": 1.0
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 60.0,
+        "scale_y": 1.0,
+        "scale_z": 8.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.012,
+        "z": -2.0
+      }
+    },
+    {
+      "id": 5,
+      "name": "Bank Back",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.24,
+        "albedo_g": 0.58,
+        "albedo_r": 0.292,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.5,
+        "shape_size_z": 1.0
+      },
+      "transform": {
+        "rotation": 180.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 60.0,
+        "scale_y": 2.0,
+        "scale_z": 2.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": -7.0
+      }
+    },
+    {
+      "id": 6,
+      "name": "Finish Stripe",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.47,
+        "albedo_g": 0.475,
+        "albedo_r": 0.478,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.01,
+        "shape_size_z": 1.0
+      },
+      "transform": {
+        "rotation": 90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 8.0,
+        "scale_y": 1.0,
+        "scale_z": 1.2,
+        "size": 1.0,
+        "x": 4.0,
+        "y": 0.02,
+        "z": -2.0
+      }
+    },
+    {
+      "id": 7,
+      "name": "Arch",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.529,
+        "albedo_g": 0.529,
+        "albedo_r": 0.867,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.85,
+        "shape_center_z": -0.5,
+        "shape_size_x": 0.3,
+        "shape_size_y": 1.7,
+        "shape_size_z": 3.4
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.6,
+        "x": 4.0,
+        "y": 0.0,
+        "z": -0.7
+      }
+    },
+    {
+      "id": 8,
+      "name": "Car",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.644,
+        "albedo_g": 0.618,
+        "albedo_r": 0.636,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.502,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.611,
+        "shape_size_y": 1.004,
+        "shape_size_z": 4.131
+      },
+      "transform": {
+        "rotation": 90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": -2.0
+      }
+    },
+    {
+      "id": 9,
+      "name": "Second Car",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.709,
+        "albedo_g": 0.7,
+        "albedo_r": 0.702,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.581,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.768,
+        "shape_size_y": 1.161,
+        "shape_size_z": 4.326
+      },
+      "transform": {
+        "rotation": 70.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -7.0,
+        "y": 0.0,
+        "z": -4.5
+      }
+    },
+    {
+      "id": 10,
+      "name": "Third Car",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.635,
+        "albedo_g": 0.603,
+        "albedo_r": 0.614,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.676,
+        "shape_center_z": 0.023,
+        "shape_size_x": 1.793,
+        "shape_size_y": 1.352,
+        "shape_size_z": 4.441
+      },
+      "transform": {
+        "rotation": 110.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -12.0,
+        "y": 0.0,
+        "z": 1.0
+      }
+    },
+    {
+      "id": 11,
+      "name": "Tree 1",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.178,
+        "albedo_g": 0.378,
+        "albedo_r": 0.154,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.575,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.794,
+        "shape_size_y": 1.15,
+        "shape_size_z": 0.8
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.0,
+        "x": -12.0,
+        "y": 0.0,
+        "z": -11.0
+      }
+    },
+    {
+      "id": 12,
+      "name": "Tree 2",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.121,
+        "albedo_g": 0.259,
+        "albedo_r": 0.18,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.6,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.397,
+        "shape_size_y": 1.2,
+        "shape_size_z": 0.4
+      },
+      "transform": {
+        "rotation": 40.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.0,
+        "x": 10.0,
+        "y": 0.0,
+        "z": -12.0
+      }
+    },
+    {
+      "id": 13,
+      "name": "Tree 3",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.158,
+        "albedo_g": 0.517,
+        "albedo_r": 0.359,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.55,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.496,
+        "shape_size_y": 1.1,
+        "shape_size_z": 0.5
+      },
+      "transform": {
+        "rotation": 80.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.0,
+        "x": 14.0,
+        "y": 0.0,
+        "z": -8.0
+      }
+    },
+    {
+      "id": 14,
+      "name": "Tree 4",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.178,
+        "albedo_g": 0.378,
+        "albedo_r": 0.154,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.85,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.893,
+        "shape_size_y": 1.7,
+        "shape_size_z": 0.9
+      },
+      "transform": {
+        "rotation": 120.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.0,
+        "x": -18.0,
+        "y": 0.0,
+        "z": -9.0
+      }
+    },
+    {
+      "id": 15,
+      "name": "Tree 5",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.116,
+        "albedo_g": 0.256,
+        "albedo_r": 0.187,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.75,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.397,
+        "shape_size_y": 1.5,
+        "shape_size_z": 0.4
+      },
+      "transform": {
+        "rotation": 160.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.0,
+        "x": 20.0,
+        "y": 0.0,
+        "z": -11.0
+      }
+    },
+    {
+      "id": 16,
+      "name": "Barrel 1",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Barrel.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.39,
+        "albedo_g": 0.481,
+        "albedo_r": 0.547,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.483,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.483
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 10.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.483,
+        "size_y": 0.5,
+        "size_z": 0.483,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.0,
+        "x": -6.0,
+        "y": 0.0,
+        "z": 1.5
+      }
+    },
+    {
+      "id": 17,
+      "name": "Barrel 2",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Barrel.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.39,
+        "albedo_g": 0.481,
+        "albedo_r": 0.547,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.483,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.483
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 10.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.483,
+        "size_y": 0.5,
+        "size_z": 0.483,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.0,
+        "x": -4.0,
+        "y": 0.0,
+        "z": 1.5
+      }
+    },
+    {
+      "id": 18,
+      "name": "Barrel 3",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Barrel.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.39,
+        "albedo_g": 0.481,
+        "albedo_r": 0.547,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.483,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.483
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 10.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.483,
+        "size_y": 0.5,
+        "size_z": 0.483,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.0,
+        "x": 5.0,
+        "y": 0.0,
+        "z": 1.5
+      }
+    },
+    {
+      "id": 19,
+      "name": "Barrel 4",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Barrel.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.39,
+        "albedo_g": 0.481,
+        "albedo_r": 0.547,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.483,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.483
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 10.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.483,
+        "size_y": 0.5,
+        "size_z": 0.483,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.0,
+        "x": 7.0,
+        "y": 0.0,
+        "z": 1.5
+      }
+    },
+    {
+      "id": 20,
+      "name": "Floodlight",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.351,
+        "albedo_g": 0.389,
+        "albedo_r": 0.408,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": -0.179,
+        "shape_center_y": 0.625,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.997,
+        "shape_size_y": 1.25,
+        "shape_size_z": 0.233
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 5.0,
+        "x": 0.895,
+        "y": 0.0,
+        "z": -9.0
+      }
+    },
+    {
+      "id": 21,
+      "light": {
+        "color_b": 0.75,
+        "color_g": 0.9,
+        "color_r": 1.0,
+        "enabled": true,
+        "intensity": 1.5,
+        "range": 22.0,
+        "spot_inner": 25.0,
+        "spot_outer": 35.0,
+        "type": "point"
+      },
+      "name": "Floodlight Light",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 8.0,
+        "z": -8.0
+      }
+    },
+    {
+      "camera": {
+        "far_plane": 1000.0,
+        "field_of_view": 60.0,
+        "near_plane": 0.05,
+        "primary": true
+      },
+      "id": 22,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "repeat",
+                    "body": [
+                      {
+                        "block": "turn_by",
+                        "id": 4,
+                        "numbers": [
+                          0.02
+                        ]
+                      }
+                    ],
+                    "id": 3,
+                    "numbers": [
+                      400.0
+                    ]
+                  },
+                  {
+                    "block": "repeat",
+                    "body": [
+                      {
+                        "block": "turn_by",
+                        "id": 6,
+                        "numbers": [
+                          -0.02
+                        ]
+                      }
+                    ],
+                    "id": 5,
+                    "numbers": [
+                      400.0
+                    ]
+                  }
+                ],
+                "id": 2
+              }
+            ],
+            "x": 20.0,
+            "y": 20.0
+          }
+        ]
+      },
+      "name": "Main Camera",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": -12.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 3.5,
+        "z": 12.0
+      }
+    },
+    {
+      "id": 23,
+      "name": "Title",
+      "screen": {
+        "anchor": "centre",
+        "bar_maximum": 100.0,
+        "bar_object": "",
+        "bar_variable": "",
+        "color_b": 0.15,
+        "color_g": 0.82,
+        "color_r": 1.0,
+        "height": 13.0,
+        "kind": "text",
+        "layer": 1,
+        "picture": "",
+        "text": "GRAND PRIX",
+        "visible": true,
+        "width": 0.0,
+        "x": 0.0,
+        "y": -24.0
+      }
+    },
+    {
+      "id": 24,
+      "name": "Subtitle",
+      "screen": {
+        "anchor": "centre",
+        "bar_maximum": 100.0,
+        "bar_object": "",
+        "bar_variable": "",
+        "color_b": 1.0,
+        "color_g": 1.0,
+        "color_r": 1.0,
+        "height": 4.0,
+        "kind": "text",
+        "layer": 1,
+        "picture": "",
+        "text": "Three laps, through every gate",
+        "visible": true,
+        "width": 0.0,
+        "x": 0.0,
+        "y": -12.0
+      }
+    },
+    {
+      "id": 25,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "free_mouse",
+                "id": 2
+              }
+            ],
+            "x": 20.0,
+            "y": 20.0
+          },
+          {
+            "blocks": [
+              {
+                "block": "when_clicked_on_screen",
+                "id": 3
+              },
+              {
+                "block": "lock_mouse",
+                "id": 4
+              },
+              {
+                "block": "go_to_scene",
+                "id": 5,
+                "text": "main"
+              }
+            ],
+            "x": 20.0,
+            "y": 280.0
+          }
+        ]
+      },
+      "name": "Play Button",
+      "screen": {
+        "anchor": "centre",
+        "bar_maximum": 100.0,
+        "bar_object": "",
+        "bar_variable": "",
+        "color_b": 0.15,
+        "color_g": 0.82,
+        "color_r": 1.0,
+        "height": 10.0,
+        "kind": "button",
+        "layer": 1,
+        "picture": "",
+        "text": "Play",
+        "visible": true,
+        "width": 26.0,
+        "x": 0.0,
+        "y": 6.0
+      }
+    },
+    {
+      "id": 26,
+      "name": "How To Play",
+      "screen": {
+        "anchor": "bottom",
+        "bar_maximum": 100.0,
+        "bar_object": "",
+        "bar_variable": "",
+        "color_b": 0.92,
+        "color_g": 0.92,
+        "color_r": 0.92,
+        "height": 3.2,
+        "kind": "text",
+        "layer": 1,
+        "picture": "",
+        "text": "W drives   A / D steer   Shift boosts",
+        "visible": true,
+        "width": 0.0,
+        "x": 0.0,
+        "y": -7.0
+      }
+    }
+  ],
+  "version": 8
+}

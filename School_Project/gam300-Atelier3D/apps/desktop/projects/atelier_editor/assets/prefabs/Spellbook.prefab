@@ -1,0 +1,81 @@
+{
+  "name": "Spellbook",
+  "objects": [
+    {
+      "id": 1,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "wait_until",
+                "id": 2,
+                "slots": [
+                  {
+                    "block": "less",
+                    "id": 3,
+                    "inputs": [
+                      {
+                        "block": "distance_to",
+                        "id": 4,
+                        "text": "Player"
+                      },
+                      {}
+                    ],
+                    "numbers": [
+                      0.0,
+                      1.6
+                    ]
+                  }
+                ]
+              },
+              {
+                "block": "hide",
+                "id": 5
+              },
+              {
+                "block": "broadcast",
+                "id": 6,
+                "text": "book found"
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Spellbook",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.396,
+        "albedo_g": 0.436,
+        "albedo_r": 0.568,
+        "rotation_speed": 60.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": -0.023,
+        "shape_size_x": 0.828,
+        "shape_size_y": 0.569,
+        "shape_size_z": 0.222
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    }
+  ],
+  "version": 1
+}

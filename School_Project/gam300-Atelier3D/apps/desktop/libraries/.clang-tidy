@@ -1,0 +1,2 @@
+# Third-party code: no clang-tidy checks (tools/ci/lint.sh does not lint this folder either)
+Checks: '-*'

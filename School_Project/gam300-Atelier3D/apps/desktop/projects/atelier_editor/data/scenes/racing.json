@@ -1,0 +1,5881 @@
+{
+  "objects": [
+    {
+      "id": 1,
+      "name": "Grass",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.143,
+        "albedo_g": 0.419,
+        "albedo_r": 0.274,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": -2.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 114.0,
+        "shape_size_y": 4.0,
+        "shape_size_z": 114.0
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": -2.0,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 114.0,
+        "size_y": 4.0,
+        "size_z": 114.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 2,
+      "light": {
+        "color_b": 0.58,
+        "color_g": 0.78,
+        "color_r": 1.0,
+        "enabled": true,
+        "intensity": 0.95,
+        "range": 10.0,
+        "spot_inner": 25.0,
+        "spot_outer": 35.0,
+        "type": "directional"
+      },
+      "name": "Sun",
+      "transform": {
+        "rotation": -110.0,
+        "rotation_x": -28.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 3,
+      "name": "Sky",
+      "sky": {
+        "ground_b": 0.22,
+        "ground_g": 0.24,
+        "ground_r": 0.3,
+        "haze": 0.006,
+        "horizon_b": 0.38,
+        "horizon_g": 0.62,
+        "horizon_r": 0.98,
+        "picture": "",
+        "top_b": 0.6,
+        "top_g": 0.3,
+        "top_r": 0.27,
+        "turn": 0.0
+      }
+    },
+    {
+      "id": 4,
+      "name": "Track North",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.561,
+        "albedo_g": 0.686,
+        "albedo_r": 0.769,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.01,
+        "shape_size_z": 1.0
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 68.0,
+        "scale_y": 1.0,
+        "scale_z": 8.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.012,
+        "z": -25.0
+      }
+    },
+    {
+      "id": 5,
+      "name": "Track South",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.561,
+        "albedo_g": 0.686,
+        "albedo_r": 0.769,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.01,
+        "shape_size_z": 1.0
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 68.0,
+        "scale_y": 1.0,
+        "scale_z": 8.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.012,
+        "z": 25.0
+      }
+    },
+    {
+      "id": 6,
+      "name": "Track East",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.561,
+        "albedo_g": 0.686,
+        "albedo_r": 0.769,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.01,
+        "shape_size_z": 1.0
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 8.0,
+        "scale_y": 1.0,
+        "scale_z": 58.0,
+        "size": 1.0,
+        "x": 30.0,
+        "y": 0.012,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 7,
+      "name": "Track West",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.561,
+        "albedo_g": 0.686,
+        "albedo_r": 0.769,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.01,
+        "shape_size_z": 1.0
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 8.0,
+        "scale_y": 1.0,
+        "scale_z": 58.0,
+        "size": 1.0,
+        "x": -30.0,
+        "y": 0.012,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 8,
+      "name": "Bank Outer North",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.24,
+        "albedo_g": 0.58,
+        "albedo_r": 0.292,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.5,
+        "shape_size_z": 1.0
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 1.0,
+        "size_y": 0.5,
+        "size_z": 1.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 180.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 70.0,
+        "scale_y": 2.0,
+        "scale_z": 2.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": -30.0
+      }
+    },
+    {
+      "id": 9,
+      "name": "Bank Inner North",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.24,
+        "albedo_g": 0.58,
+        "albedo_r": 0.292,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.5,
+        "shape_size_z": 1.0
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 1.0,
+        "size_y": 0.5,
+        "size_z": 1.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 52.0,
+        "scale_y": 2.0,
+        "scale_z": 2.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": -20.0
+      }
+    },
+    {
+      "id": 10,
+      "name": "Bank Outer South",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.24,
+        "albedo_g": 0.58,
+        "albedo_r": 0.292,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.5,
+        "shape_size_z": 1.0
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 1.0,
+        "size_y": 0.5,
+        "size_z": 1.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 70.0,
+        "scale_y": 2.0,
+        "scale_z": 2.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 30.0
+      }
+    },
+    {
+      "id": 11,
+      "name": "Bank Inner South",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.24,
+        "albedo_g": 0.58,
+        "albedo_r": 0.292,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.5,
+        "shape_size_z": 1.0
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 1.0,
+        "size_y": 0.5,
+        "size_z": 1.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 180.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 52.0,
+        "scale_y": 2.0,
+        "scale_z": 2.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 20.0
+      }
+    },
+    {
+      "id": 12,
+      "name": "Bank Outer East",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.24,
+        "albedo_g": 0.58,
+        "albedo_r": 0.292,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.5,
+        "shape_size_z": 1.0
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 1.0,
+        "size_y": 0.5,
+        "size_z": 1.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 60.0,
+        "scale_y": 2.0,
+        "scale_z": 2.0,
+        "size": 1.0,
+        "x": 35.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 13,
+      "name": "Bank Inner East",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.24,
+        "albedo_g": 0.58,
+        "albedo_r": 0.292,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.5,
+        "shape_size_z": 1.0
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 1.0,
+        "size_y": 0.5,
+        "size_z": 1.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": -90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 42.0,
+        "scale_y": 2.0,
+        "scale_z": 2.0,
+        "size": 1.0,
+        "x": 25.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 14,
+      "name": "Bank Outer West",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.24,
+        "albedo_g": 0.58,
+        "albedo_r": 0.292,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.5,
+        "shape_size_z": 1.0
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 1.0,
+        "size_y": 0.5,
+        "size_z": 1.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": -90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 60.0,
+        "scale_y": 2.0,
+        "scale_z": 2.0,
+        "size": 1.0,
+        "x": -35.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 15,
+      "name": "Bank Inner West",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.24,
+        "albedo_g": 0.58,
+        "albedo_r": 0.292,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.5,
+        "shape_size_z": 1.0
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 1.0,
+        "size_y": 0.5,
+        "size_z": 1.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 42.0,
+        "scale_y": 2.0,
+        "scale_z": 2.0,
+        "size": 1.0,
+        "x": -25.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 16,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "wait_until",
+                    "id": 3,
+                    "slots": [
+                      {
+                        "block": "less",
+                        "id": 4,
+                        "inputs": [
+                          {
+                            "block": "distance_to",
+                            "id": 5,
+                            "text": "Player"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          4.5
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "block": "broadcast",
+                    "id": 6,
+                    "text": "checkpoint 1"
+                  },
+                  {
+                    "block": "wait_until",
+                    "id": 7,
+                    "slots": [
+                      {
+                        "block": "greater",
+                        "id": 8,
+                        "inputs": [
+                          {
+                            "block": "distance_to",
+                            "id": 9,
+                            "text": "Player"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          7.0
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "id": 2
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Checkpoint 1",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.5,
+        "z": -25.0
+      }
+    },
+    {
+      "id": 17,
+      "name": "Checkpoint 1 Arch",
+      "parent": 16,
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.529,
+        "albedo_g": 0.529,
+        "albedo_r": 0.867,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.85,
+        "shape_center_z": -0.5,
+        "shape_size_x": 0.3,
+        "shape_size_y": 1.7,
+        "shape_size_z": 3.4
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.6,
+        "x": 0.0,
+        "y": -0.5,
+        "z": 1.3
+      }
+    },
+    {
+      "id": 18,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "wait_until",
+                    "id": 3,
+                    "slots": [
+                      {
+                        "block": "less",
+                        "id": 4,
+                        "inputs": [
+                          {
+                            "block": "distance_to",
+                            "id": 5,
+                            "text": "Player"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          4.5
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "block": "broadcast",
+                    "id": 6,
+                    "text": "checkpoint 2"
+                  },
+                  {
+                    "block": "wait_until",
+                    "id": 7,
+                    "slots": [
+                      {
+                        "block": "greater",
+                        "id": 8,
+                        "inputs": [
+                          {
+                            "block": "distance_to",
+                            "id": 9,
+                            "text": "Player"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          7.0
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "id": 2
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Checkpoint 2",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 30.0,
+        "y": 0.5,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 19,
+      "name": "Checkpoint 2 Arch",
+      "parent": 18,
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.529,
+        "albedo_g": 0.529,
+        "albedo_r": 0.867,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.85,
+        "shape_center_z": -0.5,
+        "shape_size_x": 0.3,
+        "shape_size_y": 1.7,
+        "shape_size_z": 3.4
+      },
+      "transform": {
+        "rotation": 90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.6,
+        "x": 1.3,
+        "y": -0.5,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 20,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "wait_until",
+                    "id": 3,
+                    "slots": [
+                      {
+                        "block": "less",
+                        "id": 4,
+                        "inputs": [
+                          {
+                            "block": "distance_to",
+                            "id": 5,
+                            "text": "Player"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          4.5
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "block": "broadcast",
+                    "id": 6,
+                    "text": "checkpoint 3"
+                  },
+                  {
+                    "block": "wait_until",
+                    "id": 7,
+                    "slots": [
+                      {
+                        "block": "greater",
+                        "id": 8,
+                        "inputs": [
+                          {
+                            "block": "distance_to",
+                            "id": 9,
+                            "text": "Player"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          7.0
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "id": 2
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Checkpoint 3",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.5,
+        "z": 25.0
+      }
+    },
+    {
+      "id": 21,
+      "name": "Checkpoint 3 Arch",
+      "parent": 20,
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.529,
+        "albedo_g": 0.529,
+        "albedo_r": 0.867,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.85,
+        "shape_center_z": -0.5,
+        "shape_size_x": 0.3,
+        "shape_size_y": 1.7,
+        "shape_size_z": 3.4
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.6,
+        "x": 0.0,
+        "y": -0.5,
+        "z": 1.3
+      }
+    },
+    {
+      "id": 22,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "wait_until",
+                    "id": 3,
+                    "slots": [
+                      {
+                        "block": "less",
+                        "id": 4,
+                        "inputs": [
+                          {
+                            "block": "distance_to",
+                            "id": 5,
+                            "text": "Player"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          4.5
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "block": "broadcast",
+                    "id": 6,
+                    "text": "finish line"
+                  },
+                  {
+                    "block": "wait_until",
+                    "id": 7,
+                    "slots": [
+                      {
+                        "block": "greater",
+                        "id": 8,
+                        "inputs": [
+                          {
+                            "block": "distance_to",
+                            "id": 9,
+                            "text": "Player"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          7.0
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "id": 2
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Finish Line",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -30.0,
+        "y": 0.5,
+        "z": 10.0
+      }
+    },
+    {
+      "id": 23,
+      "name": "Finish Line Arch",
+      "parent": 22,
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.529,
+        "albedo_g": 0.529,
+        "albedo_r": 0.867,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.85,
+        "shape_center_z": -0.5,
+        "shape_size_x": 0.3,
+        "shape_size_y": 1.7,
+        "shape_size_z": 3.4
+      },
+      "transform": {
+        "rotation": 90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.6,
+        "x": 1.3,
+        "y": -0.5,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 24,
+      "name": "Finish Stripe",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.47,
+        "albedo_g": 0.475,
+        "albedo_r": 0.478,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.01,
+        "shape_size_z": 1.0
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 8.0,
+        "scale_y": 1.0,
+        "scale_z": 1.2,
+        "size": 1.0,
+        "x": -30.0,
+        "y": 0.02,
+        "z": 10.0
+      }
+    },
+    {
+      "id": 25,
+      "name": "Start Line",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.47,
+        "albedo_g": 0.475,
+        "albedo_r": 0.478,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.01,
+        "shape_size_z": 1.0
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 8.0,
+        "scale_y": 1.0,
+        "scale_z": 0.4,
+        "size": 1.0,
+        "x": -30.0,
+        "y": 0.02,
+        "z": 15.0
+      }
+    },
+    {
+      "id": 26,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "wait_until",
+                    "id": 3,
+                    "slots": [
+                      {
+                        "block": "less",
+                        "id": 4,
+                        "inputs": [
+                          {
+                            "block": "distance_to",
+                            "id": 5,
+                            "text": "Player"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          3.0
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "block": "broadcast",
+                    "id": 6,
+                    "text": "boost"
+                  },
+                  {
+                    "block": "wait_until",
+                    "id": 7,
+                    "slots": [
+                      {
+                        "block": "greater",
+                        "id": 8,
+                        "inputs": [
+                          {
+                            "block": "distance_to",
+                            "id": 9,
+                            "text": "Player"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          5.0
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "id": 2
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Boost Pad 1",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.387,
+        "albedo_g": 0.8,
+        "albedo_r": 0.662,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.01,
+        "shape_size_z": 1.0
+      },
+      "transform": {
+        "rotation": 180.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 4.0,
+        "scale_y": 1.0,
+        "scale_z": 4.0,
+        "size": 1.0,
+        "x": -10.0,
+        "y": 0.02,
+        "z": -25.0
+      }
+    },
+    {
+      "id": 27,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "wait_until",
+                    "id": 3,
+                    "slots": [
+                      {
+                        "block": "less",
+                        "id": 4,
+                        "inputs": [
+                          {
+                            "block": "distance_to",
+                            "id": 5,
+                            "text": "Player"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          3.0
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "block": "broadcast",
+                    "id": 6,
+                    "text": "boost"
+                  },
+                  {
+                    "block": "wait_until",
+                    "id": 7,
+                    "slots": [
+                      {
+                        "block": "greater",
+                        "id": 8,
+                        "inputs": [
+                          {
+                            "block": "distance_to",
+                            "id": 9,
+                            "text": "Player"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          5.0
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "id": 2
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Boost Pad 2",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.387,
+        "albedo_g": 0.8,
+        "albedo_r": 0.662,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.01,
+        "shape_size_z": 1.0
+      },
+      "transform": {
+        "rotation": 90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 4.0,
+        "scale_y": 1.0,
+        "scale_z": 4.0,
+        "size": 1.0,
+        "x": 30.0,
+        "y": 0.02,
+        "z": -8.0
+      }
+    },
+    {
+      "id": 28,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "wait_until",
+                    "id": 3,
+                    "slots": [
+                      {
+                        "block": "less",
+                        "id": 4,
+                        "inputs": [
+                          {
+                            "block": "distance_to",
+                            "id": 5,
+                            "text": "Player"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          3.0
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "block": "broadcast",
+                    "id": 6,
+                    "text": "boost"
+                  },
+                  {
+                    "block": "wait_until",
+                    "id": 7,
+                    "slots": [
+                      {
+                        "block": "greater",
+                        "id": 8,
+                        "inputs": [
+                          {
+                            "block": "distance_to",
+                            "id": 9,
+                            "text": "Player"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          5.0
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "id": 2
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Boost Pad 3",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.387,
+        "albedo_g": 0.8,
+        "albedo_r": 0.662,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.0,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 0.01,
+        "shape_size_z": 1.0
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 4.0,
+        "scale_y": 1.0,
+        "scale_z": 4.0,
+        "size": 1.0,
+        "x": 10.0,
+        "y": 0.02,
+        "z": 25.0
+      }
+    },
+    {
+      "id": 29,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "wait_until",
+                "id": 2,
+                "slots": [
+                  {
+                    "block": "less",
+                    "id": 3,
+                    "inputs": [
+                      {
+                        "block": "distance_to",
+                        "id": 4,
+                        "text": "Player"
+                      },
+                      {}
+                    ],
+                    "numbers": [
+                      0.0,
+                      2.5
+                    ]
+                  }
+                ]
+              },
+              {
+                "block": "hide",
+                "id": 5
+              },
+              {
+                "block": "broadcast",
+                "id": 6,
+                "text": "coin"
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Coin 1",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.0,
+        "albedo_g": 0.827,
+        "albedo_r": 0.98,
+        "rotation_speed": 120.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.5,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.05,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.496
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.5,
+        "x": -20.0,
+        "y": 0.075,
+        "z": -26.5
+      }
+    },
+    {
+      "id": 30,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "wait_until",
+                "id": 2,
+                "slots": [
+                  {
+                    "block": "less",
+                    "id": 3,
+                    "inputs": [
+                      {
+                        "block": "distance_to",
+                        "id": 4,
+                        "text": "Player"
+                      },
+                      {}
+                    ],
+                    "numbers": [
+                      0.0,
+                      2.5
+                    ]
+                  }
+                ]
+              },
+              {
+                "block": "hide",
+                "id": 5
+              },
+              {
+                "block": "broadcast",
+                "id": 6,
+                "text": "coin"
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Coin 2",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.0,
+        "albedo_g": 0.827,
+        "albedo_r": 0.98,
+        "rotation_speed": 120.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.5,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.05,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.496
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.5,
+        "x": 0.0,
+        "y": 0.075,
+        "z": -23.0
+      }
+    },
+    {
+      "id": 31,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "wait_until",
+                "id": 2,
+                "slots": [
+                  {
+                    "block": "less",
+                    "id": 3,
+                    "inputs": [
+                      {
+                        "block": "distance_to",
+                        "id": 4,
+                        "text": "Player"
+                      },
+                      {}
+                    ],
+                    "numbers": [
+                      0.0,
+                      2.5
+                    ]
+                  }
+                ]
+              },
+              {
+                "block": "hide",
+                "id": 5
+              },
+              {
+                "block": "broadcast",
+                "id": 6,
+                "text": "coin"
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Coin 3",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.0,
+        "albedo_g": 0.827,
+        "albedo_r": 0.98,
+        "rotation_speed": 120.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.5,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.05,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.496
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.5,
+        "x": 20.0,
+        "y": 0.075,
+        "z": -26.5
+      }
+    },
+    {
+      "id": 32,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "wait_until",
+                "id": 2,
+                "slots": [
+                  {
+                    "block": "less",
+                    "id": 3,
+                    "inputs": [
+                      {
+                        "block": "distance_to",
+                        "id": 4,
+                        "text": "Player"
+                      },
+                      {}
+                    ],
+                    "numbers": [
+                      0.0,
+                      2.5
+                    ]
+                  }
+                ]
+              },
+              {
+                "block": "hide",
+                "id": 5
+              },
+              {
+                "block": "broadcast",
+                "id": 6,
+                "text": "coin"
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Coin 4",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.0,
+        "albedo_g": 0.827,
+        "albedo_r": 0.98,
+        "rotation_speed": 120.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.5,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.05,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.496
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.5,
+        "x": 31.5,
+        "y": 0.075,
+        "z": -18.0
+      }
+    },
+    {
+      "id": 33,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "wait_until",
+                "id": 2,
+                "slots": [
+                  {
+                    "block": "less",
+                    "id": 3,
+                    "inputs": [
+                      {
+                        "block": "distance_to",
+                        "id": 4,
+                        "text": "Player"
+                      },
+                      {}
+                    ],
+                    "numbers": [
+                      0.0,
+                      2.5
+                    ]
+                  }
+                ]
+              },
+              {
+                "block": "hide",
+                "id": 5
+              },
+              {
+                "block": "broadcast",
+                "id": 6,
+                "text": "coin"
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Coin 5",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.0,
+        "albedo_g": 0.827,
+        "albedo_r": 0.98,
+        "rotation_speed": 120.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.5,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.05,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.496
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.5,
+        "x": 28.5,
+        "y": 0.075,
+        "z": 10.0
+      }
+    },
+    {
+      "id": 34,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "wait_until",
+                "id": 2,
+                "slots": [
+                  {
+                    "block": "less",
+                    "id": 3,
+                    "inputs": [
+                      {
+                        "block": "distance_to",
+                        "id": 4,
+                        "text": "Player"
+                      },
+                      {}
+                    ],
+                    "numbers": [
+                      0.0,
+                      2.5
+                    ]
+                  }
+                ]
+              },
+              {
+                "block": "hide",
+                "id": 5
+              },
+              {
+                "block": "broadcast",
+                "id": 6,
+                "text": "coin"
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Coin 6",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.0,
+        "albedo_g": 0.827,
+        "albedo_r": 0.98,
+        "rotation_speed": 120.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.5,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.05,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.496
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.5,
+        "x": 31.5,
+        "y": 0.075,
+        "z": 18.0
+      }
+    },
+    {
+      "id": 35,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "wait_until",
+                "id": 2,
+                "slots": [
+                  {
+                    "block": "less",
+                    "id": 3,
+                    "inputs": [
+                      {
+                        "block": "distance_to",
+                        "id": 4,
+                        "text": "Player"
+                      },
+                      {}
+                    ],
+                    "numbers": [
+                      0.0,
+                      2.5
+                    ]
+                  }
+                ]
+              },
+              {
+                "block": "hide",
+                "id": 5
+              },
+              {
+                "block": "broadcast",
+                "id": 6,
+                "text": "coin"
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Coin 7",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.0,
+        "albedo_g": 0.827,
+        "albedo_r": 0.98,
+        "rotation_speed": 120.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.5,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.05,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.496
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.5,
+        "x": 20.0,
+        "y": 0.075,
+        "z": 23.0
+      }
+    },
+    {
+      "id": 36,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "wait_until",
+                "id": 2,
+                "slots": [
+                  {
+                    "block": "less",
+                    "id": 3,
+                    "inputs": [
+                      {
+                        "block": "distance_to",
+                        "id": 4,
+                        "text": "Player"
+                      },
+                      {}
+                    ],
+                    "numbers": [
+                      0.0,
+                      2.5
+                    ]
+                  }
+                ]
+              },
+              {
+                "block": "hide",
+                "id": 5
+              },
+              {
+                "block": "broadcast",
+                "id": 6,
+                "text": "coin"
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Coin 8",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.0,
+        "albedo_g": 0.827,
+        "albedo_r": 0.98,
+        "rotation_speed": 120.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.5,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.05,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.496
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.5,
+        "x": -5.0,
+        "y": 0.075,
+        "z": 26.5
+      }
+    },
+    {
+      "id": 37,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "wait_until",
+                "id": 2,
+                "slots": [
+                  {
+                    "block": "less",
+                    "id": 3,
+                    "inputs": [
+                      {
+                        "block": "distance_to",
+                        "id": 4,
+                        "text": "Player"
+                      },
+                      {}
+                    ],
+                    "numbers": [
+                      0.0,
+                      2.5
+                    ]
+                  }
+                ]
+              },
+              {
+                "block": "hide",
+                "id": 5
+              },
+              {
+                "block": "broadcast",
+                "id": 6,
+                "text": "coin"
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Coin 9",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.0,
+        "albedo_g": 0.827,
+        "albedo_r": 0.98,
+        "rotation_speed": 120.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.5,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.05,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.496
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.5,
+        "x": -20.0,
+        "y": 0.075,
+        "z": 23.0
+      }
+    },
+    {
+      "id": 38,
+      "name": "Barrel 1",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Barrel.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.39,
+        "albedo_g": 0.481,
+        "albedo_r": 0.547,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.483,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.483
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 10.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.483,
+        "size_y": 0.5,
+        "size_z": 0.483,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.0,
+        "x": -28.0,
+        "y": 0.0,
+        "z": -10.0
+      }
+    },
+    {
+      "id": 39,
+      "name": "Barrel 2",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Barrel.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.39,
+        "albedo_g": 0.481,
+        "albedo_r": 0.547,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.483,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.483
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 10.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.483,
+        "size_y": 0.5,
+        "size_z": 0.483,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.0,
+        "x": -32.0,
+        "y": 0.0,
+        "z": -4.0
+      }
+    },
+    {
+      "id": 40,
+      "name": "Barrel 3",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Barrel.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.39,
+        "albedo_g": 0.481,
+        "albedo_r": 0.547,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.483,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.483
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 10.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.483,
+        "size_y": 0.5,
+        "size_z": 0.483,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.0,
+        "x": -28.0,
+        "y": 0.0,
+        "z": 2.0
+      }
+    },
+    {
+      "id": 41,
+      "name": "Barrel 4",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Barrel.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.39,
+        "albedo_g": 0.481,
+        "albedo_r": 0.547,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.483,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.483
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 10.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.483,
+        "size_y": 0.5,
+        "size_z": 0.483,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.0,
+        "x": 10.0,
+        "y": 0.0,
+        "z": -27.0
+      }
+    },
+    {
+      "id": 42,
+      "name": "Barrel 5",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Barrel.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.39,
+        "albedo_g": 0.481,
+        "albedo_r": 0.547,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.483,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.483
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 10.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.483,
+        "size_y": 0.5,
+        "size_z": 0.483,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.0,
+        "x": 14.0,
+        "y": 0.0,
+        "z": -23.0
+      }
+    },
+    {
+      "id": 43,
+      "name": "Barrel 6",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Barrel.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.39,
+        "albedo_g": 0.481,
+        "albedo_r": 0.547,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.483,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.483
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 10.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.483,
+        "size_y": 0.5,
+        "size_z": 0.483,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.0,
+        "x": 18.0,
+        "y": 0.0,
+        "z": -27.0
+      }
+    },
+    {
+      "id": 44,
+      "name": "Barrel 7",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Barrel.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.39,
+        "albedo_g": 0.481,
+        "albedo_r": 0.547,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.483,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.483
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 10.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.483,
+        "size_y": 0.5,
+        "size_z": 0.483,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.0,
+        "x": 28.0,
+        "y": 0.0,
+        "z": 12.0
+      }
+    },
+    {
+      "id": 45,
+      "name": "Barrel 8",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Barrel.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.39,
+        "albedo_g": 0.481,
+        "albedo_r": 0.547,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.483,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.483
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 10.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.483,
+        "size_y": 0.5,
+        "size_z": 0.483,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.0,
+        "x": 32.0,
+        "y": 0.0,
+        "z": 16.0
+      }
+    },
+    {
+      "id": 46,
+      "name": "Barrel 9",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Barrel.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.39,
+        "albedo_g": 0.481,
+        "albedo_r": 0.547,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.483,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.483
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 10.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.483,
+        "size_y": 0.5,
+        "size_z": 0.483,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.0,
+        "x": -10.0,
+        "y": 0.0,
+        "z": 23.0
+      }
+    },
+    {
+      "id": 47,
+      "name": "Barrel 10",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Barrel.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.39,
+        "albedo_g": 0.481,
+        "albedo_r": 0.547,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.25,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.483,
+        "shape_size_y": 0.5,
+        "shape_size_z": 0.483
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.25,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 10.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.483,
+        "size_y": 0.5,
+        "size_z": 0.483,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 2.0,
+        "x": -14.0,
+        "y": 0.0,
+        "z": 27.0
+      }
+    },
+    {
+      "id": 48,
+      "name": "Hay Bale 1",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/HayBale.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.525,
+        "albedo_g": 0.759,
+        "albedo_r": 0.854,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.241,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.834,
+        "shape_size_y": 0.584,
+        "shape_size_z": 0.584
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.2414137,
+        "center_z": 0.0,
+        "friction": 0.7,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 8.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.8341641,
+        "size_y": 0.5841641,
+        "size_z": 0.5841641,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 45.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.6,
+        "x": -33.0,
+        "y": 0.0,
+        "z": -28.0
+      }
+    },
+    {
+      "id": 49,
+      "name": "Hay Bale 2",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/HayBale.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.525,
+        "albedo_g": 0.759,
+        "albedo_r": 0.854,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.241,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.834,
+        "shape_size_y": 0.584,
+        "shape_size_z": 0.584
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.2414137,
+        "center_z": 0.0,
+        "friction": 0.7,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 8.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.8341641,
+        "size_y": 0.5841641,
+        "size_z": 0.5841641,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 45.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.6,
+        "x": -33.0,
+        "y": 0.93,
+        "z": -28.0
+      }
+    },
+    {
+      "id": 50,
+      "name": "Hay Bale 3",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/HayBale.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.525,
+        "albedo_g": 0.759,
+        "albedo_r": 0.854,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.241,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.834,
+        "shape_size_y": 0.584,
+        "shape_size_z": 0.584
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.2414137,
+        "center_z": 0.0,
+        "friction": 0.7,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 8.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.8341641,
+        "size_y": 0.5841641,
+        "size_z": 0.5841641,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 45.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.6,
+        "x": 33.0,
+        "y": 0.0,
+        "z": -28.0
+      }
+    },
+    {
+      "id": 51,
+      "name": "Hay Bale 4",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/HayBale.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.525,
+        "albedo_g": 0.759,
+        "albedo_r": 0.854,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.241,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.834,
+        "shape_size_y": 0.584,
+        "shape_size_z": 0.584
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.2414137,
+        "center_z": 0.0,
+        "friction": 0.7,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 8.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.8341641,
+        "size_y": 0.5841641,
+        "size_z": 0.5841641,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 45.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.6,
+        "x": 33.0,
+        "y": 0.93,
+        "z": -28.0
+      }
+    },
+    {
+      "id": 52,
+      "name": "Hay Bale 5",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/HayBale.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.525,
+        "albedo_g": 0.759,
+        "albedo_r": 0.854,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.241,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.834,
+        "shape_size_y": 0.584,
+        "shape_size_z": 0.584
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.2414137,
+        "center_z": 0.0,
+        "friction": 0.7,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 8.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.8341641,
+        "size_y": 0.5841641,
+        "size_z": 0.5841641,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 45.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.6,
+        "x": 33.0,
+        "y": 0.0,
+        "z": 28.0
+      }
+    },
+    {
+      "id": 53,
+      "name": "Hay Bale 6",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/HayBale.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.525,
+        "albedo_g": 0.759,
+        "albedo_r": 0.854,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.241,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.834,
+        "shape_size_y": 0.584,
+        "shape_size_z": 0.584
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.2414137,
+        "center_z": 0.0,
+        "friction": 0.7,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 8.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.8341641,
+        "size_y": 0.5841641,
+        "size_z": 0.5841641,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 45.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.6,
+        "x": 33.0,
+        "y": 0.93,
+        "z": 28.0
+      }
+    },
+    {
+      "id": 54,
+      "name": "Hay Bale 7",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/HayBale.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.525,
+        "albedo_g": 0.759,
+        "albedo_r": 0.854,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.241,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.834,
+        "shape_size_y": 0.584,
+        "shape_size_z": 0.584
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.2414137,
+        "center_z": 0.0,
+        "friction": 0.7,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 8.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.8341641,
+        "size_y": 0.5841641,
+        "size_z": 0.5841641,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 45.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.6,
+        "x": -33.0,
+        "y": 0.0,
+        "z": 28.0
+      }
+    },
+    {
+      "id": 55,
+      "name": "Hay Bale 8",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/HayBale.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.525,
+        "albedo_g": 0.759,
+        "albedo_r": 0.854,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.241,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.834,
+        "shape_size_y": 0.584,
+        "shape_size_z": 0.584
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.2414137,
+        "center_z": 0.0,
+        "friction": 0.7,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 8.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.8341641,
+        "size_y": 0.5841641,
+        "size_z": 0.5841641,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 45.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.6,
+        "x": -33.0,
+        "y": 0.93,
+        "z": 28.0
+      }
+    },
+    {
+      "id": 56,
+      "name": "Grandstand",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.372,
+        "albedo_g": 0.423,
+        "albedo_r": 0.486,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": -0.5,
+        "shape_center_y": 0.35,
+        "shape_center_z": 0.0,
+        "shape_size_x": 2.0,
+        "shape_size_y": 1.1,
+        "shape_size_z": 1.0
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": -0.5,
+        "center_y": 0.35,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 2.0,
+        "size_y": 1.1,
+        "size_z": 1.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 3.0,
+        "scale_y": 3.0,
+        "scale_z": 20.0,
+        "size": 1.0,
+        "x": -38.5,
+        "y": 0.6,
+        "z": 10.0
+      }
+    },
+    {
+      "id": 57,
+      "name": "Grandstand Roof",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.535,
+        "albedo_g": 0.666,
+        "albedo_r": 0.737,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.075,
+        "shape_center_y": 0.606,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.15,
+        "shape_size_y": 1.212,
+        "shape_size_z": 1.3
+      },
+      "transform": {
+        "rotation": 180.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 5.0,
+        "scale_y": 1.0,
+        "scale_z": 16.0,
+        "size": 1.0,
+        "x": -40.625,
+        "y": 3.6,
+        "z": 10.0
+      }
+    },
+    {
+      "id": 58,
+      "name": "Grandstand Post 1",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.251,
+        "albedo_g": 0.314,
+        "albedo_r": 0.384,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": -0.5,
+        "shape_center_y": 0.164,
+        "shape_center_z": 0.5,
+        "shape_size_x": 0.231,
+        "shape_size_y": 0.996,
+        "shape_size_z": 0.231
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 2.0,
+        "scale_y": 3.7,
+        "scale_z": 2.0,
+        "size": 1.0,
+        "x": -42.0,
+        "y": 1.237,
+        "z": 2.0
+      }
+    },
+    {
+      "id": 59,
+      "name": "Grandstand Post 2",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.251,
+        "albedo_g": 0.314,
+        "albedo_r": 0.384,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": -0.5,
+        "shape_center_y": 0.164,
+        "shape_center_z": 0.5,
+        "shape_size_x": 0.231,
+        "shape_size_y": 0.996,
+        "shape_size_z": 0.231
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 2.0,
+        "scale_y": 3.7,
+        "scale_z": 2.0,
+        "size": 1.0,
+        "x": -42.0,
+        "y": 1.237,
+        "z": 16.0
+      }
+    },
+    {
+      "id": 60,
+      "name": "Spectator 1",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.477,
+        "albedo_g": 0.508,
+        "albedo_r": 0.588,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 1.272,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.017,
+        "shape_size_y": 2.543,
+        "shape_size_z": 0.89
+      },
+      "transform": {
+        "rotation": -90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 0.7,
+        "x": -42.2,
+        "y": 2.7,
+        "z": 4.0
+      }
+    },
+    {
+      "id": 61,
+      "name": "Spectator 2",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.396,
+        "albedo_g": 0.436,
+        "albedo_r": 0.568,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 1.325,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.062,
+        "shape_size_y": 2.655,
+        "shape_size_z": 0.929
+      },
+      "transform": {
+        "rotation": -90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 0.7,
+        "x": -42.2,
+        "y": 2.7,
+        "z": 7.5
+      }
+    },
+    {
+      "id": 62,
+      "name": "Spectator 3",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.489,
+        "albedo_g": 0.521,
+        "albedo_r": 0.572,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 1.199,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.959,
+        "shape_size_y": 2.398,
+        "shape_size_z": 0.839
+      },
+      "transform": {
+        "rotation": -90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 0.7,
+        "x": -42.2,
+        "y": 2.7,
+        "z": 11.0
+      }
+    },
+    {
+      "id": 63,
+      "name": "Spectator 4",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.394,
+        "albedo_g": 0.464,
+        "albedo_r": 0.53,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 1.084,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.869,
+        "shape_size_y": 2.173,
+        "shape_size_z": 0.761
+      },
+      "transform": {
+        "rotation": -90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 0.7,
+        "x": -42.2,
+        "y": 2.7,
+        "z": 14.5
+      }
+    },
+    {
+      "id": 64,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "set_variable",
+                "id": 2,
+                "numbers": [
+                  0.0
+                ],
+                "text": "lap"
+              },
+              {
+                "block": "set_variable",
+                "id": 3,
+                "numbers": [
+                  1.0
+                ],
+                "text": "next"
+              },
+              {
+                "block": "set_variable",
+                "id": 4,
+                "numbers": [
+                  0.0
+                ],
+                "text": "coins"
+              },
+              {
+                "block": "reset_timer",
+                "id": 5
+              },
+              {
+                "block": "say",
+                "id": 6,
+                "text": "Drive through the gates in order, 3 laps! W drives, A / D steer, Shift boosts. Grab the coins!"
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          },
+          {
+            "blocks": [
+              {
+                "block": "when_i_receive",
+                "id": 7,
+                "text": "checkpoint 1"
+              },
+              {
+                "block": "if",
+                "body": [
+                  {
+                    "block": "set_variable",
+                    "id": 11,
+                    "numbers": [
+                      2.0
+                    ],
+                    "text": "next"
+                  },
+                  {
+                    "block": "say",
+                    "id": 12,
+                    "text": "Checkpoint 1 of 3!"
+                  }
+                ],
+                "id": 8,
+                "slots": [
+                  {
+                    "block": "equal",
+                    "id": 9,
+                    "inputs": [
+                      {
+                        "block": "variable",
+                        "id": 10,
+                        "text": "next"
+                      },
+                      {}
+                    ],
+                    "numbers": [
+                      0.0,
+                      1.0
+                    ]
+                  }
+                ]
+              }
+            ],
+            "x": 500.0,
+            "y": 30.0
+          },
+          {
+            "blocks": [
+              {
+                "block": "when_i_receive",
+                "id": 13,
+                "text": "checkpoint 2"
+              },
+              {
+                "block": "if",
+                "body": [
+                  {
+                    "block": "set_variable",
+                    "id": 17,
+                    "numbers": [
+                      3.0
+                    ],
+                    "text": "next"
+                  },
+                  {
+                    "block": "say",
+                    "id": 18,
+                    "text": "Checkpoint 2 of 3!"
+                  }
+                ],
+                "id": 14,
+                "slots": [
+                  {
+                    "block": "equal",
+                    "id": 15,
+                    "inputs": [
+                      {
+                        "block": "variable",
+                        "id": 16,
+                        "text": "next"
+                      },
+                      {}
+                    ],
+                    "numbers": [
+                      0.0,
+                      2.0
+                    ]
+                  }
+                ]
+              }
+            ],
+            "x": 40.0,
+            "y": 330.0
+          },
+          {
+            "blocks": [
+              {
+                "block": "when_i_receive",
+                "id": 19,
+                "text": "checkpoint 3"
+              },
+              {
+                "block": "if",
+                "body": [
+                  {
+                    "block": "set_variable",
+                    "id": 23,
+                    "numbers": [
+                      4.0
+                    ],
+                    "text": "next"
+                  },
+                  {
+                    "block": "say",
+                    "id": 24,
+                    "text": "Checkpoint 3 of 3!"
+                  }
+                ],
+                "id": 20,
+                "slots": [
+                  {
+                    "block": "equal",
+                    "id": 21,
+                    "inputs": [
+                      {
+                        "block": "variable",
+                        "id": 22,
+                        "text": "next"
+                      },
+                      {}
+                    ],
+                    "numbers": [
+                      0.0,
+                      3.0
+                    ]
+                  }
+                ]
+              }
+            ],
+            "x": 500.0,
+            "y": 330.0
+          },
+          {
+            "blocks": [
+              {
+                "block": "when_i_receive",
+                "id": 25,
+                "text": "finish line"
+              },
+              {
+                "block": "if",
+                "body": [
+                  {
+                    "block": "change_variable",
+                    "id": 29,
+                    "numbers": [
+                      1.0
+                    ],
+                    "text": "lap"
+                  },
+                  {
+                    "block": "set_variable",
+                    "id": 30,
+                    "numbers": [
+                      1.0
+                    ],
+                    "text": "next"
+                  },
+                  {
+                    "block": "if_else",
+                    "body": [
+                      {
+                        "block": "say",
+                        "id": 34,
+                        "text": "Race finished: 3 laps done!"
+                      },
+                      {
+                        "block": "broadcast",
+                        "id": 35,
+                        "text": "race over"
+                      }
+                    ],
+                    "else": [
+                      {
+                        "block": "say",
+                        "id": 36,
+                        "text": "Lap done! Keep going!"
+                      }
+                    ],
+                    "id": 31,
+                    "slots": [
+                      {
+                        "block": "equal",
+                        "id": 32,
+                        "inputs": [
+                          {
+                            "block": "variable",
+                            "id": 33,
+                            "text": "lap"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          3.0
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "id": 26,
+                "slots": [
+                  {
+                    "block": "equal",
+                    "id": 27,
+                    "inputs": [
+                      {
+                        "block": "variable",
+                        "id": 28,
+                        "text": "next"
+                      },
+                      {}
+                    ],
+                    "numbers": [
+                      0.0,
+                      4.0
+                    ]
+                  }
+                ]
+              }
+            ],
+            "x": 40.0,
+            "y": 630.0
+          },
+          {
+            "blocks": [
+              {
+                "block": "when_i_receive",
+                "id": 37,
+                "text": "coin"
+              },
+              {
+                "block": "change_variable",
+                "id": 38,
+                "numbers": [
+                  1.0
+                ],
+                "text": "coins"
+              }
+            ],
+            "x": 500.0,
+            "y": 630.0
+          }
+        ],
+        "variables": [
+          {
+            "name": "lap",
+            "value": 0.0
+          },
+          {
+            "name": "next",
+            "value": 1.0
+          },
+          {
+            "name": "coins",
+            "value": 0.0
+          }
+        ]
+      },
+      "name": "Race Control",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.82,
+        "albedo_g": 0.894,
+        "albedo_r": 0.937,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.5,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.0,
+        "shape_size_y": 1.0,
+        "shape_size_z": 1.0
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.5,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 1.0,
+        "size_y": 1.0,
+        "size_z": 1.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 4.0,
+        "scale_y": 6.0,
+        "scale_z": 4.0,
+        "size": 1.0,
+        "x": -40.0,
+        "y": 0.0,
+        "z": -8.0
+      }
+    },
+    {
+      "id": 65,
+      "name": "Race Control Roof Front",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.327,
+        "albedo_g": 0.396,
+        "albedo_r": 0.61,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.035,
+        "shape_center_y": 0.6,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.071,
+        "shape_size_y": 1.2,
+        "shape_size_z": 1.0
+      },
+      "transform": {
+        "rotation": -90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.9891589,
+        "scale_y": 1.3,
+        "scale_z": 4.6,
+        "size": 1.0,
+        "x": -40.0,
+        "y": 6.0,
+        "z": -7.0054207
+      }
+    },
+    {
+      "id": 66,
+      "name": "Race Control Roof Back",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.327,
+        "albedo_g": 0.396,
+        "albedo_r": 0.61,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.035,
+        "shape_center_y": 0.6,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.071,
+        "shape_size_y": 1.2,
+        "shape_size_z": 1.0
+      },
+      "transform": {
+        "rotation": 90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.9891589,
+        "scale_y": 1.3,
+        "scale_z": 4.6,
+        "size": 1.0,
+        "x": -40.0,
+        "y": 6.0,
+        "z": -8.994579
+      }
+    },
+    {
+      "id": 67,
+      "name": "Race Control Chimney",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.389,
+        "albedo_g": 0.444,
+        "albedo_r": 0.512,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.875,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.5,
+        "shape_size_y": 1.75,
+        "shape_size_z": 0.5
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.3,
+        "x": -38.8,
+        "y": 6.2,
+        "z": -8.6
+      }
+    },
+    {
+      "id": 68,
+      "name": "Race Control Door",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.323,
+        "albedo_g": 0.36,
+        "albedo_r": 0.394,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.389,
+        "shape_center_y": 0.675,
+        "shape_center_z": 0.019,
+        "shape_size_x": 0.178,
+        "shape_size_y": 1.35,
+        "shape_size_z": 0.738
+      },
+      "transform": {
+        "rotation": -90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.4,
+        "x": -39.974,
+        "y": 0.0,
+        "z": -6.445
+      }
+    },
+    {
+      "id": 69,
+      "name": "Race Control Lamp",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.355,
+        "albedo_g": 0.39,
+        "albedo_r": 0.406,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": -0.091,
+        "shape_center_y": 0.77,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.822,
+        "shape_size_y": 0.7,
+        "shape_size_z": 0.233
+      },
+      "transform": {
+        "rotation": -90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.1,
+        "x": -38.9,
+        "y": 0.838,
+        "z": -5.78
+      }
+    },
+    {
+      "id": 70,
+      "name": "Race Control Sign",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.381,
+        "albedo_g": 0.45,
+        "albedo_r": 0.499,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.272,
+        "shape_center_y": 0.706,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.552,
+        "shape_size_y": 0.958,
+        "shape_size_z": 0.2
+      },
+      "transform": {
+        "rotation": -90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.1,
+        "x": -41.2,
+        "y": 1.651,
+        "z": -5.449
+      }
+    },
+    {
+      "id": 71,
+      "name": "Floodlight 1",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.351,
+        "albedo_g": 0.389,
+        "albedo_r": 0.408,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": -0.179,
+        "shape_center_y": 0.625,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.997,
+        "shape_size_y": 1.25,
+        "shape_size_z": 0.233
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": -0.17901029,
+        "center_y": 0.625,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.9969423,
+        "size_y": 1.25,
+        "size_z": 0.23333333,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": -130.7321,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 5.0,
+        "x": -36.584,
+        "y": 0.0,
+        "z": -30.322
+      }
+    },
+    {
+      "id": 72,
+      "light": {
+        "color_b": 0.75,
+        "color_g": 0.9,
+        "color_r": 1.0,
+        "enabled": true,
+        "intensity": 1.5,
+        "range": 22.0,
+        "spot_inner": 25.0,
+        "spot_outer": 35.0,
+        "type": "point"
+      },
+      "name": "Floodlight 1 Light",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -34.2,
+        "y": 6.5,
+        "z": -29.45
+      }
+    },
+    {
+      "id": 73,
+      "name": "Floodlight 2",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.351,
+        "albedo_g": 0.389,
+        "albedo_r": 0.408,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": -0.179,
+        "shape_center_y": 0.625,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.997,
+        "shape_size_y": 1.25,
+        "shape_size_z": 0.233
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": -0.17901029,
+        "center_y": 0.625,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.9969423,
+        "size_y": 1.25,
+        "size_z": 0.23333333,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 130.7321,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 5.0,
+        "x": 35.416,
+        "y": 0.0,
+        "z": -31.678
+      }
+    },
+    {
+      "id": 74,
+      "light": {
+        "color_b": 0.75,
+        "color_g": 0.9,
+        "color_r": 1.0,
+        "enabled": true,
+        "intensity": 1.5,
+        "range": 22.0,
+        "spot_inner": 25.0,
+        "spot_outer": 35.0,
+        "type": "point"
+      },
+      "name": "Floodlight 2 Light",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 34.2,
+        "y": 6.5,
+        "z": -29.45
+      }
+    },
+    {
+      "id": 75,
+      "name": "Floodlight 3",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.351,
+        "albedo_g": 0.389,
+        "albedo_r": 0.408,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": -0.179,
+        "shape_center_y": 0.625,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.997,
+        "shape_size_y": 1.25,
+        "shape_size_z": 0.233
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": -0.17901029,
+        "center_y": 0.625,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.9969423,
+        "size_y": 1.25,
+        "size_z": 0.23333333,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 49.267895,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 5.0,
+        "x": 36.584,
+        "y": 0.0,
+        "z": 30.322
+      }
+    },
+    {
+      "id": 76,
+      "light": {
+        "color_b": 0.75,
+        "color_g": 0.9,
+        "color_r": 1.0,
+        "enabled": true,
+        "intensity": 1.5,
+        "range": 22.0,
+        "spot_inner": 25.0,
+        "spot_outer": 35.0,
+        "type": "point"
+      },
+      "name": "Floodlight 3 Light",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 34.2,
+        "y": 6.5,
+        "z": 29.45
+      }
+    },
+    {
+      "id": 77,
+      "name": "Floodlight 4",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.351,
+        "albedo_g": 0.389,
+        "albedo_r": 0.408,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": -0.179,
+        "shape_center_y": 0.625,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.997,
+        "shape_size_y": 1.25,
+        "shape_size_z": 0.233
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": -0.17901029,
+        "center_y": 0.625,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 0.9969423,
+        "size_y": 1.25,
+        "size_z": 0.23333333,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": -49.267895,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 5.0,
+        "x": -35.416,
+        "y": 0.0,
+        "z": 31.678
+      }
+    },
+    {
+      "id": 78,
+      "light": {
+        "color_b": 0.75,
+        "color_g": 0.9,
+        "color_r": 1.0,
+        "enabled": true,
+        "intensity": 1.5,
+        "range": 22.0,
+        "spot_inner": 25.0,
+        "spot_outer": 35.0,
+        "type": "point"
+      },
+      "name": "Floodlight 4 Light",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -34.2,
+        "y": 6.5,
+        "z": 29.45
+      }
+    },
+    {
+      "id": 79,
+      "name": "Tree 1",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.178,
+        "albedo_g": 0.378,
+        "albedo_r": 0.154,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.575,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.794,
+        "shape_size_y": 1.15,
+        "shape_size_z": 0.8
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.0,
+        "x": -10.0,
+        "y": 0.0,
+        "z": -8.0
+      }
+    },
+    {
+      "id": 80,
+      "name": "Tree 2",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.121,
+        "albedo_g": 0.259,
+        "albedo_r": 0.18,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.6,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.397,
+        "shape_size_y": 1.2,
+        "shape_size_z": 0.4
+      },
+      "transform": {
+        "rotation": 37.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.4,
+        "x": 8.0,
+        "y": 0.0,
+        "z": 6.0
+      }
+    },
+    {
+      "id": 81,
+      "name": "Tree 3",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.158,
+        "albedo_g": 0.517,
+        "albedo_r": 0.359,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.55,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.496,
+        "shape_size_y": 1.1,
+        "shape_size_z": 0.5
+      },
+      "transform": {
+        "rotation": 74.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.8,
+        "x": -14.0,
+        "y": 0.0,
+        "z": 10.0
+      }
+    },
+    {
+      "id": 82,
+      "name": "Tree 4",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.178,
+        "albedo_g": 0.378,
+        "albedo_r": 0.154,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.85,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.893,
+        "shape_size_y": 1.7,
+        "shape_size_z": 0.9
+      },
+      "transform": {
+        "rotation": 111.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.0,
+        "x": 15.0,
+        "y": 0.0,
+        "z": -10.0
+      }
+    },
+    {
+      "id": 83,
+      "name": "Tree 5",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.116,
+        "albedo_g": 0.256,
+        "albedo_r": 0.187,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.75,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.397,
+        "shape_size_y": 1.5,
+        "shape_size_z": 0.4
+      },
+      "transform": {
+        "rotation": 148.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.4,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 84,
+      "name": "Tree 6",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.158,
+        "albedo_g": 0.517,
+        "albedo_r": 0.359,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.625,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.695,
+        "shape_size_y": 1.25,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 185.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.8,
+        "x": 20.0,
+        "y": 0.0,
+        "z": 14.0
+      }
+    },
+    {
+      "id": 85,
+      "name": "Tree 7",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.178,
+        "albedo_g": 0.378,
+        "albedo_r": 0.154,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.575,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.794,
+        "shape_size_y": 1.15,
+        "shape_size_z": 0.8
+      },
+      "transform": {
+        "rotation": 222.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.0,
+        "x": -5.0,
+        "y": 0.0,
+        "z": 12.0
+      }
+    },
+    {
+      "id": 86,
+      "name": "Tree 8",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.121,
+        "albedo_g": 0.259,
+        "albedo_r": 0.18,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.6,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.397,
+        "shape_size_y": 1.2,
+        "shape_size_z": 0.4
+      },
+      "transform": {
+        "rotation": 259.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.4,
+        "x": 12.0,
+        "y": 0.0,
+        "z": -3.0
+      }
+    },
+    {
+      "id": 87,
+      "name": "Tree 9",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.158,
+        "albedo_g": 0.517,
+        "albedo_r": 0.359,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.55,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.496,
+        "shape_size_y": 1.1,
+        "shape_size_z": 0.5
+      },
+      "transform": {
+        "rotation": 296.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.8,
+        "x": -18.0,
+        "y": 0.0,
+        "z": -12.0
+      }
+    },
+    {
+      "id": 88,
+      "name": "Tree 10",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.178,
+        "albedo_g": 0.378,
+        "albedo_r": 0.154,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.85,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.893,
+        "shape_size_y": 1.7,
+        "shape_size_z": 0.9
+      },
+      "transform": {
+        "rotation": 333.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.0,
+        "x": 4.0,
+        "y": 0.0,
+        "z": -12.0
+      }
+    },
+    {
+      "id": 89,
+      "name": "Tree 11",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.116,
+        "albedo_g": 0.256,
+        "albedo_r": 0.187,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.75,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.397,
+        "shape_size_y": 1.5,
+        "shape_size_z": 0.4
+      },
+      "transform": {
+        "rotation": 10.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.4,
+        "x": -48.0,
+        "y": 0.0,
+        "z": -30.0
+      }
+    },
+    {
+      "id": 90,
+      "name": "Tree 12",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.158,
+        "albedo_g": 0.517,
+        "albedo_r": 0.359,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.625,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.695,
+        "shape_size_y": 1.25,
+        "shape_size_z": 0.7
+      },
+      "transform": {
+        "rotation": 47.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.8,
+        "x": 46.0,
+        "y": 0.0,
+        "z": 30.0
+      }
+    },
+    {
+      "id": 91,
+      "name": "Tree 13",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.178,
+        "albedo_g": 0.378,
+        "albedo_r": 0.154,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.575,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.794,
+        "shape_size_y": 1.15,
+        "shape_size_z": 0.8
+      },
+      "transform": {
+        "rotation": 84.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.0,
+        "x": 47.0,
+        "y": 0.0,
+        "z": -10.0
+      }
+    },
+    {
+      "id": 92,
+      "name": "Tree 14",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.121,
+        "albedo_g": 0.259,
+        "albedo_r": 0.18,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.6,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.397,
+        "shape_size_y": 1.2,
+        "shape_size_z": 0.4
+      },
+      "transform": {
+        "rotation": 121.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.4,
+        "x": -48.0,
+        "y": 0.0,
+        "z": 24.0
+      }
+    },
+    {
+      "id": 93,
+      "name": "Tree 15",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.158,
+        "albedo_g": 0.517,
+        "albedo_r": 0.359,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.55,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.496,
+        "shape_size_y": 1.1,
+        "shape_size_z": 0.5
+      },
+      "transform": {
+        "rotation": 158.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.8,
+        "x": 48.0,
+        "y": 0.0,
+        "z": 8.0
+      }
+    },
+    {
+      "id": 94,
+      "name": "Tree 16",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.178,
+        "albedo_g": 0.378,
+        "albedo_r": 0.154,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.85,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.893,
+        "shape_size_y": 1.7,
+        "shape_size_z": 0.9
+      },
+      "transform": {
+        "rotation": 195.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.0,
+        "x": -8.0,
+        "y": 0.0,
+        "z": 42.0
+      }
+    },
+    {
+      "id": 95,
+      "name": "Tree 17",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.116,
+        "albedo_g": 0.256,
+        "albedo_r": 0.187,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.75,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.397,
+        "shape_size_y": 1.5,
+        "shape_size_z": 0.4
+      },
+      "transform": {
+        "rotation": 232.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.4,
+        "x": 10.0,
+        "y": 0.0,
+        "z": -44.0
+      }
+    },
+    {
+      "id": 96,
+      "name": "Lighthouse",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.418,
+        "albedo_g": 0.419,
+        "albedo_r": 0.802,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 3.116,
+        "shape_center_z": -0.011,
+        "shape_size_x": 2.375,
+        "shape_size_y": 6.232,
+        "shape_size_z": 2.379
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 3.1161199,
+        "center_z": -0.010581175,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 2.375,
+        "size_y": 6.2322397,
+        "size_z": 2.3788376,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.6,
+        "x": 42.0,
+        "y": 0.0,
+        "z": -39.983
+      }
+    },
+    {
+      "id": 97,
+      "name": "Corner Sign 1",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.192,
+        "albedo_g": 0.76,
+        "albedo_r": 0.805,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.01,
+        "shape_center_y": 0.671,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.046,
+        "shape_size_y": 1.342,
+        "shape_size_z": 0.516
+      },
+      "transform": {
+        "rotation": 180.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": -1.0,
+        "size": 2.2,
+        "x": 18.022,
+        "y": 0.0,
+        "z": -32.2
+      }
+    },
+    {
+      "id": 98,
+      "name": "Corner Sign 2",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.192,
+        "albedo_g": 0.76,
+        "albedo_r": 0.805,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.01,
+        "shape_center_y": 0.671,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.046,
+        "shape_size_y": 1.342,
+        "shape_size_z": 0.516
+      },
+      "transform": {
+        "rotation": 90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": -1.0,
+        "size": 2.2,
+        "x": 37.2,
+        "y": 0.0,
+        "z": 14.022
+      }
+    },
+    {
+      "id": 99,
+      "name": "Corner Sign 3",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.192,
+        "albedo_g": 0.76,
+        "albedo_r": 0.805,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.01,
+        "shape_center_y": 0.671,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.046,
+        "shape_size_y": 1.342,
+        "shape_size_z": 0.516
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": -1.0,
+        "size": 2.2,
+        "x": -18.022,
+        "y": 0.0,
+        "z": 32.2
+      }
+    },
+    {
+      "id": 100,
+      "name": "Corner Sign 4",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.192,
+        "albedo_g": 0.76,
+        "albedo_r": 0.805,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.01,
+        "shape_center_y": 0.671,
+        "shape_center_z": 0.0,
+        "shape_size_x": 0.046,
+        "shape_size_y": 1.342,
+        "shape_size_z": 0.516
+      },
+      "transform": {
+        "rotation": -90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": -1.0,
+        "size": 2.2,
+        "x": -37.2,
+        "y": 0.0,
+        "z": -14.022
+      }
+    },
+    {
+      "id": 101,
+      "name": "Parked Car 1",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.635,
+        "albedo_g": 0.603,
+        "albedo_r": 0.614,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.676,
+        "shape_center_z": 0.023,
+        "shape_size_x": 1.793,
+        "shape_size_y": 1.352,
+        "shape_size_z": 4.441
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.7,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 1.8,
+        "size_y": 1.4,
+        "size_z": 4.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -47.0,
+        "y": 0.0,
+        "z": -18.0
+      }
+    },
+    {
+      "id": 102,
+      "name": "Parked Car 2",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.703,
+        "albedo_g": 0.694,
+        "albedo_r": 0.703,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.679,
+        "shape_center_z": 0.023,
+        "shape_size_x": 1.793,
+        "shape_size_y": 1.358,
+        "shape_size_z": 4.441
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.7,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 1.8,
+        "size_y": 1.4,
+        "size_z": 4.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -47.0,
+        "y": 0.0,
+        "z": -12.0
+      }
+    },
+    {
+      "id": 103,
+      "name": "Parked Car 3",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.677,
+        "albedo_g": 0.666,
+        "albedo_r": 0.678,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.906,
+        "shape_center_z": 0.0,
+        "shape_size_x": 2.142,
+        "shape_size_y": 1.812,
+        "shape_size_z": 4.718
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.7,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 1.8,
+        "size_y": 1.4,
+        "size_z": 4.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -47.0,
+        "y": 0.0,
+        "z": -24.0
+      }
+    },
+    {
+      "id": 104,
+      "name": "Parked Car 4",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.71,
+        "albedo_g": 0.702,
+        "albedo_r": 0.715,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.872,
+        "shape_center_z": 0.0,
+        "shape_size_x": 2.191,
+        "shape_size_y": 1.743,
+        "shape_size_z": 4.591
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.7,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 1.8,
+        "size_y": 1.4,
+        "size_z": 4.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 180.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -47.0,
+        "y": 0.0,
+        "z": 34.0
+      }
+    },
+    {
+      "id": 105,
+      "name": "Parked Car 5",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.704,
+        "albedo_g": 0.685,
+        "albedo_r": 0.71,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.672,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.696,
+        "shape_size_y": 1.345,
+        "shape_size_z": 3.668
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.7,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 1.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 1.8,
+        "size_y": 1.4,
+        "size_z": 4.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "static"
+      },
+      "transform": {
+        "rotation": 90.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -41.0,
+        "y": 0.0,
+        "z": 36.0
+      }
+    },
+    {
+      "id": 106,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "wait",
+                "id": 2,
+                "numbers": [
+                  3.2
+                ]
+              },
+              {
+                "block": "point_in_direction",
+                "id": 3,
+                "numbers": [
+                  0.0
+                ]
+              },
+              {
+                "block": "glide_to",
+                "id": 4,
+                "numbers": [
+                  3.4,
+                  -31.5,
+                  0.6,
+                  -27.0
+                ]
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "point_in_direction",
+                    "id": 6,
+                    "numbers": [
+                      -90.0
+                    ]
+                  },
+                  {
+                    "block": "glide_to",
+                    "id": 7,
+                    "numbers": [
+                      4.4,
+                      31.5,
+                      0.6,
+                      -27.0
+                    ]
+                  },
+                  {
+                    "block": "point_in_direction",
+                    "id": 8,
+                    "numbers": [
+                      180.0
+                    ]
+                  },
+                  {
+                    "block": "glide_to",
+                    "id": 9,
+                    "numbers": [
+                      3.9,
+                      31.5,
+                      0.6,
+                      27.0
+                    ]
+                  },
+                  {
+                    "block": "point_in_direction",
+                    "id": 10,
+                    "numbers": [
+                      90.0
+                    ]
+                  },
+                  {
+                    "block": "glide_to",
+                    "id": 11,
+                    "numbers": [
+                      4.4,
+                      -31.5,
+                      0.6,
+                      27.0
+                    ]
+                  },
+                  {
+                    "block": "point_in_direction",
+                    "id": 12,
+                    "numbers": [
+                      0.0
+                    ]
+                  },
+                  {
+                    "block": "glide_to",
+                    "id": 13,
+                    "numbers": [
+                      3.9,
+                      -31.5,
+                      0.6,
+                      -27.0
+                    ]
+                  }
+                ],
+                "id": 5
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          }
+        ]
+      },
+      "name": "Rival",
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.0,
+        "center_z": 0.0,
+        "friction": 0.5,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 900.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 1.8,
+        "size_y": 0.7,
+        "size_z": 4.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "kinematic"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -32.5,
+        "y": 0.6,
+        "z": 18.0
+      }
+    },
+    {
+      "id": 107,
+      "name": "Rival Model",
+      "parent": 106,
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.748,
+        "albedo_g": 0.732,
+        "albedo_r": 0.74,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.437,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.758,
+        "shape_size_y": 0.874,
+        "shape_size_z": 4.529
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": -0.35,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 108,
+      "name": "Lap Bar",
+      "screen": {
+        "anchor": "top",
+        "bar_maximum": 3.0,
+        "bar_object": "Race Control",
+        "bar_variable": "lap",
+        "color_b": 0.15,
+        "color_g": 0.82,
+        "color_r": 1.0,
+        "height": 3.5,
+        "kind": "bar",
+        "layer": 0,
+        "picture": "",
+        "text": "lap",
+        "visible": true,
+        "width": 0.0,
+        "x": 0.0,
+        "y": 5.0
+      }
+    },
+    {
+      "id": 109,
+      "name": "Coins Bar",
+      "screen": {
+        "anchor": "top",
+        "bar_maximum": 9.0,
+        "bar_object": "Race Control",
+        "bar_variable": "coins",
+        "color_b": 0.2,
+        "color_g": 0.82,
+        "color_r": 1.0,
+        "height": 3.5,
+        "kind": "bar",
+        "layer": 0,
+        "picture": "",
+        "text": "coins",
+        "visible": true,
+        "width": 0.0,
+        "x": 0.0,
+        "y": 10.0
+      }
+    },
+    {
+      "id": 110,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "wait",
+                "id": 2,
+                "numbers": [
+                  0.8
+                ]
+              },
+              {
+                "block": "show_text_on_screen",
+                "id": 3,
+                "text": "2"
+              },
+              {
+                "block": "wait",
+                "id": 4,
+                "numbers": [
+                  0.8
+                ]
+              },
+              {
+                "block": "show_text_on_screen",
+                "id": 5,
+                "text": "1"
+              },
+              {
+                "block": "wait",
+                "id": 6,
+                "numbers": [
+                  0.8
+                ]
+              },
+              {
+                "block": "set_color",
+                "id": 7,
+                "numbers": [
+                  0.4,
+                  1.0,
+                  0.4
+                ]
+              },
+              {
+                "block": "show_text_on_screen",
+                "id": 8,
+                "text": "GO!"
+              },
+              {
+                "block": "wait",
+                "id": 9,
+                "numbers": [
+                  1.0
+                ]
+              },
+              {
+                "block": "hide",
+                "id": 10
+              }
+            ],
+            "x": 20.0,
+            "y": 20.0
+          },
+          {
+            "blocks": [
+              {
+                "block": "when_i_receive",
+                "id": 11,
+                "text": "race over"
+              },
+              {
+                "block": "show_text_on_screen",
+                "id": 12,
+                "text": "FINISHED!"
+              },
+              {
+                "block": "set_color",
+                "id": 13,
+                "numbers": [
+                  1.0,
+                  0.82,
+                  0.15
+                ]
+              }
+            ],
+            "x": 20.0,
+            "y": 280.0
+          }
+        ]
+      },
+      "name": "Countdown",
+      "screen": {
+        "anchor": "centre",
+        "bar_maximum": 100.0,
+        "bar_object": "",
+        "bar_variable": "",
+        "color_b": 1.0,
+        "color_g": 1.0,
+        "color_r": 1.0,
+        "height": 12.0,
+        "kind": "text",
+        "layer": 0,
+        "picture": "",
+        "text": "3",
+        "visible": true,
+        "width": 0.0,
+        "x": 0.0,
+        "y": -10.0
+      }
+    },
+    {
+      "id": 111,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "if_else",
+                    "body": [
+                      {
+                        "block": "set_variable",
+                        "id": 5,
+                        "numbers": [
+                          0.6
+                        ],
+                        "text": "speed"
+                      }
+                    ],
+                    "else": [
+                      {
+                        "block": "set_variable",
+                        "id": 6,
+                        "numbers": [
+                          0.35
+                        ],
+                        "text": "speed"
+                      }
+                    ],
+                    "id": 3,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 4,
+                        "text": "LeftShift"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "set_variable",
+                        "id": 10,
+                        "numbers": [
+                          0.9
+                        ],
+                        "text": "speed"
+                      }
+                    ],
+                    "id": 7,
+                    "slots": [
+                      {
+                        "block": "equal",
+                        "id": 8,
+                        "inputs": [
+                          {
+                            "block": "variable",
+                            "id": 9,
+                            "text": "boost"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          1.0
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_forward",
+                        "id": 13,
+                        "inputs": [
+                          {
+                            "block": "variable",
+                            "id": 14,
+                            "text": "speed"
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 11,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 12,
+                        "text": "W"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_forward",
+                        "id": 17,
+                        "inputs": [
+                          {
+                            "block": "subtract",
+                            "id": 18,
+                            "inputs": [
+                              {},
+                              {
+                                "block": "variable",
+                                "id": 19,
+                                "text": "speed"
+                              }
+                            ],
+                            "numbers": [
+                              0.0,
+                              0.0
+                            ]
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 15,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 16,
+                        "text": "S"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "turn_by",
+                        "id": 26,
+                        "numbers": [
+                          -2.5
+                        ]
+                      }
+                    ],
+                    "id": 20,
+                    "slots": [
+                      {
+                        "block": "and",
+                        "id": 21,
+                        "slots": [
+                          {
+                            "block": "key_down",
+                            "id": 22,
+                            "text": "D"
+                          },
+                          {
+                            "block": "or",
+                            "id": 23,
+                            "slots": [
+                              {
+                                "block": "key_down",
+                                "id": 24,
+                                "text": "W"
+                              },
+                              {
+                                "block": "key_down",
+                                "id": 25,
+                                "text": "S"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "turn_by",
+                        "id": 33,
+                        "numbers": [
+                          2.5
+                        ]
+                      }
+                    ],
+                    "id": 27,
+                    "slots": [
+                      {
+                        "block": "and",
+                        "id": 28,
+                        "slots": [
+                          {
+                            "block": "key_down",
+                            "id": 29,
+                            "text": "A"
+                          },
+                          {
+                            "block": "or",
+                            "id": 30,
+                            "slots": [
+                              {
+                                "block": "key_down",
+                                "id": 31,
+                                "text": "W"
+                              },
+                              {
+                                "block": "key_down",
+                                "id": 32,
+                                "text": "S"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "id": 2
+              }
+            ],
+            "x": 40.0,
+            "y": 30.0
+          },
+          {
+            "blocks": [
+              {
+                "block": "when_i_receive",
+                "id": 34,
+                "text": "boost"
+              },
+              {
+                "block": "set_variable",
+                "id": 35,
+                "numbers": [
+                  1.0
+                ],
+                "text": "boost"
+              },
+              {
+                "block": "say",
+                "id": 36,
+                "text": "Boost!"
+              },
+              {
+                "block": "wait",
+                "id": 37,
+                "numbers": [
+                  1.5
+                ]
+              },
+              {
+                "block": "set_variable",
+                "id": 38,
+                "numbers": [
+                  0.0
+                ],
+                "text": "boost"
+              }
+            ],
+            "x": 500.0,
+            "y": 30.0
+          },
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 39
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "go_to",
+                        "id": 44,
+                        "numbers": [
+                          -30.0,
+                          0.6,
+                          18.0
+                        ]
+                      },
+                      {
+                        "block": "say",
+                        "id": 45,
+                        "text": "Back to the start!"
+                      }
+                    ],
+                    "id": 41,
+                    "slots": [
+                      {
+                        "block": "less",
+                        "id": 42,
+                        "inputs": [
+                          {
+                            "block": "y_position",
+                            "id": 43
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          -10.0
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "id": 40
+              }
+            ],
+            "x": 40.0,
+            "y": 330.0
+          }
+        ],
+        "variables": [
+          {
+            "name": "speed",
+            "value": 0.35
+          },
+          {
+            "name": "boost",
+            "value": 0.0
+          }
+        ]
+      },
+      "name": "Player",
+      "player": {
+        "camera_offset_y": 2.2,
+        "camera_offset_z": 7.0,
+        "camera_pitch": -12.0,
+        "fast_multiplier": 2.0,
+        "follow_camera": true,
+        "look_sensitivity": 0.2,
+        "speed": 0.0
+      },
+      "rigid_body": {
+        "bounciness": 0.0,
+        "center_x": 0.0,
+        "center_y": 0.0,
+        "center_z": 0.0,
+        "friction": 0.3,
+        "gravity_scale": 1.0,
+        "height": 2.0,
+        "mass": 900.0,
+        "radius": 0.5,
+        "shape": "box",
+        "size_x": 1.8,
+        "size_y": 0.7,
+        "size_z": 4.0,
+        "start_velocity_x": 0.0,
+        "start_velocity_y": 0.0,
+        "start_velocity_z": 0.0,
+        "type": "dynamic"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -30.0,
+        "y": 0.6,
+        "z": 18.0
+      }
+    },
+    {
+      "id": 112,
+      "name": "Car Model",
+      "parent": 111,
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.644,
+        "albedo_g": 0.618,
+        "albedo_r": 0.636,
+        "rotation_speed": 0.0,
+        "shape": "cube",
+        "shape_center_x": 0.0,
+        "shape_center_y": 0.502,
+        "shape_center_z": 0.0,
+        "shape_size_x": 1.611,
+        "shape_size_y": 1.004,
+        "shape_size_z": 4.131
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": -0.35,
+        "z": 0.0
+      }
+    },
+    {
+      "camera": {
+        "far_plane": 1000.0,
+        "field_of_view": 60.0,
+        "near_plane": 0.05,
+        "primary": true
+      },
+      "id": 113,
+      "name": "Main Camera",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": -15.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -30.0,
+        "y": 4.0,
+        "z": 27.0
+      }
+    }
+  ],
+  "version": 8
+}

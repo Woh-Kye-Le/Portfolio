@@ -1,0 +1,1060 @@
+{
+  "objects": [
+    {
+      "id": 1,
+      "name": "Floor",
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.6,
+        "albedo_g": 0.57,
+        "albedo_r": 0.55,
+        "rotation_speed": 0.0,
+        "shape": "plane"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 4.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 2,
+      "light": {
+        "color_b": 0.88,
+        "color_g": 0.96,
+        "color_r": 1.0,
+        "enabled": true,
+        "intensity": 0.9,
+        "range": 10.0,
+        "spot_inner": 25.0,
+        "spot_outer": 35.0,
+        "type": "directional"
+      },
+      "name": "Sun",
+      "transform": {
+        "rotation": -50.0,
+        "rotation_x": -55.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "camera": {
+        "far_plane": 1000.0,
+        "field_of_view": 60.0,
+        "near_plane": 0.05,
+        "primary": true
+      },
+      "id": 3,
+      "name": "Main Camera",
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": -30.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 5.0,
+        "z": 9.0
+      }
+    },
+    {
+      "id": 4,
+      "logic": {
+        "scripts": [
+          {
+            "blocks": [
+              {
+                "block": "when_play_starts",
+                "id": 1
+              },
+              {
+                "block": "forever",
+                "body": [
+                  {
+                    "block": "if_else",
+                    "body": [
+                      {
+                        "block": "set_variable",
+                        "id": 5,
+                        "numbers": [
+                          0.14
+                        ],
+                        "text": "speed"
+                      }
+                    ],
+                    "else": [
+                      {
+                        "block": "set_variable",
+                        "id": 6,
+                        "numbers": [
+                          0.07
+                        ],
+                        "text": "speed"
+                      }
+                    ],
+                    "id": 3,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 4,
+                        "text": "LeftShift"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_forward",
+                        "id": 9,
+                        "inputs": [
+                          {
+                            "block": "variable",
+                            "id": 10,
+                            "text": "speed"
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 7,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 8,
+                        "text": "W"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_forward",
+                        "id": 13,
+                        "inputs": [
+                          {
+                            "block": "subtract",
+                            "id": 14,
+                            "inputs": [
+                              {},
+                              {
+                                "block": "variable",
+                                "id": 15,
+                                "text": "speed"
+                              }
+                            ],
+                            "numbers": [
+                              0.0,
+                              0.0
+                            ]
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 11,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 12,
+                        "text": "S"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_right",
+                        "id": 18,
+                        "inputs": [
+                          {
+                            "block": "variable",
+                            "id": 19,
+                            "text": "speed"
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 16,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 17,
+                        "text": "D"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_right",
+                        "id": 22,
+                        "inputs": [
+                          {
+                            "block": "subtract",
+                            "id": 23,
+                            "inputs": [
+                              {},
+                              {
+                                "block": "variable",
+                                "id": 24,
+                                "text": "speed"
+                              }
+                            ],
+                            "numbers": [
+                              0.0,
+                              0.0
+                            ]
+                          }
+                        ],
+                        "numbers": [
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 20,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 21,
+                        "text": "A"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_by",
+                        "id": 27,
+                        "inputs": [
+                          {},
+                          {
+                            "block": "variable",
+                            "id": 28,
+                            "text": "speed"
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          0.0,
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 25,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 26,
+                        "text": "E"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "move_by",
+                        "id": 31,
+                        "inputs": [
+                          {},
+                          {
+                            "block": "subtract",
+                            "id": 32,
+                            "inputs": [
+                              {},
+                              {
+                                "block": "variable",
+                                "id": 33,
+                                "text": "speed"
+                              }
+                            ],
+                            "numbers": [
+                              0.0,
+                              0.0
+                            ]
+                          },
+                          {}
+                        ],
+                        "numbers": [
+                          0.0,
+                          0.0,
+                          0.0
+                        ]
+                      }
+                    ],
+                    "id": 29,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 30,
+                        "text": "Q"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "turn_by",
+                        "id": 36,
+                        "numbers": [
+                          -2.0
+                        ]
+                      }
+                    ],
+                    "id": 34,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 35,
+                        "text": "Right"
+                      }
+                    ]
+                  },
+                  {
+                    "block": "if",
+                    "body": [
+                      {
+                        "block": "turn_by",
+                        "id": 39,
+                        "numbers": [
+                          2.0
+                        ]
+                      }
+                    ],
+                    "id": 37,
+                    "slots": [
+                      {
+                        "block": "key_down",
+                        "id": 38,
+                        "text": "Left"
+                      }
+                    ]
+                  }
+                ],
+                "id": 2
+              }
+            ],
+            "x": 20.0,
+            "y": 20.0
+          }
+        ],
+        "variables": [
+          {
+            "name": "speed",
+            "value": 0.07
+          },
+          {
+            "name": "health",
+            "value": 100.0
+          }
+        ]
+      },
+      "name": "Player",
+      "player": {
+        "camera_offset_y": 1.0,
+        "camera_offset_z": 6.0,
+        "camera_pitch": -20.0,
+        "fast_multiplier": 2.0,
+        "follow_camera": true,
+        "look_sensitivity": 0.2,
+        "speed": 0.0
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 1.0,
+        "albedo_g": 0.55,
+        "albedo_r": 0.35,
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.5,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 5,
+      "name": "Head",
+      "parent": 4,
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "sphere"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 0.35,
+        "x": 0.0,
+        "y": 0.85,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 6,
+      "name": "Left Arm",
+      "parent": 4,
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 0.3,
+        "scale_y": 0.8,
+        "scale_z": 0.3,
+        "size": 1.0,
+        "x": -0.65,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 7,
+      "name": "Right Arm",
+      "parent": 4,
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 0.3,
+        "scale_y": 0.8,
+        "scale_z": 0.3,
+        "size": 1.0,
+        "x": 0.65,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 8,
+      "logic": {
+        "scripts": [],
+        "variables": [
+          {
+            "name": "health",
+            "value": 100.0
+          }
+        ]
+      },
+      "name": "Enemy 1",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.25,
+        "albedo_g": 0.25,
+        "albedo_r": 0.9,
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 180.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -6.0,
+        "y": 0.5,
+        "z": -6.0
+      }
+    },
+    {
+      "id": 9,
+      "name": "Head",
+      "parent": 8,
+      "prefab": {
+        "object": 2,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "sphere"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 0.35,
+        "x": 0.0,
+        "y": 0.85,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 10,
+      "name": "Left Arm",
+      "parent": 8,
+      "prefab": {
+        "object": 3,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 0.3,
+        "scale_y": 0.8,
+        "scale_z": 0.3,
+        "size": 1.0,
+        "x": -0.65,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 11,
+      "name": "Right Arm",
+      "parent": 8,
+      "prefab": {
+        "object": 4,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 0.3,
+        "scale_y": 0.8,
+        "scale_z": 0.3,
+        "size": 1.0,
+        "x": 0.65,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 12,
+      "logic": {
+        "scripts": [],
+        "variables": [
+          {
+            "name": "health",
+            "value": 100.0
+          }
+        ]
+      },
+      "name": "Enemy 2",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.25,
+        "albedo_g": 0.25,
+        "albedo_r": 0.9,
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 180.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": -3.0,
+        "y": 0.5,
+        "z": -6.0
+      }
+    },
+    {
+      "id": 13,
+      "name": "Head",
+      "parent": 12,
+      "prefab": {
+        "object": 2,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "sphere"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 0.35,
+        "x": 0.0,
+        "y": 0.85,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 14,
+      "name": "Left Arm",
+      "parent": 12,
+      "prefab": {
+        "object": 3,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 0.3,
+        "scale_y": 0.8,
+        "scale_z": 0.3,
+        "size": 1.0,
+        "x": -0.65,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 15,
+      "name": "Right Arm",
+      "parent": 12,
+      "prefab": {
+        "object": 4,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 0.3,
+        "scale_y": 0.8,
+        "scale_z": 0.3,
+        "size": 1.0,
+        "x": 0.65,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 16,
+      "logic": {
+        "scripts": [],
+        "variables": [
+          {
+            "name": "health",
+            "value": 25.0
+          }
+        ]
+      },
+      "name": "Enemy 3",
+      "prefab": {
+        "object": 1,
+        "overrides": [
+          "logic/variables"
+        ],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.25,
+        "albedo_g": 0.25,
+        "albedo_r": 0.9,
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 180.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 0.0,
+        "y": 0.5,
+        "z": -6.0
+      }
+    },
+    {
+      "id": 17,
+      "name": "Head",
+      "parent": 16,
+      "prefab": {
+        "object": 2,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "sphere"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 0.35,
+        "x": 0.0,
+        "y": 0.85,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 18,
+      "name": "Left Arm",
+      "parent": 16,
+      "prefab": {
+        "object": 3,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 0.3,
+        "scale_y": 0.8,
+        "scale_z": 0.3,
+        "size": 1.0,
+        "x": -0.65,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 19,
+      "name": "Right Arm",
+      "parent": 16,
+      "prefab": {
+        "object": 4,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 0.3,
+        "scale_y": 0.8,
+        "scale_z": 0.3,
+        "size": 1.0,
+        "x": 0.65,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 20,
+      "logic": {
+        "scripts": [],
+        "variables": [
+          {
+            "name": "health",
+            "value": 100.0
+          }
+        ]
+      },
+      "name": "Enemy 4",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.25,
+        "albedo_g": 0.25,
+        "albedo_r": 0.9,
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 180.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 3.0,
+        "y": 0.5,
+        "z": -6.0
+      }
+    },
+    {
+      "id": 21,
+      "name": "Head",
+      "parent": 20,
+      "prefab": {
+        "object": 2,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "sphere"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 0.35,
+        "x": 0.0,
+        "y": 0.85,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 22,
+      "name": "Left Arm",
+      "parent": 20,
+      "prefab": {
+        "object": 3,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 0.3,
+        "scale_y": 0.8,
+        "scale_z": 0.3,
+        "size": 1.0,
+        "x": -0.65,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 23,
+      "name": "Right Arm",
+      "parent": 20,
+      "prefab": {
+        "object": 4,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 0.3,
+        "scale_y": 0.8,
+        "scale_z": 0.3,
+        "size": 1.0,
+        "x": 0.65,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 24,
+      "logic": {
+        "scripts": [],
+        "variables": [
+          {
+            "name": "health",
+            "value": 100.0
+          }
+        ]
+      },
+      "name": "Enemy 5",
+      "prefab": {
+        "object": 1,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "albedo_a": 1.0,
+        "albedo_b": 0.25,
+        "albedo_g": 0.25,
+        "albedo_r": 0.9,
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 180.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 1.0,
+        "x": 6.0,
+        "y": 0.5,
+        "z": -6.0
+      }
+    },
+    {
+      "id": 25,
+      "name": "Head",
+      "parent": 24,
+      "prefab": {
+        "object": 2,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "sphere"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 1.0,
+        "scale_y": 1.0,
+        "scale_z": 1.0,
+        "size": 0.35,
+        "x": 0.0,
+        "y": 0.85,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 26,
+      "name": "Left Arm",
+      "parent": 24,
+      "prefab": {
+        "object": 3,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 0.3,
+        "scale_y": 0.8,
+        "scale_z": 0.3,
+        "size": 1.0,
+        "x": -0.65,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    {
+      "id": 27,
+      "name": "Right Arm",
+      "parent": 24,
+      "prefab": {
+        "object": 4,
+        "overrides": [],
+        "path": "assets/prefabs/Enemy.prefab"
+      },
+      "renderable": {
+        "rotation_speed": 0.0,
+        "shape": "cube"
+      },
+      "transform": {
+        "rotation": 0.0,
+        "rotation_x": 0.0,
+        "rotation_z": 0.0,
+        "scale_x": 0.3,
+        "scale_y": 0.8,
+        "scale_z": 0.3,
+        "size": 1.0,
+        "x": 0.65,
+        "y": 0.0,
+        "z": 0.0
+      }
+    }
+  ],
+  "version": 8
+}

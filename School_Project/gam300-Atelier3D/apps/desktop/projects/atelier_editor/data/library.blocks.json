@@ -1,0 +1,1414 @@
+{
+  "blocks": [
+    {
+      "blocks": [
+        {
+          "block": "set_mouse_sensitivity",
+          "id": 1,
+          "inputs": [
+            {
+              "block": "divide",
+              "id": 2,
+              "inputs": [
+                {
+                  "block": "variable",
+                  "id": 3,
+                  "text": "sens"
+                },
+                {}
+              ],
+              "numbers": [
+                0.0,
+                100.0
+              ]
+            }
+          ],
+          "numbers": [
+            0.0
+          ]
+        },
+        {
+          "block": "set_volume",
+          "id": 4,
+          "inputs": [
+            {
+              "block": "variable",
+              "id": 5,
+              "text": "master"
+            }
+          ],
+          "numbers": [
+            0.0
+          ],
+          "text": "master"
+        },
+        {
+          "block": "set_volume",
+          "id": 6,
+          "inputs": [
+            {
+              "block": "variable",
+              "id": 7,
+              "text": "music"
+            }
+          ],
+          "numbers": [
+            0.0
+          ],
+          "text": "music"
+        },
+        {
+          "block": "set_volume",
+          "id": 8,
+          "inputs": [
+            {
+              "block": "variable",
+              "id": 9,
+              "text": "sfx"
+            }
+          ],
+          "numbers": [
+            0.0
+          ],
+          "text": "sfx"
+        },
+        {
+          "block": "set_setting",
+          "id": 10,
+          "inputs": [
+            {
+              "block": "variable",
+              "id": 11,
+              "text": "fov"
+            }
+          ],
+          "numbers": [
+            0.0
+          ],
+          "text": "fov"
+        },
+        {
+          "block": "set_setting",
+          "id": 12,
+          "inputs": [
+            {
+              "block": "variable",
+              "id": 13,
+              "text": "crosshair"
+            }
+          ],
+          "numbers": [
+            0.0
+          ],
+          "text": "crosshair"
+        },
+        {
+          "block": "set_setting",
+          "id": 14,
+          "inputs": [
+            {
+              "block": "variable",
+              "id": 15,
+              "text": "quality"
+            }
+          ],
+          "numbers": [
+            0.0
+          ],
+          "text": "quality"
+        }
+      ],
+      "name": "Apply Settings"
+    },
+    {
+      "blocks": [
+        {
+          "block": "go_to",
+          "id": 1,
+          "numbers": [
+            0.0,
+            0.9,
+            10.0
+          ]
+        },
+        {
+          "block": "set_variable",
+          "id": 2,
+          "numbers": [
+            100.0
+          ],
+          "text": "health"
+        }
+      ],
+      "name": "Back To Village"
+    },
+    {
+      "blocks": [
+        {
+          "block": "if",
+          "body": [
+            {
+              "block": "if_else",
+              "body": [
+                {
+                  "block": "point_towards",
+                  "id": 10,
+                  "text": "Player"
+                },
+                {
+                  "block": "if_else",
+                  "body": [
+                    {
+                      "block": "play_animation",
+                      "id": 14,
+                      "text": "Running_A"
+                    },
+                    {
+                      "block": "move_forward",
+                      "id": 15,
+                      "numbers": [
+                        0.05
+                      ]
+                    }
+                  ],
+                  "else": [
+                    {
+                      "block": "play_animation",
+                      "id": 16,
+                      "text": "Melee_2H_Idle"
+                    }
+                  ],
+                  "id": 11,
+                  "slots": [
+                    {
+                      "block": "greater",
+                      "id": 12,
+                      "inputs": [
+                        {
+                          "block": "distance_to",
+                          "id": 13,
+                          "text": "Player"
+                        },
+                        {}
+                      ],
+                      "numbers": [
+                        0.0,
+                        1.3
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "else": [
+                {
+                  "block": "if",
+                  "body": [
+                    {
+                      "block": "play_animation",
+                      "id": 20,
+                      "text": "Walking_A"
+                    },
+                    {
+                      "block": "turn_by",
+                      "id": 21,
+                      "numbers": [
+                        1.0
+                      ]
+                    },
+                    {
+                      "block": "move_forward",
+                      "id": 22,
+                      "numbers": [
+                        0.015
+                      ]
+                    }
+                  ],
+                  "id": 17,
+                  "slots": [
+                    {
+                      "block": "greater",
+                      "id": 18,
+                      "inputs": [
+                        {
+                          "block": "variable",
+                          "id": 19,
+                          "text": "health"
+                        },
+                        {}
+                      ],
+                      "numbers": [
+                        0.0,
+                        0.0
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "id": 4,
+              "slots": [
+                {
+                  "block": "and",
+                  "id": 5,
+                  "slots": [
+                    {
+                      "block": "less",
+                      "id": 6,
+                      "inputs": [
+                        {
+                          "block": "distance_to",
+                          "id": 7,
+                          "text": "Player"
+                        },
+                        {}
+                      ],
+                      "numbers": [
+                        0.0,
+                        9.0
+                      ]
+                    },
+                    {
+                      "block": "greater",
+                      "id": 8,
+                      "inputs": [
+                        {
+                          "block": "variable",
+                          "id": 9,
+                          "text": "health"
+                        },
+                        {}
+                      ],
+                      "numbers": [
+                        0.0,
+                        0.0
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "id": 1,
+          "slots": [
+            {
+              "block": "equal",
+              "id": 2,
+              "inputs": [
+                {
+                  "block": "variable",
+                  "id": 3,
+                  "text": "stunned"
+                },
+                {}
+              ],
+              "numbers": [
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        }
+      ],
+      "name": "Bandit Chase"
+    },
+    {
+      "blocks": [
+        {
+          "block": "if",
+          "body": [
+            {
+              "block": "set_variable",
+              "id": 7,
+              "numbers": [
+                1.0
+              ],
+              "text": "stunned"
+            },
+            {
+              "block": "point_towards",
+              "id": 8,
+              "text": "Player"
+            },
+            {
+              "block": "push_forward",
+              "id": 9,
+              "numbers": [
+                -7.0
+              ]
+            },
+            {
+              "block": "change_variable",
+              "id": 10,
+              "numbers": [
+                -10.0
+              ],
+              "text": "health"
+            },
+            {
+              "block": "play_sound",
+              "id": 11,
+              "text": "sword_hit"
+            },
+            {
+              "block": "play_sound",
+              "id": 12,
+              "text": "bandit_hurt"
+            },
+            {
+              "block": "set_color",
+              "id": 13,
+              "numbers": [
+                1.0,
+                0.45,
+                0.45
+              ]
+            },
+            {
+              "block": "play_animation_once",
+              "id": 14,
+              "text": "Hit_A"
+            },
+            {
+              "block": "wait",
+              "id": 15,
+              "numbers": [
+                0.15
+              ]
+            },
+            {
+              "block": "set_color",
+              "id": 16,
+              "numbers": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "block": "if_else",
+              "body": [
+                {
+                  "block": "say",
+                  "id": 20,
+                  "text": "Ugh... you win!"
+                },
+                {
+                  "block": "play_animation_once",
+                  "id": 21,
+                  "text": "Death_A"
+                },
+                {
+                  "block": "wait",
+                  "id": 22,
+                  "numbers": [
+                    1.5
+                  ]
+                },
+                {
+                  "block": "hide",
+                  "id": 23
+                },
+                {
+                  "block": "go_to",
+                  "id": 24,
+                  "numbers": [
+                    0.0,
+                    -100.0,
+                    0.0
+                  ]
+                }
+              ],
+              "else": [
+                {
+                  "block": "wait",
+                  "id": 25,
+                  "numbers": [
+                    0.5
+                  ]
+                },
+                {
+                  "block": "set_variable",
+                  "id": 26,
+                  "numbers": [
+                    0.0
+                  ],
+                  "text": "stunned"
+                }
+              ],
+              "id": 17,
+              "slots": [
+                {
+                  "block": "less",
+                  "id": 18,
+                  "inputs": [
+                    {
+                      "block": "variable",
+                      "id": 19,
+                      "text": "health"
+                    },
+                    {}
+                  ],
+                  "numbers": [
+                    0.0,
+                    1.0
+                  ]
+                }
+              ]
+            }
+          ],
+          "id": 1,
+          "slots": [
+            {
+              "block": "and",
+              "id": 2,
+              "slots": [
+                {
+                  "block": "less",
+                  "id": 3,
+                  "inputs": [
+                    {
+                      "block": "distance_to",
+                      "id": 4,
+                      "text": "Sword Hitbox"
+                    },
+                    {}
+                  ],
+                  "numbers": [
+                    0.0,
+                    1.4
+                  ]
+                },
+                {
+                  "block": "greater",
+                  "id": 5,
+                  "inputs": [
+                    {
+                      "block": "variable",
+                      "id": 6,
+                      "text": "health"
+                    },
+                    {}
+                  ],
+                  "numbers": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "name": "Bandit Hurt"
+    },
+    {
+      "blocks": [
+        {
+          "block": "if",
+          "body": [
+            {
+              "block": "if",
+              "body": [
+                {
+                  "block": "play_animation_once",
+                  "id": 10,
+                  "text": "Melee_1H_Attack_Chop"
+                },
+                {
+                  "block": "play_sound",
+                  "id": 11,
+                  "text": "sword_swing"
+                },
+                {
+                  "block": "wait",
+                  "id": 12,
+                  "numbers": [
+                    0.4
+                  ]
+                },
+                {
+                  "block": "broadcast",
+                  "id": 13,
+                  "text": "hurt"
+                },
+                {
+                  "block": "wait",
+                  "id": 14,
+                  "numbers": [
+                    1.0
+                  ]
+                }
+              ],
+              "id": 7,
+              "slots": [
+                {
+                  "block": "equal",
+                  "id": 8,
+                  "inputs": [
+                    {
+                      "block": "variable",
+                      "id": 9,
+                      "text": "stunned"
+                    },
+                    {}
+                  ],
+                  "numbers": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            }
+          ],
+          "id": 1,
+          "slots": [
+            {
+              "block": "and",
+              "id": 2,
+              "slots": [
+                {
+                  "block": "less",
+                  "id": 3,
+                  "inputs": [
+                    {
+                      "block": "distance_to",
+                      "id": 4,
+                      "text": "Player"
+                    },
+                    {}
+                  ],
+                  "numbers": [
+                    0.0,
+                    1.5
+                  ]
+                },
+                {
+                  "block": "greater",
+                  "id": 5,
+                  "inputs": [
+                    {
+                      "block": "variable",
+                      "id": 6,
+                      "text": "health"
+                    },
+                    {}
+                  ],
+                  "numbers": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "name": "Bandit Strike"
+    },
+    {
+      "blocks": [
+        {
+          "block": "set_variable",
+          "id": 1,
+          "numbers": [
+            1.0
+          ],
+          "text": "busy"
+        },
+        {
+          "block": "wait",
+          "id": 2,
+          "inputs": [
+            {
+              "block": "variable",
+              "id": 3,
+              "text": "seconds"
+            }
+          ],
+          "numbers": [
+            0.0
+          ]
+        },
+        {
+          "block": "set_variable",
+          "id": 4,
+          "numbers": [
+            0.0
+          ],
+          "text": "busy"
+        }
+      ],
+      "inputs": "seconds",
+      "name": "Busy For"
+    },
+    {
+      "blocks": [
+        {
+          "block": "if_else",
+          "body": [
+            {
+              "block": "set_variable",
+              "id": 9,
+              "numbers": [
+                1.0
+              ],
+              "text": "moving"
+            }
+          ],
+          "else": [
+            {
+              "block": "set_variable",
+              "id": 10,
+              "numbers": [
+                0.0
+              ],
+              "text": "moving"
+            }
+          ],
+          "id": 1,
+          "slots": [
+            {
+              "block": "or",
+              "id": 2,
+              "slots": [
+                {
+                  "block": "or",
+                  "id": 3,
+                  "slots": [
+                    {
+                      "block": "key_down",
+                      "id": 4,
+                      "text": "W"
+                    },
+                    {
+                      "block": "key_down",
+                      "id": 5,
+                      "text": "S"
+                    }
+                  ]
+                },
+                {
+                  "block": "or",
+                  "id": 6,
+                  "slots": [
+                    {
+                      "block": "key_down",
+                      "id": 7,
+                      "text": "A"
+                    },
+                    {
+                      "block": "key_down",
+                      "id": 8,
+                      "text": "D"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "name": "Check Movement Keys"
+    },
+    {
+      "blocks": [
+        {
+          "block": "point_towards",
+          "id": 1,
+          "text": "Player"
+        },
+        {
+          "block": "play_animation",
+          "id": 2,
+          "text": "Soldier_Shoot"
+        },
+        {
+          "block": "ray_at",
+          "id": 3,
+          "numbers": [
+            100.0,
+            1.5,
+            3.2
+          ],
+          "text": "Player"
+        },
+        {
+          "block": "if",
+          "body": [
+            {
+              "block": "change_value_of",
+              "id": 6,
+              "numbers": [
+                -9.0
+              ],
+              "text": "Player.health"
+            },
+            {
+              "block": "tell_ray_hit",
+              "id": 7,
+              "text": "shot"
+            }
+          ],
+          "id": 4,
+          "slots": [
+            {
+              "block": "ray_hit",
+              "id": 5,
+              "text": "Player"
+            }
+          ]
+        },
+        {
+          "block": "play_sound",
+          "id": 8,
+          "text": "rifle_fire"
+        },
+        {
+          "block": "wait",
+          "id": 9,
+          "inputs": [
+            {
+              "block": "random",
+              "id": 10,
+              "numbers": [
+                0.3,
+                0.75
+              ]
+            }
+          ],
+          "numbers": [
+            0.0
+          ]
+        }
+      ],
+      "name": "Enemy Fire"
+    },
+    {
+      "blocks": [
+        {
+          "block": "if",
+          "body": [
+            {
+              "block": "set_color",
+              "id": 4,
+              "numbers": [
+                1.0,
+                0.45,
+                0.45
+              ]
+            },
+            {
+              "block": "wait",
+              "id": 5,
+              "numbers": [
+                0.08
+              ]
+            },
+            {
+              "block": "set_color",
+              "id": 6,
+              "numbers": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "block": "if",
+              "body": [
+                {
+                  "block": "set_variable",
+                  "id": 10,
+                  "numbers": [
+                    0.0
+                  ],
+                  "text": "alive"
+                },
+                {
+                  "block": "broadcast",
+                  "id": 11,
+                  "text": "bot down"
+                },
+                {
+                  "block": "play_animation_once",
+                  "id": 12,
+                  "text": "Soldier_Death"
+                },
+                {
+                  "block": "wait",
+                  "id": 13,
+                  "numbers": [
+                    2.5
+                  ]
+                },
+                {
+                  "block": "hide",
+                  "id": 14
+                },
+                {
+                  "block": "go_to",
+                  "id": 15,
+                  "inputs": [
+                    {
+                      "block": "variable",
+                      "id": 16,
+                      "text": "home x"
+                    },
+                    {},
+                    {
+                      "block": "variable",
+                      "id": 17,
+                      "text": "home z"
+                    }
+                  ],
+                  "numbers": [
+                    0.0,
+                    -40.0,
+                    0.0
+                  ]
+                }
+              ],
+              "id": 7,
+              "slots": [
+                {
+                  "block": "less",
+                  "id": 8,
+                  "inputs": [
+                    {
+                      "block": "variable",
+                      "id": 9,
+                      "text": "health"
+                    },
+                    {}
+                  ],
+                  "numbers": [
+                    0.0,
+                    1.0
+                  ]
+                }
+              ]
+            }
+          ],
+          "id": 1,
+          "slots": [
+            {
+              "block": "equal",
+              "id": 2,
+              "inputs": [
+                {
+                  "block": "variable",
+                  "id": 3,
+                  "text": "alive"
+                },
+                {}
+              ],
+              "numbers": [
+                0.0,
+                1.0
+              ]
+            }
+          ]
+        }
+      ],
+      "name": "Enemy Hurt"
+    },
+    {
+      "blocks": [
+        {
+          "block": "set_variable",
+          "id": 1,
+          "numbers": [
+            100.0
+          ],
+          "text": "health"
+        },
+        {
+          "block": "show",
+          "id": 2
+        },
+        {
+          "block": "go_to",
+          "id": 3,
+          "inputs": [
+            {
+              "block": "variable",
+              "id": 4,
+              "text": "home x"
+            },
+            {},
+            {
+              "block": "variable",
+              "id": 5,
+              "text": "home z"
+            }
+          ],
+          "numbers": [
+            0.0,
+            0.05,
+            0.0
+          ]
+        },
+        {
+          "block": "set_variable",
+          "id": 6,
+          "numbers": [
+            0.0
+          ],
+          "text": "leg"
+        },
+        {
+          "block": "set_variable",
+          "id": 7,
+          "numbers": [
+            1.0
+          ],
+          "text": "alive"
+        },
+        {
+          "block": "set_variable",
+          "id": 8,
+          "numbers": [
+            0.0
+          ],
+          "text": "active"
+        },
+        {
+          "block": "play_animation",
+          "id": 9,
+          "text": "Soldier_Idle"
+        }
+      ],
+      "inputs": "home x, home z",
+      "name": "Enemy Spawn"
+    },
+    {
+      "blocks": [
+        {
+          "block": "set_variable",
+          "id": 1,
+          "numbers": [
+            30.0
+          ],
+          "text": "r ammo"
+        },
+        {
+          "block": "set_variable",
+          "id": 2,
+          "numbers": [
+            90.0
+          ],
+          "text": "r spare"
+        },
+        {
+          "block": "set_variable",
+          "id": 3,
+          "numbers": [
+            12.0
+          ],
+          "text": "p ammo"
+        },
+        {
+          "block": "set_variable",
+          "id": 4,
+          "numbers": [
+            36.0
+          ],
+          "text": "p spare"
+        }
+      ],
+      "name": "Fill Ammo"
+    },
+    {
+      "blocks": [
+        {
+          "block": "show",
+          "id": 1
+        },
+        {
+          "block": "wait",
+          "id": 2,
+          "inputs": [
+            {
+              "block": "variable",
+              "id": 3,
+              "text": "seconds"
+            }
+          ],
+          "numbers": [
+            0.0
+          ]
+        },
+        {
+          "block": "hide",
+          "id": 4
+        }
+      ],
+      "inputs": "seconds",
+      "name": "Flash On Screen"
+    },
+    {
+      "blocks": [
+        {
+          "block": "if",
+          "body": [
+            {
+              "block": "move_forward",
+              "id": 3,
+              "inputs": [
+                {
+                  "block": "variable",
+                  "id": 4,
+                  "text": "speed"
+                }
+              ],
+              "numbers": [
+                0.0
+              ]
+            }
+          ],
+          "id": 1,
+          "slots": [
+            {
+              "block": "key_down",
+              "id": 2,
+              "text": "W"
+            }
+          ]
+        },
+        {
+          "block": "if",
+          "body": [
+            {
+              "block": "move_forward",
+              "id": 7,
+              "inputs": [
+                {
+                  "block": "subtract",
+                  "id": 8,
+                  "inputs": [
+                    {},
+                    {
+                      "block": "variable",
+                      "id": 9,
+                      "text": "speed"
+                    }
+                  ],
+                  "numbers": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "numbers": [
+                0.0
+              ]
+            }
+          ],
+          "id": 5,
+          "slots": [
+            {
+              "block": "key_down",
+              "id": 6,
+              "text": "S"
+            }
+          ]
+        },
+        {
+          "block": "if",
+          "body": [
+            {
+              "block": "move_right",
+              "id": 12,
+              "inputs": [
+                {
+                  "block": "variable",
+                  "id": 13,
+                  "text": "speed"
+                }
+              ],
+              "numbers": [
+                0.0
+              ]
+            }
+          ],
+          "id": 10,
+          "slots": [
+            {
+              "block": "key_down",
+              "id": 11,
+              "text": "D"
+            }
+          ]
+        },
+        {
+          "block": "if",
+          "body": [
+            {
+              "block": "move_right",
+              "id": 16,
+              "inputs": [
+                {
+                  "block": "subtract",
+                  "id": 17,
+                  "inputs": [
+                    {},
+                    {
+                      "block": "variable",
+                      "id": 18,
+                      "text": "speed"
+                    }
+                  ],
+                  "numbers": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "numbers": [
+                0.0
+              ]
+            }
+          ],
+          "id": 14,
+          "slots": [
+            {
+              "block": "key_down",
+              "id": 15,
+              "text": "A"
+            }
+          ]
+        }
+      ],
+      "inputs": "speed",
+      "name": "Move With Keys"
+    },
+    {
+      "blocks": [
+        {
+          "block": "ray_ahead",
+          "id": 1,
+          "numbers": [
+            250.0,
+            1.5
+          ]
+        },
+        {
+          "block": "if",
+          "body": [
+            {
+              "block": "change_value_of",
+              "id": 4,
+              "inputs": [
+                {
+                  "block": "subtract",
+                  "id": 5,
+                  "inputs": [
+                    {},
+                    {
+                      "block": "variable",
+                      "id": 6,
+                      "text": "damage"
+                    }
+                  ],
+                  "numbers": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              ],
+              "numbers": [
+                0.0
+              ],
+              "text": "hit.health"
+            },
+            {
+              "block": "tell_ray_hit",
+              "id": 7,
+              "text": "shot"
+            },
+            {
+              "block": "broadcast",
+              "id": 8,
+              "text": "hit marker"
+            }
+          ],
+          "id": 2,
+          "slots": [
+            {
+              "block": "value_exists",
+              "id": 3,
+              "text": "hit.health"
+            }
+          ]
+        },
+        {
+          "block": "set_tilt",
+          "id": 9,
+          "inputs": [
+            {
+              "block": "add",
+              "id": 10,
+              "inputs": [
+                {
+                  "block": "tilt_of",
+                  "id": 11,
+                  "text": "Player"
+                },
+                {
+                  "block": "variable",
+                  "id": 12,
+                  "text": "kick"
+                }
+              ],
+              "numbers": [
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "numbers": [
+            0.0
+          ]
+        },
+        {
+          "block": "change_variable",
+          "id": 13,
+          "inputs": [
+            {
+              "block": "variable",
+              "id": 14,
+              "text": "kick"
+            }
+          ],
+          "numbers": [
+            0.0
+          ],
+          "text": "recoil"
+        },
+        {
+          "block": "turn_by",
+          "id": 15,
+          "inputs": [
+            {
+              "block": "random",
+              "id": 16,
+              "numbers": [
+                -0.35,
+                0.35
+              ]
+            }
+          ],
+          "numbers": [
+            0.0
+          ]
+        }
+      ],
+      "inputs": "damage, kick",
+      "name": "Shoot"
+    },
+    {
+      "blocks": [
+        {
+          "block": "if_else",
+          "body": [
+            {
+              "block": "set_variable",
+              "id": 4,
+              "inputs": [
+                {
+                  "block": "variable",
+                  "id": 5,
+                  "text": "r ammo"
+                }
+              ],
+              "numbers": [
+                0.0
+              ],
+              "text": "ammo"
+            },
+            {
+              "block": "set_variable",
+              "id": 6,
+              "inputs": [
+                {
+                  "block": "variable",
+                  "id": 7,
+                  "text": "r spare"
+                }
+              ],
+              "numbers": [
+                0.0
+              ],
+              "text": "spare"
+            }
+          ],
+          "else": [
+            {
+              "block": "set_variable",
+              "id": 8,
+              "inputs": [
+                {
+                  "block": "variable",
+                  "id": 9,
+                  "text": "p ammo"
+                }
+              ],
+              "numbers": [
+                0.0
+              ],
+              "text": "ammo"
+            },
+            {
+              "block": "set_variable",
+              "id": 10,
+              "inputs": [
+                {
+                  "block": "variable",
+                  "id": 11,
+                  "text": "p spare"
+                }
+              ],
+              "numbers": [
+                0.0
+              ],
+              "text": "spare"
+            }
+          ],
+          "id": 1,
+          "slots": [
+            {
+              "block": "equal",
+              "id": 2,
+              "inputs": [
+                {
+                  "block": "variable",
+                  "id": 3,
+                  "text": "weapon"
+                },
+                {}
+              ],
+              "numbers": [
+                0.0,
+                1.0
+              ]
+            }
+          ]
+        }
+      ],
+      "name": "Show Ammo"
+    },
+    {
+      "blocks": [
+        {
+          "block": "set_variable",
+          "id": 1,
+          "numbers": [
+            0.0
+          ],
+          "text": "aiming"
+        }
+      ],
+      "name": "Stop Aiming"
+    }
+  ],
+  "version": 1
+}
